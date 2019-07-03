@@ -95,20 +95,55 @@ $(document).ready(function () {
     
     
     
-//#sticky script start    
-$(".headerLine2").height($('.headerLine2 #sticky').height());
-$( window ).resize(function() {
-  $(".headerLine2").height($('.headerLine2 #sticky').height());
-});
-$(window).scroll(function () {
-    var top = $(".headerLine1").height();
-    if ($(this).scrollTop() > top) {
-        $('.headerLine2 #sticky').addClass('sticky-menu');
-    } else if ($(this).scrollTop() <= top) {
-        $('.headerLine2 #sticky').removeClass('sticky-menu');
-    }
-});
-//#sticky script end
+    //#stickySm script start    
+    function stickySm(){
+        $("#stickySm").height($('#stickySm header').height());
+        $(window).scroll(function () { 
+            var top = $("#stickySm header").scrollTop();
+            if ($(this).scrollTop() > top) {
+                $('#stickySm header').addClass('sticky-menu');
+            } else if ($(this).scrollTop() <= top) {
+                $('#stickySm header').removeClass('sticky-menu');
+            }
+
+        });
+    };
+    //#stickyLg script end
+    //#stickyLg script start    
+    function stickyLg(){
+        $("#stickyLg").height($('#stickyLg .stickyLgwrap').height());
+        $(window).scroll(function () {
+            
+            var top = $("#noSticky").outerHeight();
+            if ($(this).scrollTop() > top) {
+                $('#stickyLg .stickyLgwrap').addClass('sticky-menu');
+            } else if ($(this).scrollTop() <= top) {
+                $('#stickyLg .stickyLgwrap').removeClass('sticky-menu');
+            }
+            
+        });
+    };
+    //#stickyLg script end    
+    
+    
+    if($(window).width() < 992) {
+        stickySm();
+    } else if($(window).width() >= 992) {
+        stickyLg();
+    };
+    
+    $(window).resize(function(){
+        
+        $("#stickySm").height($('#stickySm header').height());
+        $("#stickyLg").height($('#stickyLg .stickyLgwrap').height());
+        
+        if($(window).width() < 992) {
+            stickySm();
+        } else if($(window).width() >= 992) {
+            stickyLg();
+        }
+    });
+
     
     
     

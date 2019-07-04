@@ -62,6 +62,14 @@ $(document).ready(function () {
                     element.siblings('li').find('ul').slideUp(200);
                 }
             });
+    
+        $(window).resize(function(){
+            $(".cssmenu .has-sub").removeClass('open');
+            $(".cssmenu .menuName ul").css({
+                display: "none"
+            });
+        });
+    
     ///.cssmenu script  end
     
     
@@ -91,11 +99,11 @@ $(document).ready(function () {
     $('.asideDropdown').click(function(e) {
         e.stopPropagation();
     });
-    //aside .asideDropdown script start
+    //aside .asideDropdown script end
     
     
     
-    //#stickySm script start    
+    //#sticky script start    
     function stickySm(){
         $("#stickySm").height($('#stickySm header').height());
         $(window).scroll(function () { 
@@ -107,9 +115,7 @@ $(document).ready(function () {
             }
 
         });
-    };
-    //#stickyLg script end
-    //#stickyLg script start    
+    };   
     function stickyLg(){
         $("#stickyLg").height($('#stickyLg .stickyLgwrap').height());
         $(window).scroll(function () {
@@ -123,27 +129,25 @@ $(document).ready(function () {
             
         });
     };
-    //#stickyLg script end    
-    
-    
     if($(window).width() < 992) {
+        $("#stickyLg").height($('#stickyLg .stickyLgwrap').height());
         stickySm();
     } else if($(window).width() >= 992) {
+        $("#stickySm").height($('#stickySm header').height());
         stickyLg();
     };
-    
     $(window).resize(function(){
-        
-        $("#stickySm").height($('#stickySm header').height());
-        $("#stickyLg").height($('#stickyLg .stickyLgwrap').height());
-        
+        $(".navbar-toggler").addClass('collapsed');
+        $(".navbar-collapse").removeClass('show');
         if($(window).width() < 992) {
+        $("#stickyLg").height($('#stickyLg .stickyLgwrap').height());
             stickySm();
         } else if($(window).width() >= 992) {
+        $("#stickySm").height($('#stickySm header').height());
             stickyLg();
         }
     });
-
+    //#sticky script script end
     
     
     

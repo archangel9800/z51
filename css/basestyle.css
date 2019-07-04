@@ -104,13 +104,21 @@ header .slogan {
 header{
     position: relative;
     z-index: 2000;
-    background: rgb(0,0,0) -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,1)); /* FF3.6-15 */
-    background: rgb(0,0,0) -webkit-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,1)); /* Chrome10-25,Safari5.1-6 */
-    background: rgb(0,0,0) linear-gradient(to bottom, rgba(51,51,51,1) 0%, rgba(0,0,0,1)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background-repeat: no-repeat;
 }
-
-
+@media only screen and (min-width: 0px){
+    header{
+        background: var(--black);
+    }    
+}
+@media only screen and (min-width: 992px){
+    header{
+        background: rgb(0,0,0) -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,1)); /* FF3.6-15 */
+        background: rgb(0,0,0) -webkit-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,1)); /* Chrome10-25,Safari5.1-6 */
+        background: rgb(0,0,0) linear-gradient(to bottom, rgba(51,51,51,1) 0%, rgba(0,0,0,1)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+}
+/* jQuery .sticky-menu style start*/
 .sticky-menu {
     position: fixed;
     max-width: 1580px;
@@ -128,7 +136,7 @@ header{
     }
 
 }
-
+/* jQuery .sticky-menu style end*/
 
 /* jQuery.ellipsis style start*/
 .ellip {
@@ -181,7 +189,7 @@ header .logoImg img{
     width: 171px;
 }
 
-/*header .callUs start*/
+/*header jQuery.callUs start*/
 header .callUs {
     background-color: var(--grey3);
 }
@@ -214,7 +222,7 @@ header .callUs .dropdown-item:hover{
     border: none;
     border-radius: 0;
 }
-/*header .callUs end*/
+/*header jQuery.callUs end*/
 
 /*header #headerNavCollapse2 start*/
 header .navigation .navbar-collapse .navbar-nav .nav-item a{
@@ -234,7 +242,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 }
 /*header .navigation end*/
 
-/*header .cssmenu start*/
+/*header jQuery.cssmenu start*/
 header .cssmenu *{
     font-weight: bold;
 }
@@ -361,9 +369,9 @@ header .cssmenu ul ul li.has-sub.open > span{
         position: absolute;
     }
 }
-/*header .cssmenu style end*/
+/*header jQuery.cssmenu style end*/
 
-/*header .cssmenu start*/
+/*header .topSearch start*/
 header .topSearch input, header .topSearch button{
     outline: none;
     border: none;
@@ -391,7 +399,7 @@ header .topSearch button:hover {
         height: 3rem;
     }
 }
-/**header .cssmenu style end*/
+/**header .topSearch style end*/
 
 /*header .home start*/
 header .home li{
@@ -531,9 +539,7 @@ header .home .home-icons.cart a:hover::before, header .home .home-icons.active.c
     color: var(--mainContCol);
     letter-spacing: 1.7px;
 }
-.contentWrapper .catName::after{
-    display: block;
-    content: '';
+.contentWrapper .line{
     background-color: var(--white);
     height: 2px;
     flex-grow: 1;

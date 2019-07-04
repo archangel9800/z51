@@ -16,22 +16,36 @@
     <header class="px-1 pt-1 pt-lg-0">
         <div class="mainWidth">
             <nav class="navbar-z51 navbar navbar-expand-lg px-0 py-0 flex-wrap">
-                <div id="noSticky" class="col-12 px-0 pb-3 pt-0 pt-lg-3 d-flex flex-wrap align-items-center justify-content-between">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".headerNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="logoImg navbar-brand m-0 col-auto px-1 pl-lg-0 pr-lg-3 py-0" href="#">
-                        <img src="./img/icons/svg/z51_logo.svg" alt="ЗОНА51">
-                    </a>
-                    <form class="topSearch px-lg-3 mt-1 mt-sm-0 d-flex d-lg-none flex-grow-1">
-                        <div class="d-flex flex-grow-1">
-                            <input class="flex-grow-1 px-3 py-2" type="search" placeholder="Search" aria-label="Search">
-                            <button type="submit"></button>
-                        </div>
-                    </form>
-                    <div class="m-0 headerNavCollapse collapse navbar-collapse flex-wrap flex-grow-0">
+                <div id="noSticky" class="col-12 px-0 pb-3 pt-0 pt-lg-3 d-flex flex-wrap align-items-center">
+                    <div class="d-flex m-0 p-0 col-xs-12 col-lg flex-grow-0 flex-wrap flex-sm-nowrap justify-content-between">
+                        <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target=".headerNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="logoImg navbar-brand m-0 col-auto px-1 pl-lg-0 pr-lg-3 py-0 order-2" href="#">
+                            <img src="./img/icons/svg/z51_logo.svg" alt="ЗОНА51">
+                        </a>
+                        <form class="topSearch px-lg-3 mt-1 mt-sm-0 d-flex d-lg-none flex-grow-1 order-4 order-sm-3">
+                            <div class="d-flex flex-grow-1">
+                                <input class="flex-grow-1 px-3 py-2" type="search" placeholder="Search" aria-label="Search">
+                                <button type="submit"></button>
+                            </div>
+                        </form>
+                        
+                        <ul class="home p-0 m-0 pt-0 pt-lg-0 flex-grow-0 d-flex d-lg-none order-3 order-sm-4">
+                           <div class="p-0 m-0 d-flex align-items-end justify-content-center justify-content-lg-end">
+                               <li class="cart home-icons">
+                                   <a class="d-flex flex-wrap justify-content-center align-items-start" href="#">
+                                       <span class="cart-counter fntS075rem whiteFnt">2</span>
+                                       <span class="icon-name fntS075rem w-100">Корзина</span>
+                                   </a>
+                               </li>
+                          </div>
+                        </ul>
+                    </div>
+                    
+                    <div class="headerNavCollapse collapse navbar-collapse flex-wrap flex-grow-0 m-0 px-lg-0">
                         <p class="text-uppercase mainZ51ColFnt slogan m-0 p-1 pl-lg-1 pr-lg-1 pt-lg-1 pb-lg-0">Магазин <span class="d-block"></span> для геймеров</p>
-                        <div class="callUs ml-lg-3 pr-lg-3 pt-2 mr-0 pb-2 row flex-lg-nowrap align-items-center">
+                        <div class="callUs m-0 ml-lg-3 px-2 pr-lg-3 pt-2 pb-2 row flex-lg-nowrap align-items-center">
                             <div id="callUsDropdown" class="dropdown">
                                 <p id="callUsButton" class="dropdown-toggle-left row flex-lg-nowrap align-items-center pb-1 pb-lg-0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="pt-1 pl-2"><span class="whiteFnt">Киев, ул. Гетьмана, 13,</span> <span class="mainZ51ColFnt">(044) 538-15-11</span> <br><span class="lightGreyFnt fntS075rem">Пн-Пт: 11:00 - 21:00, Сб-Вс 10:00 - 20:00</span></span>
@@ -139,54 +153,55 @@
     </header>
 </div>   
        
-<div class="d-flex flex-wrap p-0 contentWrapper mainWidth">
-   
-   
-    <ul class="breadcrumbs d-flex flex-wrap col-12 pl-0 m-0 pt-4 justify-content-center justify-content-lg-start">
-      <li class="d-flex align-items-center"><a href="#">Главная</a></li>
-      <li class="d-flex align-items-center"><a href="#">Товары для геймеров</a></li>
-      <li class="d-flex align-items-center one-line">Игровые мыши</li> 
-    </ul>
-   
-   <div class="catName col-12 d-flex flex-wrap p-0 pt-3 m-0 align-items-center">
-    <h1 class="pr-4">Игровые мыши</h1>
-   </div>    
-   
-    <aside>
-        
-        <div class="dropdown show filterBlock">
-          <button class="dropdown-toggle text-uppercase py-1 px-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">
-            Производитель
-          </button>
-          <div class="dropdown-menu asideDropdown show" aria-labelledby="dropdownMenuButton">
-            <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="check0">
-                <label class="custom-control-label" for="check0">Remember</label>
-              </div>
-            <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="check1">
-                <label class="custom-control-label" for="check1">Remember</label>
-              </div>
-            <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="check2">
-                <label class="custom-control-label" for="check2">Remember</label>
-              </div>
-            <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="check3">
-                <label class="custom-control-label" for="check3">Remember</label>
-              </div>
-          </div>
+<div class="px-1">
+    <div class="d-flex flex-wrap p-0 contentWrapper mainWidth">
+
+
+        <ul class="breadcrumbs d-flex flex-wrap col-12 pl-0 m-0 pt-4 justify-content-center justify-content-lg-start">
+            <li class="d-flex align-items-center"><a href="#">Главная</a></li>
+            <li class="d-flex align-items-center"><a href="#">Товары для геймеров</a></li>
+            <li class="d-flex align-items-center one-line">Игровые мыши</li>
+        </ul>
+
+        <div class="catName col-12 d-flex flex-wrap p-0 pt-3 m-0 align-items-center justify-content-center">
+            <h1 class="pr-4">Игровые мыши</h1>
+            <div class="line ml-2 flex-grow-1 d-none d-sm-block"></div>
         </div>
-        
-    </aside>
-    
-    <article>
-        
-    </article>
-    
+
+        <aside>
+
+            <div class="dropdown show filterBlock">
+                <button class="dropdown-toggle text-uppercase py-1 px-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">
+                    Производитель
+                </button>
+                <div class="dropdown-menu asideDropdown show" aria-labelledby="dropdownMenuButton">
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" class="custom-control-input" id="check0">
+                        <label class="custom-control-label" for="check0">Remember</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" class="custom-control-input" id="check1">
+                        <label class="custom-control-label" for="check1">Remember</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" class="custom-control-input" id="check2">
+                        <label class="custom-control-label" for="check2">Remember</label>
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" class="custom-control-input" id="check3">
+                        <label class="custom-control-label" for="check3">Remember</label>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <article>
+
+        </article>
+
+    </div>
 </div>
-    
-    
     
     
     

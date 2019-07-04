@@ -1,4 +1,3 @@
-
 /*// Малые девайсы («ландшафтные телефоны», >= 0px) xs*/
 @media only screen and (min-width: 0px) { 
     .position-static-xs{
@@ -7,6 +6,12 @@
     .position-absolute-xs{
         position: absolute;
     }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+      .position-sticky-xs {
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    }  
 }
 
 /*// Малые девайсы («ландшафтные телефоны», >= 576px) sm*/
@@ -17,6 +22,12 @@
     .position-absolute-sm{
         position: absolute;
     }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+      .position-sticky-sm {
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    } 
 }
 
 /*// Средние девайсы («таблетки», >= 768px) md*/
@@ -27,6 +38,12 @@
     .position-absolute-md{
         position: absolute;
     }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+      .position-sticky-md {
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    } 
 }
 
 /*// Большие девайсы (десктопы, >= 992px) lg*/
@@ -37,6 +54,12 @@
     .position-absolute-lg{
         position: absolute;
     }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+      .position-sticky-lg {
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    } 
 }
 
 /*// Экстрабольшие девайсы (большие десктопы, >= 1200px) xl*/
@@ -47,9 +70,27 @@
     .position-absolute-xl{
         position: absolute;
     }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+      .position-sticky-xl {
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    } 
 }
 
 @media (min-width: 1480px) {
+    .position-static-xxl{
+        position: static;
+    }
+    .position-absolute-xxl{
+        position: absolute;
+    }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+      .position-sticky-xxl {
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    } 
   .col-xxl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;

@@ -31,9 +31,7 @@ body{
     line-height: 1rem;
     min-width: 400px;
     font-family: 'Play', sans-serif;
-    background: rgb(0,0,0); /* Old browsers */
-    background: rgb(0,0,0) -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 230px); /* FF3.6-15 */
-    background: rgb(0,0,0) -webkit-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 230px); /* Chrome10-25,Safari5.1-6 */
+    background: rgb(0,0,0); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
     background: rgb(0,0,0) linear-gradient(to bottom, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 230px); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background-repeat: no-repeat;
 }
@@ -108,6 +106,8 @@ header .slogan {
 
 /* jQuery.ellipsis style start*/
 .ellip {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -133,6 +133,7 @@ header .navbar-z51 .navbar-toggler-icon {
 }
 header .navbar-z51 .navbar-toggler .navbar-toggler-icon {
   background-image: url("../img/icons/svg/menu.svg");
+    -webkit-transition: all 0.1s;
     transition: all 0.1s;
 }
 header .navbar-z51 .navbar-toggler:hover .navbar-toggler-icon, .navbar-z51 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
@@ -210,6 +211,8 @@ header .cssmenu ul li > span{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;  
 }
 header .cssmenu ul,
@@ -502,6 +505,8 @@ header .home .home-icons.cart a:hover::before, header .home .home-icons.active.c
     content: '';
     background-color: var(--white);
     height: 2px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     margin-left: 0.5rem;
 }

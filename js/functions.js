@@ -1,5 +1,29 @@
 $(document).ready(function () {
-	
+
+/* Sample function that returns boolean in case the browser is Internet Explorer*/
+function isIE() {
+  ua = navigator.userAgent;
+  /* MSIE used to detect old browsers and Trident used to newer ones*/
+  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+  return is_ie; 
+}
+    
+/* Create an alert to show if the browser is IE or not */
+//if (isIE()){
+//    alert('It is InternetExplorer');
+//}else{
+//    alert('It is NOT InternetExplorer');
+//} 
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement('style')
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      '@-ms-viewport{width:auto!important}'
+    )
+  )
+  document.head.appendChild(msViewportStyle)
+}    
+    
  
  ///#callUsDropdown script start
     $("#callUsDropdown").on("click", function (event) {
@@ -95,7 +119,6 @@ $(document).ready(function () {
     });
     //aside .asideDropdown script end
     
-
     if($(window).width() < 992) {
        $('.sticky-top').css({
             top: 0+'px'
@@ -105,8 +128,7 @@ $(document).ready(function () {
             top: '-'+$('.sticky-top #firstNavLine').height()+'px'
         });
     };
-    
-    $(window).resize(function(){        
+    $(window).resize(function(){  
         if($(window).width() < 992) {
            $('.sticky-top').css({
                 top: 0+'px'
@@ -115,7 +137,7 @@ $(document).ready(function () {
             $('.sticky-top').css({
                 top: '-'+$('.sticky-top #firstNavLine').height()+'px'
             });
-        };         
+        }; 
    });
     
     

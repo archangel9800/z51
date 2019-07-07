@@ -23,7 +23,7 @@ html{
     --fntS0875rem: 0.875rem;
 /*    18px*/
     --fntS1125rem: 1.125rem;
-/*    18px*/
+/*    48px*/
     --fntS3rem: 3rem;
 } 
 
@@ -105,7 +105,10 @@ header .slogan {
     line-height: 1.3;
 }
 
-
+.sepLine{
+    height: 1px;
+    background-color: var(--grey3);
+}
 
 header{
     position: relative;
@@ -192,9 +195,6 @@ header .logoImg img{
 }
 
 /*header jQuery.callUs start*/
-header .callUs {
-    background-color: var(--grey3);
-}
 header .callUs p, .callUs li {
     cursor: pointer;
     margin: 0;
@@ -214,28 +214,59 @@ header .callUs .show .dropdown-toggle-left::before {
     border-color: var(--mainZ51Col) transparent;
 }
 header .callUs .dropdown-menu{
-    background-color: var(--grey3);
     border: none;
     border-radius: 0;
     min-width: -webkit-max-content;min-width: -moz-max-content;min-width: max-content;
     width: 100%;
 }
 header .callUs .dropdown-item{
-     padding: 0.3rem 2.75rem;
+     padding: 0.3rem 0 0.3rem 2.75rem;
 }
-
 header .callUs .dropdown-item:hover{
-    background-color: var(--grey2);
     border: none;
     border-radius: 0;
 }
+@media only screen and (min-width: 0px){
+    header .callUs, header .callUs .dropdown-menu, header .callUs .dropdown-item:hover{
+        background-color: var(--transp);
+    }
+    header .callUs .dropdown-menu{
+        position: static;
+        height: 0;
+        overflow: hidden;
+        display: block;
+    }
+    header .callUs .dropdown-menu.show{
+        height: auto;
+    }
+}
+@media only screen and (min-width: 992px){
+    header .callUs, header .callUs .dropdown-menu, header .callUs .dropdown-item:hover {
+        background-color: var(--grey3);
+    }
+    header .callUs #callUsDropdown {
+        max-width: none;
+    }
+    header .callUs .dropdown-menu{
+        position: absolute;
+        height: auto;
+        overflow: visible;
+        display: none;
+    }
+    header .callUs .dropdown-menu.show{
+        display: block;
+    }
+}
 /*header jQuery.callUs end*/
 
-/*header #headerNavCollapse2 start*/
+/*header .navbar-collapsestart*/
+.navbar-collapse{
+    flex-basis: auto;
+}
 header .navigation .navbar-collapse .navbar-nav .nav-item a{
     color: var(--mainZ51Col);
 }
-/*header #headerNavCollapse2 end*/
+/*header .navbar-collapse end*/
 
 /*header .navigation start*/
 .navigation a{
@@ -544,7 +575,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 .contentWrapper .catName h1{
     font-size: var(--fntS3rem);
     color: var(--mainContCol);
-    letter-spacing: 1.7px;
+    letter-spacing: 1.4px;
 }
 .contentWrapper .line{
     background-color: var(--white);
@@ -556,26 +587,143 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 
 
 
-/*header header .breadcrumbs style start*/
-
-
-aside .filterBlock button, aside .filterBlock .asideDropdown{
-    border-radius: 0;
-    border: none;
-    border-image-width: 0;
-    outline: none;
-    background-color: transparent;
+/*aside style start*/
+aside{
+    min-width: 300px;
+}
+aside .asideTxt{
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
     color: var(--white);
 }
-aside .filterBlock .asideDropdown{
-    border-radius: 0;
-    border: none;
-    border-image-width: 0;
-    outline: none;
-    background-color: transparent;
+/*aside style end*/
+
+/*.customZ51Checkbox style start*/
+.customZ51Checkbox label{
+    color: var(--grey1);
+    font-size: var(--fntS0875rem);
+    position: relative;
+}
+.customZ51Checkbox > p{
+    cursor: pointer;
+}
+.customZ51Checkbox ul p{
     color: var(--white);
+    font-size: var(--fntS0875rem);
+}
+.customZ51Checkbox > p::after{
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: var(--mainZ51Col) transparent;
+}
+.customZ51Checkbox.visible > p::after{
+    border-width: 0 6px 6px 6px;  
+}
+.customZ51Checkbox > ul{
+    height: 0;
+    overflow: hidden;
+}
+.customZ51Checkbox.visible > ul{
+    height: auto;
+}
+.customZ51Checkbox input[type=checkbox], input[type=radio] {
+    display: none;
+}
+.customZ51Checkbox label::after,.customZ51Checkbox label::before{
+    position: absolute;
+    display: block;
+    content: '';
+    cursor: pointer;
+}
+.customZ51Checkbox label::before{
+    top: -2px;
+    left: -3px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--transp);
+    border-radius: 0 !important;
+    outline: 1px solid var(--grey3);
+    transition: all 0.2s;
+}
+.customZ51Checkbox label:hover::before{
+    outline: 1px solid var(--grey2);
+}
+.customZ51Checkbox input:checked ~  label::after {
+    top: 3px;
+    left: 2px;
+    background-image: none;
+    width: 10px;
+    height: 10px;
+    background-color: var(--mainContCol);
+}
+.customZ51Checkbox input:not(:disabled):active ~ label::before, .customZ51Checkbox input:checked ~ label::before  {
+    background-color: var(--transp);
+    border-color: var(--grey3);
+    box-shadow: var(--transp);
+}
+.customZ51Checkbox .showAll{
+    cursor: pointer;
+    color: var(--mainContCol);
+    font-size: var(--fntS0875rem);
+}
+.customZ51Checkbox .showAll:hover{
+    color: var(--white);
+}
+/*.customZ51Checkbox style end*/
+
+/*.customZ51Checkbox style start*/
+.priceVal .priceInp input{
+    color: var(--grey1);
+    background-color: var(--transp);
+    border: 1px solid var(--grey3);
+    width: 110px;
+    text-align: center;
+    padding: 0.6rem 0 0.6rem 0;
+}
+.priceVal .priceLine{
+    height: 4px;
+    border: none;
+    border-radius: 0;
+    background-color: var(--grey2);
+}
+.priceVal .priceLine .ui-slider-range {
+    background-color: var(--mainContCol);
+}
+.priceVal .priceLine span {
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    width: 10px;
+    height: 16px;
+    background-color: var(--mainContCol);
+    margin-left: -5px;
+    top: -6px;
 }
 
 
 
-/*header header .breadcrumbs style end*/
+
+
+/*.customZ51Checkbox style end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

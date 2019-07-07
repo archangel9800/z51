@@ -13,18 +13,31 @@ function isIE() {
 //    alert('It is InternetExplorer');
 //}else{
 //    alert('It is NOT InternetExplorer');
-//} 
-if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-  var msViewportStyle = document.createElement('style')
-  msViewportStyle.appendChild(
-    document.createTextNode(
-      '@-ms-viewport{width:auto!important}'
-    )
-  )
-  document.head.appendChild(msViewportStyle)
-}    
+//}    
     
- 
+///.sticky-top script start
+    if($(window).width() < 992) {
+       $('.sticky-top').css({
+            top: 0+'px'
+        }); 
+    } else if($(window).width() >= 992) {
+        $('.sticky-top').css({
+            top: '-'+$('.sticky-top #firstNavLine').height()+'px'
+        });
+    };
+    $(window).resize(function(){  
+        if($(window).width() < 992) {
+           $('.sticky-top').css({
+                top: 0+'px'
+            }); 
+        } else if($(window).width() >= 992) {
+            $('.sticky-top').css({
+                top: '-'+$('.sticky-top #firstNavLine').height()+'px'
+            });
+        }; 
+   });    
+///.sticky-top script end  
+    
  ///#callUsDropdown script start
     $("#callUsDropdown").on("click", function (event) {
         event.preventDefault();
@@ -113,32 +126,44 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
    ///jQuery.ellipsis script end
     
     
+
+//    $('aside .customZ51Checkbox > .dropdown-menu').click(function(e) {
+//        e.stopPropagation();
+//    });
+//    $('aside .customZ51Checkbox > p').click(function(e) {
+//        $('aside .customZ51Checkbox > [aria-expanded="false"]').parent().addClass('show');
+//        $('aside .customZ51Checkbox > p').not(this).sibling().find('.dropdown-menu').addClass('show');
+//        
+//    });
     //aside .asideDropdown script start
-    $('.asideDropdown').click(function(e) {
-        e.stopPropagation();
+    $('aside .customZ51Checkbox > p').click(function(e) {
+        $(this).parent().toggleClass('visible');
     });
     //aside .asideDropdown script end
     
-    if($(window).width() < 992) {
-       $('.sticky-top').css({
-            top: 0+'px'
-        }); 
-    } else if($(window).width() >= 992) {
-        $('.sticky-top').css({
-            top: '-'+$('.sticky-top #firstNavLine').height()+'px'
+    
+    
+
+    //aside .priceVal script start        
+    var values= $( ".priceVal #buy_price" ).attr('value').split(', ')
+        $( "input[name=price_s]" ).val(  values[ 0 ] ); // выводим  значение от при запуске
+        $( "input[name=price_f]" ).val(  values[ 1 ] ); // выводим  значение до при запуске
+        $("#buy_price").slider({
+            range: true,
+            min: parseInt($( "#buy_price" ).attr('min')), // минимальное значение цены
+            max: parseInt($( "#buy_price" ).attr('max')), // максимальное значение цены
+            step: parseInt($( "#buy_price" ).attr('step')), // шаг слайдераs
+            values: $( "#buy_price" ).attr('value').split(', '),  // начальные значения - позиции ползунков на шкале
+            slide: function( event, ui ) {
+                $( "input[name=price_s]" ).val(  ui.values[ 0 ] ); // выводим  значение от при изменении
+                $( "input[name=price_f]" ).val(  ui.values[ 1 ] ); // выводим  значение до при изменении
+            },
+            stop: function(event, ui) { show(); } // выполняем действие  после остановки ползунка, в нашем случае функция show
         });
-    };
-    $(window).resize(function(){  
-        if($(window).width() < 992) {
-           $('.sticky-top').css({
-                top: 0+'px'
-            }); 
-        } else if($(window).width() >= 992) {
-            $('.sticky-top').css({
-                top: '-'+$('.sticky-top #firstNavLine').height()+'px'
-            });
-        }; 
-   });
+
+    //aside .priceVal script end
+    
+    
     
     
 });

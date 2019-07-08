@@ -127,9 +127,8 @@ header{
     }
 }
 @media only screen and (min-width: 992px){
-    header{
-        background: rgb(0,0,0) -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,1)); /* FF3.6-15 */
-        background: rgb(0,0,0) -webkit-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,1)); /* Chrome10-25,Safari5.1-6 */
+    header{ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+        background: rgb(0,0,0) -webkit-gradient(linear, left top, left bottom, from(rgba(51,51,51,1)), to(rgba(0,0,0,1)));
         background: rgb(0,0,0) linear-gradient(to bottom, rgba(51,51,51,1) 0%, rgba(0,0,0,1)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
     @supports ((position: -webkit-sticky) or (position: sticky)) {
@@ -145,6 +144,8 @@ header{
 
 /* jQuery.ellipsis style start*/
 .ellip {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -170,6 +171,7 @@ header .navbar-z51 .navbar-toggler-icon {
 }
 header .navbar-z51 .navbar-toggler .navbar-toggler-icon {
   background-image: url("../img/icons/svg/menu.svg");
+    -webkit-transition: all 0.1s;
     transition: all 0.1s;
 }
 header .navbar-z51 .navbar-toggler:hover .navbar-toggler-icon, .navbar-z51 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
@@ -261,7 +263,8 @@ header .callUs .dropdown-item:hover{
 
 /*header .navbar-collapsestart*/
 .navbar-collapse{
-    flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
 }
 header .navigation .navbar-collapse .navbar-nav .nav-item a{
     color: var(--mainZ51Col);
@@ -291,7 +294,9 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    justify-content: space-between;  
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;  
 }
 .cssmenu ul,
 .cssmenu ul li, 
@@ -580,7 +585,9 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 .contentWrapper .line{
     background-color: var(--white);
     height: 2px;
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     margin-left: 0.5rem;
 }
 /*header .catName style end*/
@@ -645,6 +652,7 @@ aside .asideTxt{
     background-color: var(--transp);
     border-radius: 0 !important;
     outline: 1px solid var(--grey3);
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 .customZ51Checkbox label:hover::before{
@@ -661,7 +669,8 @@ aside .asideTxt{
 .customZ51Checkbox input:not(:disabled):active ~ label::before, .customZ51Checkbox input:checked ~ label::before  {
     background-color: var(--transp);
     border-color: var(--grey3);
-    box-shadow: var(--transp);
+    -webkit-box-shadow: var(--transp);
+            box-shadow: var(--transp);
 }
 .customZ51Checkbox .showAll{
     cursor: pointer;

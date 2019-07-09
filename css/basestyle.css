@@ -766,13 +766,16 @@ aside .asideTxt{
     .asideCollapse{
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 0;
         min-width: 400px;
         width: 100vw; 
         z-index: 2500;
         background-color: black;
         overflow: auto;
         padding: 0.25rem 0.25rem;
+    }
+    .asideCollapse.show{
+        height: 100%;
     }
 }
 @media only screen and (min-width: 992px){

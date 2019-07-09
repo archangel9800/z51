@@ -243,7 +243,10 @@ header .callUs .dropdown-item:hover{
     }
 }
 @media only screen and (min-width: 992px){
-    header .callUs, header .callUs .dropdown-menu, header .callUs .dropdown-item:hover {
+    header .callUs .dropdown-item:hover {
+        background-color: var(--grey2);
+    }
+    header .callUs, header .callUs .dropdown-menu {
         background-color: var(--grey3);
     }
     header .callUs #callUsDropdown {
@@ -280,6 +283,16 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 }
 .navigation a:hover, .navigation .active a{
     color: var(--white);
+}
+.navigation .langBl a::after{
+    display: block;
+    content: '';
+    border-bottom: 1px dotted var(--transp);
+    height: 2px;
+    transition: all 0.2s;
+}
+.navigation .langBl a:hover::after, .navigation .langBl .active a::after{
+    border-color: var(--white);
 }
 /*header .navigation end*/
 
@@ -452,6 +465,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
     text-align: center;
     -webkit-transition: all 0.2s; transition: all 0.2s;
     margin-top: 0.4rem;
+    line-height: 0.625rem;
 } 
 .home .home-icons a{
     text-decoration: none;
@@ -520,7 +534,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 }  
 @media only screen and (min-width: 0px){
     .home {
-        height: 2.6rem;
+        height: auto;
     }
 }
 @media only screen and (min-width: 992px){
@@ -711,14 +725,67 @@ aside .asideTxt{
     top: -6px;
 }
 
-
-
-
-
 /*.customZ51Checkbox style end*/
 
 
 
+.asideZ51 .navbar-toggler-icon {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+.asideZ51 .navbar-toggler .navbar-toggler-icon {
+  background-image: url("../img/icons/svg/filter.svg");
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.asideZ51 .navbar-toggler:hover .navbar-toggler-icon, .asideZ51 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
+  -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+.asideZ51 .navbar-toggler span{
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.asideZ51 .navbar-toggler:hover span, .asideZ51 .navbar-toggler[aria-expanded="true"] span{
+  color: var(--white);
+}
+.asideZ51 .navbar-toggler {
+    padding: 0.5rem 0.6rem;
+    font-size: 13px;
+    line-height: 0px;
+    border: none;
+    border-radius: 0;
+    background-color: var(--mainZ51Col);
+}
+.asideZ51 .navbar-toggler:focus, .asideZ51 .navbar-toggler:hover {
+    outline: none;
+    background-color: var(--green);
+}
+@media only screen and (min-width: 0px){
+    .asideCollapse{
+        top: 0;
+        left: 0;
+        height: 100vh;
+        min-width: 400px;
+        width: 100vw; 
+        z-index: 2500;
+        background-color: black;
+        overflow: auto;
+        padding: 0.25rem 0.25rem;
+    }
+}
+@media only screen and (min-width: 992px){
+    .asideCollapse{
+        top: auto;
+        left: auto;
+        min-width: inherit;
+        height: auto;
+        width: auto;  
+        z-index: auto;
+        background-color: transparent;
+    }
+}
 
 
 

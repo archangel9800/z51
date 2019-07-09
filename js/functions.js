@@ -85,6 +85,14 @@ function isIE() {
             $('.cssmenu li.has-sub>span').on('click', function(){
                 $(this).removeAttr('href');
                 var element = $(this).parent('li');
+                
+                $(document).mouseup(function (e){ 
+                    if (!element.is(e.target) && element.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
+                        element.removeClass('open');
+                        element.find('li').removeClass('open');
+                        element.find('ul').slideUp(200);
+                    }
+                })
                 if (element.hasClass('open')) {
                     element.removeClass('open');
                     element.find('li').removeClass('open');
@@ -99,6 +107,16 @@ function isIE() {
                     element.siblings('li').find('ul').slideUp(200);
                 }
             });
+    jQuery(function($){
+    $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
+        var block = $("#block"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+        if (!block.is(e.target) // проверка условия если клик был не по нашему блоку
+            && block.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
+            block.hide(); // если условия выполняются - скрываем наш элемент
+        }
+    });
+});
+
     
     
     ///.cssmenu script  end

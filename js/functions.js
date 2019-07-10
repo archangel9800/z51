@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
 /* Sample function that returns boolean in case the browser is Internet Explorer*/
-function isIE() {
-  ua = navigator.userAgent;
-  /* MSIE used to detect old browsers and Trident used to newer ones*/
-  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
-  return is_ie; 
-}
+//function isIE() {
+//  ua = navigator.userAgent;
+//  /* MSIE used to detect old browsers and Trident used to newer ones*/
+//  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+//  return is_ie; 
+//}
     
 /* Create an alert to show if the browser is IE or not */
 //if (isIE()){
@@ -69,10 +69,7 @@ function isIE() {
         }
         $(function() {
             var dd = new DropDown( $('#callUsDropdown') );  
-            
-            
-            $("#callUsDropdown .dropdown-menu li").click(function() {
-            });
+
         });
         
         
@@ -162,27 +159,27 @@ function isIE() {
     
     
 
-    //aside .priceVal script start        
-    var values= $( ".priceVal #buy_price" ).attr('value').split(', ')
-        $( "input[name=price_s]" ).val(  values[ 0 ] ); // выводим  значение от при запуске
-        $( "input[name=price_f]" ).val(  values[ 1 ] ); // выводим  значение до при запуске
-        $("#buy_price").slider({
-            range: true,
-            min: parseInt($( "#buy_price" ).attr('min')), // минимальное значение цены
-            max: parseInt($( "#buy_price" ).attr('max')), // максимальное значение цены
-            step: parseInt($( "#buy_price" ).attr('step')), // шаг слайдераs
-            values: $( "#buy_price" ).attr('value').split(', '),  // начальные значения - позиции ползунков на шкале
-            slide: function( event, ui ) {
-                $( "input[name=price_s]" ).val(  ui.values[ 0 ] ); // выводим  значение от при изменении
-                $( "input[name=price_f]" ).val(  ui.values[ 1 ] ); // выводим  значение до при изменении
-            },
-            stop: function(event, ui) { show(); } // выполняем действие  после остановки ползунка, в нашем случае функция show
-        });
+       
+//    var values= $( ".priceVal #buy_price" ).attr('value').split(', ')
+//        $( "input[name=price_s]" ).val(  values[ 0 ] ); // выводим  значение от при запуске
+//        $( "input[name=price_f]" ).val(  values[ 1 ] ); // выводим  значение до при запуске
+//        $("#buy_price").slider({
+//            range: true,
+//            min: parseInt($( "#buy_price" ).attr('min')), // минимальное значение цены
+//            max: parseInt($( "#buy_price" ).attr('max')), // максимальное значение цены
+//            step: parseInt($( "#buy_price" ).attr('step')), // шаг слайдераs
+//            values: $( "#buy_price" ).attr('value').split(', '),  // начальные значения - позиции ползунков на шкале
+//            slide: function( event, ui ) {
+//                $( "input[name=price_s]" ).val(  ui.values[ 0 ] ); // выводим  значение от при изменении
+//                $( "input[name=price_f]" ).val(  ui.values[ 1 ] ); // выводим  значение до при изменении
+//            }
+//        });
 
-    //aside .priceVal script end
-    
-    
-    
+
+    //aside .priceVal script start 
+       $("#priceLine").slider({});
+    //aside .priceVal script end  
+ 
     
 });
  

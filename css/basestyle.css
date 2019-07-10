@@ -141,7 +141,6 @@ header{
 
 
 
-
 /* jQuery.ellipsis style start*/
 .ellip {
   display: -webkit-box;
@@ -351,7 +350,6 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
     border-color: transparent var(--mainZ51Col);
     -webkit-transform: rotate(90deg);transform: rotate(90deg);
 }
-
 .cssmenu ul li.menuName > span b{
     color: var(--black);
 }
@@ -428,6 +426,9 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 /*header jQuery.cssmenu style end*/
 
 /*.topSearch start*/
+.topSearch{
+    position: relative;
+}
 .topSearch input, .topSearch button{
     outline: none;
     border: none;
@@ -445,6 +446,50 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 .topSearch button:hover {
     background-image: url('../img/icons/svg/search-hover.svg');
 }
+.topSearch .offerSearchRes {
+    background-color: var(--grey3);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 3000;
+}
+.topSearch .offerSearchRes .offerProduct {
+    border-left: 1px solid var(--white); 
+    border-right: 1px solid var(--white); 
+    transition: all 0.1s;
+}
+.topSearch .offerSearchRes .offerProduct:last-child {
+    border-bottom: 1px solid var(--white);  
+}
+.topSearch .offerSearchRes .offerProduct:hover {
+    background-color: var(--grey2);
+}
+.topSearch .offerSearchRes .offerProduct .offerProductStatus *{
+    font-size: var(--fntS0875rem);
+}
+.topSearch .offerSearchRes .offerProduct a{
+    transition: all 0.1s;
+    text-decoration: none;
+    color: var(--white);
+}
+.topSearch .offerSearchRes .offerProduct a:hover{
+    color: var(--mainZ51Col);
+}
+.topSearch .offerProduct .offerProductStatus span{
+    color: var(--mainZ51Col);
+}
+.topSearch .offerProduct .offerProductStatus p{
+    color: var(--white);
+}
+.topSearch .offerSearchRes .offerProduct img{
+    height: 50px;
+    width: 50px;
+}
+
 @media only screen and (min-width: 0px){
     .topSearch{
         height: 2.5rem;
@@ -610,12 +655,75 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 
 /*aside style start*/
 aside{
-    min-width: 300px;
+    width: 300px;
 }
 aside .asideTxt{
     letter-spacing: 2.2px;
     text-transform: uppercase;
     color: var(--white);
+}
+/*aside style end*/
+
+/*aside style start*/
+.asideZ51 .navbar-toggler-icon {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+.asideZ51 .navbar-toggler .navbar-toggler-icon {
+  background-image: url("../img/icons/svg/filter.svg");
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.asideZ51 .navbar-toggler:hover .navbar-toggler-icon, .asideZ51 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
+  -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+.asideZ51 .navbar-toggler span{
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.asideZ51 .navbar-toggler:hover span, .asideZ51 .navbar-toggler[aria-expanded="true"] span{
+  color: var(--white);
+}
+.asideZ51 .navbar-toggler {
+    padding: 0.5rem 0.6rem;
+    font-size: 13px;
+    line-height: 0px;
+    border: none;
+    border-radius: 0;
+    background-color: var(--mainZ51Col);
+}
+.asideZ51 .navbar-toggler:focus, .asideZ51 .navbar-toggler:hover {
+    outline: none;
+    background-color: var(--green);
+}
+@media only screen and (min-width: 0px){
+    .asideCollapse{
+        top: 0;
+        left: 0;
+        height: 0;
+        min-width: 400px;
+        width: 100vw; 
+        z-index: 2500;
+        background-color: black;
+        overflow: auto;
+        padding: 0.25rem 0.25rem;
+    }
+    .asideCollapse.show{
+        height: 100%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .asideCollapse{
+        top: auto;
+        left: auto;
+        min-width: inherit;
+        height: auto;
+        width: auto;  
+        z-index: auto;
+        background-color: transparent;
+    }
 }
 /*aside style end*/
 
@@ -696,7 +804,10 @@ aside .asideTxt{
 }
 /*.customZ51Checkbox style end*/
 
-/*.customZ51Checkbox style start*/
+/*.priceVal style start*/
+.priceVal .slider.slider-horizontal {
+    width: 97%;
+}
 .priceVal .priceInp input{
     color: var(--grey1);
     background-color: var(--transp);
@@ -705,90 +816,38 @@ aside .asideTxt{
     text-align: center;
     padding: 0.6rem 0 0.6rem 0;
 }
-.priceVal .priceLine{
-    height: 4px;
-    border: none;
+.priceVal .slider-track {
+    height: 4px !important;
+    border-radius: 0 !important;
+    background-image: none !important;
+    margin-top: -4px !important;
+}
+.priceVal .slider-selection {
+    background-image: none;
+    background-color: var(--mainContCol);
+    border-radius: 0;
+}
+.priceVal .slider-track-high, .priceVal .slider-track-low{
+    background-image: none;
     border-radius: 0;
     background-color: var(--grey2);
 }
-.priceVal .priceLine .ui-slider-range {
-    background-color: var(--mainContCol);
-}
-.priceVal .priceLine span {
+.priceVal .slider-handle {
     cursor: pointer;
-    border: none;
-    border-radius: 0;
     width: 10px;
     height: 16px;
+    background-image: none;
     background-color: var(--mainContCol);
-    margin-left: -5px;
-    top: -6px;
 }
+.priceVal .min-slider-handle {
+    margin-left: 0px !important;
+}
+.priceVal .tooltip {
+    display: none !important;
+}
+/*.priceVal style end*/
 
-/*.customZ51Checkbox style end*/
 
-
-
-.asideZ51 .navbar-toggler-icon {
-  width: 16px;
-  height: 16px;
-  background-size: 16px 16px;
-}
-.asideZ51 .navbar-toggler .navbar-toggler-icon {
-  background-image: url("../img/icons/svg/filter.svg");
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-}
-.asideZ51 .navbar-toggler:hover .navbar-toggler-icon, .asideZ51 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
-  -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
-.asideZ51 .navbar-toggler span{
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-}
-.asideZ51 .navbar-toggler:hover span, .asideZ51 .navbar-toggler[aria-expanded="true"] span{
-  color: var(--white);
-}
-.asideZ51 .navbar-toggler {
-    padding: 0.5rem 0.6rem;
-    font-size: 13px;
-    line-height: 0px;
-    border: none;
-    border-radius: 0;
-    background-color: var(--mainZ51Col);
-}
-.asideZ51 .navbar-toggler:focus, .asideZ51 .navbar-toggler:hover {
-    outline: none;
-    background-color: var(--green);
-}
-@media only screen and (min-width: 0px){
-    .asideCollapse{
-        top: 0;
-        left: 0;
-        height: 0;
-        min-width: 400px;
-        width: 100vw; 
-        z-index: 2500;
-        background-color: black;
-        overflow: auto;
-        padding: 0.25rem 0.25rem;
-    }
-    .asideCollapse.show{
-        height: 100%;
-    }
-}
-@media only screen and (min-width: 992px){
-    .asideCollapse{
-        top: auto;
-        left: auto;
-        min-width: inherit;
-        height: auto;
-        width: auto;  
-        z-index: auto;
-        background-color: transparent;
-    }
-}
 
 
 

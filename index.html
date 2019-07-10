@@ -5,9 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-	<link type="text/css" rel="stylesheet" href="./css/bootstrap-reboot.css" media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="./css/bootstrap-reboot.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="./css/bootstrap.css" media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="./css/jquery-ui.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap-slider.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="./css/bootstrap.modz51.css" media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="./css/fonts.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="./css/basestyle.css"  media="screen,projection"/>
@@ -31,6 +31,30 @@
                         <input class="flex-grow-1 px-3 py-2" type="search" placeholder="Search" aria-label="Search">
                         <button type="submit"></button>
                     </div>
+                    <ul class="offerSearchRes">
+                        <li class="offerProduct">
+                            <a class="d-flex align-items-center py-2 px-3" href="#">
+                                <img src="img/img/100.jpg" alt="">
+                                <div class="d-flex flex-wrap">
+                                    <span class="offerProductName col-12 pr-0 mb-1">Razer Mamba Wireless (RZ01-02710100-R3M1)</span>
+                                    <div class="offerProductStatus col-12 pr-0">
+                                        <p class="m-0">Цена: <span>3499 грн.</span> На складе: <span>Много.</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="offerProduct">
+                            <a class="d-flex align-items-center py-2 px-3" href="#">
+                                <img src="img/img/100.jpg" alt="">
+                                <div class="d-flex flex-wrap">
+                                    <span class="offerProductName col-12 pr-0 mb-1">Razer Mamba Wireless (RZ01-02710100-R3M1)</span>
+                                    <div class="offerProductStatus col-12 pr-0">
+                                        <p class="m-0">Цена: <span>3499 грн.</span> На складе: <span>Много.</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </form>
 
                 <ul class="home p-0 m-0 pt-0 pt-lg-0 flex-grow-0 d-flex d-lg-none order-3 order-sm-4">
@@ -70,7 +94,7 @@
             
                 
                 
-            <div class="headerNavCollapse collapse navbar-collapse flex-grow-1  flex-grow-lg-0 home">
+            <div class="headerNavCollapse collapse navbar-collapse flex-grow-1 flex-lg-grow-0 home">
                 <ul class="m-0 p-0 py-3 align-items-end d-flex d-lg-none  justify-content-center justify-content-lg-end">
                    <li class="cab home-icons active">
                        <a class="d-flex flex-wrap justify-content-center align-items-start" href="#"><span class="icon-name fntS075rem w-100">Кабинет</span>
@@ -153,12 +177,38 @@
                     </li>
                 </ul>
             </div>
-            <form class="topSearch px-1 px-lg-4 d-none d-lg-flex flex-grow-1">
+            
+            <form class="topSearch p-0 mx-1 mx-lg-4 d-none d-lg-flex flex-grow-1">
                 <div class="d-flex flex-grow-1">
                     <input class="flex-grow-1 px-3 py-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="my-2 my-sm-0" type="submit"></button>
+                    <button type="submit"></button>
                 </div>
+                <ul class="offerSearchRes">
+                    <li class="offerProduct">
+                        <a class="d-flex align-items-center py-2 px-3" href="#">
+                            <img src="img/img/100.jpg" alt="">
+                            <div class="d-flex flex-wrap">
+                                <span class="offerProductName col-12 pr-0 mb-1">Razer Mamba Wireless (RZ01-02710100-R3M1)</span>
+                                <div class="offerProductStatus col-12 pr-0">
+                                    <p class="m-0">Цена: <span>3499 грн.</span> На складе: <span>Много.</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="offerProduct">
+                        <a class="d-flex align-items-center py-2 px-3" href="#">
+                            <img src="img/img/100.jpg" alt="">
+                            <div class="d-flex flex-wrap">
+                                <span class="offerProductName col-12 pr-0 mb-1">Razer Mamba Wireless (RZ01-02710100-R3M1)</span>
+                                <div class="offerProductStatus col-12 pr-0">
+                                    <p class="m-0">Цена: <span>3499 грн.</span> На складе: <span>Много.</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </form>
+            
             <ul class="home p-0 m-0 pt-2 pt-lg-0 flex-grow-1 flex-lg-grow-0 d-none d-lg-flex align-items-center justify-content-center">
                    <div class="p-0 m-0 d-flex align-items-end justify-content-center">
                        <li class="cab home-icons active">
@@ -209,14 +259,17 @@
         <aside class="pt-2 pt-lg-4 d-block">
 
        <div class="navbar-expand-lg asideZ51">
+           
             <button class="navbar-toggler order-1 d-flex d-lg-none align-items-center" type="button" data-toggle="collapse" data-target=".asideCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span><span>Фильтрация</span>
+                <span class="navbar-toggler-icon mr-1"></span><span>Фильтрация</span>
             </button>
                
             <div class="asideCollapse collapse navbar-collapse position-fixed-xs position-static-lg">
-            <button class="navbar-toggler order-1 d-flex d-lg-none align-items-center" type="button" data-toggle="collapse" data-target=".asideCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span><span>Фильтрация</span>
-            </button>
+            
+                <button class="navbar-toggler order-1 d-flex d-lg-none align-items-center justify-content-center mb-1 col-12" type="button" data-toggle="collapse" data-target=".asideCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mr-1"></span><span>Фильтрация</span>
+                </button>
+               
                 <div class="col-12 p-0">
                     <div class="filterBlock customZ51Checkbox visible">
                         <p class="asideTxt m-0 py-1 pl-2 pr-2 col-12 pb-2 d-flex justify-content-between align-items-center">
@@ -261,15 +314,17 @@
 
                     <p class="asideTxt pt-1 pb-2 pl-2 pr-2">Цена</p>
 
-                    <div class="priceVal pb-4">
-                        <div class="priceInp d-flex flex-row col-12 align-items-center justify-content-around pb-4 px-1">
-                            <input name="price_s" type="text"> 
+
+                    <div class="priceVal pb-4 mx-1 d-flex flex-wrap justify-content-center">
+                       <div class="priceInp d-flex flex-row col-12 align-items-center justify-content-around pb-4 px-1 tooltip-max top">
+                            <input class="priceMin mr-3" name="priceMin" type="text"> 
                             <div class="sepLine px-2 mx-1"></div> 
-                            <input name="price_f" type="text">
+                            <input class="priceMax ml-3" name="priceMax" type="text">
                         </div>
-                        <div class="priceLine mt-1 mx-1" id="buy_price" min="0" max="10000" step="1" value="1000, 9000"></div>
+                        <input id="priceLine" type="text" class="span2" value="" data-slider-min="0" data-slider-max="10000" data-slider-step="1" data-slider-value="[1000,9000]" data-slider-handle="square">
                     </div>
 
+                   
                     <div class="sepLine mt-2 mb-3 col-12"></div>
 
                     <div class="filterBlock customZ51Checkbox">
@@ -376,7 +431,7 @@
     
     
 
-    
+
     
     
     
@@ -398,18 +453,12 @@
 	
 
     <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="./js/jquery-ui.js"></script>
-    <script type="text/javascript" src="./js/popper.js"></script>
     <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-slider.js"></script>
 	<script type="text/javascript" src="./js/functions.js"></script>	
 	
 	
-<!--
-	    меню 
-как должен выглядеть в адапотиве сайт(пример)
-как должны в адаптиве выглядеть фильтры
--->
-	
+
 	
  	
 </body>

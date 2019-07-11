@@ -19,14 +19,14 @@
     
     <nav id="firstNavLine" class="navbar-z51 navbar navbar-expand-lg px-0 py-0 flex-wrap mainWidth">
         <div class="col-12 px-0 pb-0 pb-lg-3 pt-0 pt-lg-3 d-flex flex-wrap align-items-start align-items-lg-center">
-            <div class="d-flex m-0 p-0 flex-grow-1 flex-lg-grow-0 flex-wrap flex-sm-nowrap justify-content-between align-items-center col-12 col-lg">
+            <div id="firstTopLine" class="d-flex m-0 p-0 flex-grow-1 flex-lg-grow-0 flex-wrap flex-sm-nowrap justify-content-between align-items-center col-12 col-lg">
                 <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target=".headerNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="logoImg navbar-brand m-0 col-auto px-1 pl-lg-0 pr-lg-3 py-0 order-2" href="#">
                     <img src="./img/icons/svg/z51_logo.svg" alt="ЗОНА51">
                 </a>
-                <form class="topSearch px-lg-3 mt-1 mt-sm-0 d-flex d-lg-none flex-grow-1 order-4 order-sm-3">
+                <form id="smSearch" class="topSearch px-lg-3 mt-1 mt-sm-0 d-flex d-lg-none flex-grow-1 order-4 order-sm-3">
                     <div class="d-flex flex-grow-1">
                         <input class="flex-grow-1 px-3 py-2" type="search" placeholder="Search" aria-label="Search">
                         <button type="submit"></button>
@@ -243,7 +243,7 @@
       
 <div class="px-1">
     <div class="d-flex flex-wrap p-0 contentWrapper mainWidth">
-       
+
         <ul class="breadcrumbs d-flex flex-wrap col-12 pl-0 m-0 pt-2 pt-lg-4 justify-content-center justify-content-lg-start">
             <li class="d-flex align-items-center"><a href="#">Главная</a></li>
             <li class="d-flex align-items-center"><a href="#">Товары для геймеров</a></li>
@@ -255,181 +255,205 @@
             <div class="line ml-2 flex-grow-1 d-none d-sm-block"></div>
         </div>
 
+        <div class="d-flex flex-grow-1">
        
-        <aside class="pt-2 pt-lg-4 d-block">
+            <aside class="pt-2 pt-lg-4 d-block">
 
-       <div class="navbar-expand-lg asideZ51">
-           
-            <button class="navbar-toggler order-1 d-flex d-lg-none align-items-center" type="button" data-toggle="collapse" data-target=".asideCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon mr-1"></span><span>Фильтрация</span>
-            </button>
-               
-            <div class="asideCollapse collapse navbar-collapse position-fixed-xs position-static-lg">
-            
-                <button class="navbar-toggler order-1 d-flex d-lg-none align-items-center justify-content-center mb-1 col-12" type="button" data-toggle="collapse" data-target=".asideCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon mr-1"></span><span>Фильтрация</span>
-                </button>
-               
-                <div class="col-12 p-0">
-                    <div class="filterBlock customZ51Checkbox visible">
-                        <p class="asideTxt m-0 py-1 pl-2 pr-2 col-12 pb-2 d-flex justify-content-between align-items-center">
-                            Производитель
-                        </p>
-                        <ul class="p-0 m-0 w-100 pt-1">
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch0">
-                                    <label class="p-0 m-0 pl-4" for="ch0">Remember</label>
+                <div class="navbar-expand-lg asideAndArticle">
+
+                    <div class="asideCollapse collapse navbar-collapse position-fixed-xs position-static-lg">
+
+                        <button class="navbar-toggler order-1 d-flex d-lg-none align-items-center justify-content-center mb-1 col-12" type="button" data-toggle="collapse" data-target=".asideCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon mr-1"></span><span>Фильтрация</span>
+                        </button>
+
+                        <div class="col-12 p-0">
+                            <div class="filterBlock customZ51Checkbox visible">
+                                <p class="asideTxt m-0 py-1 pl-2 pr-2 col-12 pb-2 d-flex justify-content-between align-items-center">
+                                    Производитель
+                                </p>
+                                <ul class="p-0 m-0 w-100 pt-1">
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch0">
+                                            <label class="p-0 m-0 pl-4" for="ch0">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch0">1</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch1">
+                                            <label class="p-0 m-0 pl-4" for="ch1">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch1">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch2">
+                                            <label class="p-0 m-0 pl-4" for="ch2">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch2">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch3">
+                                            <label class="p-0 m-0 pl-4" for="ch3">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch3">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-0 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <p class="showAll pl-4 m-0">Показать все</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sepLine mt-3 mb-4 col-12"></div>
+
+                            <p class="asideTxt pt-1 pb-2 pl-2 pr-2">Цена</p>
+
+
+                            <div class="priceVal pb-4 mx-1 d-flex flex-wrap justify-content-center">
+                                <div class="priceInp d-flex flex-row col-12 align-items-center justify-content-around pb-4 px-1 tooltip-max top">
+                                    <input class="priceMin mr-3" name="priceMin" type="text">
+                                    <div class="sepLine px-2 mx-1"></div>
+                                    <input class="priceMax ml-3" name="priceMax" type="text">
                                 </div>
-                                <p class="p-0 m-0 ch0">1</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch1">
-                                    <label class="p-0 m-0 pl-4" for="ch1">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch1">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch2">
-                                    <label class="p-0 m-0 pl-4" for="ch2">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch2">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch3">
-                                    <label class="p-0 m-0 pl-4" for="ch3">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch3">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-0 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <p class="showAll pl-4 m-0">Показать все</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="sepLine mt-3 mb-4 col-12"></div>
-
-                    <p class="asideTxt pt-1 pb-2 pl-2 pr-2">Цена</p>
+                                <input id="priceLine" type="text" class="span2" value="" data-slider-min="0" data-slider-max="10000" data-slider-step="1" data-slider-value="[1000,9000]" data-slider-handle="square">
+                            </div>
 
 
-                    <div class="priceVal pb-4 mx-1 d-flex flex-wrap justify-content-center">
-                       <div class="priceInp d-flex flex-row col-12 align-items-center justify-content-around pb-4 px-1 tooltip-max top">
-                            <input class="priceMin mr-3" name="priceMin" type="text"> 
-                            <div class="sepLine px-2 mx-1"></div> 
-                            <input class="priceMax ml-3" name="priceMax" type="text">
+                            <div class="sepLine mt-2 mb-3 col-12"></div>
+
+                            <div class="filterBlock customZ51Checkbox">
+                                <p class="asideTxt m-0 py-1 pl-2 pr-2 col-12 pb-2 d-flex justify-content-between align-items-center">
+                                    Производитель
+                                </p>
+                                <ul class="p-0 m-0 w-100 pt-1">
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch5">
+                                            <label class="p-0 m-0 pl-4" for="ch5">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch5">14</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch6">
+                                            <label class="p-0 m-0 pl-4" for="ch6">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch6">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch7">
+                                            <label class="p-0 m-0 pl-4" for="ch7">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch7">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch8">
+                                            <label class="p-0 m-0 pl-4" for="ch8">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch8">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch9">
+                                            <label class="p-0 m-0 pl-4" for="ch9">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch9">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <p class="showAll pl-4 m-0">Показать все</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sepLine mt-2 mb-3 col-12"></div>
+
+                            <div class="filterBlock customZ51Checkbox">
+                                <p class="asideTxt m-0 py-1 pl-2 pr-2 col-12 pb-2 d-flex justify-content-between align-items-center">
+                                    Производитель
+                                </p>
+                                <ul class="p-0 m-0 w-100 pt-1">
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch10">
+                                            <label class="p-0 m-0 pl-4" for="ch10">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch10">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch11">
+                                            <label class="p-0 m-0 pl-4" for="ch11">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch11">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch12">
+                                            <label class="p-0 m-0 pl-4" for="ch12">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch12">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="ch13">
+                                            <label class="p-0 m-0 pl-4" for="ch13">Remember</label>
+                                        </div>
+                                        <p class="p-0 m-0 ch13">10</p>
+                                    </li>
+                                    <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
+                                        <p class="showAll pl-4 m-0">Показать все</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <input id="priceLine" type="text" class="span2" value="" data-slider-min="0" data-slider-max="10000" data-slider-step="1" data-slider-value="[1000,9000]" data-slider-handle="square">
-                    </div>
-
-                   
-                    <div class="sepLine mt-2 mb-3 col-12"></div>
-
-                    <div class="filterBlock customZ51Checkbox">
-                        <p class="asideTxt m-0 py-1 pl-2 pr-2 col-12 pb-2 d-flex justify-content-between align-items-center">
-                            Производитель
-                        </p>
-                        <ul class="p-0 m-0 w-100 pt-1">
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch5">
-                                    <label class="p-0 m-0 pl-4" for="ch5">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch5">14</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch6">
-                                    <label class="p-0 m-0 pl-4" for="ch6">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch6">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch7">
-                                    <label class="p-0 m-0 pl-4" for="ch7">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch7">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch8">
-                                    <label class="p-0 m-0 pl-4" for="ch8">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch8">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch9">
-                                    <label class="p-0 m-0 pl-4" for="ch9">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch9">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <p class="showAll pl-4 m-0">Показать все</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="sepLine mt-2 mb-3 col-12"></div>   
-
-                    <div class="filterBlock customZ51Checkbox">
-                        <p class="asideTxt m-0 py-1 pl-2 pr-2 col-12 pb-2 d-flex justify-content-between align-items-center">
-                            Производитель
-                        </p>
-                        <ul class="p-0 m-0 w-100 pt-1">
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch10">
-                                    <label class="p-0 m-0 pl-4" for="ch10">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch10">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch11">
-                                    <label class="p-0 m-0 pl-4" for="ch11">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch11">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch12">
-                                    <label class="p-0 m-0 pl-4" for="ch12">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch12">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <div class="d-flex align-items-center p-0 m-0">
-                                    <input type="checkbox" id="ch13">
-                                    <label class="p-0 m-0 pl-4" for="ch13">Remember</label>
-                                </div>
-                                <p class="p-0 m-0 ch13">10</p>
-                            </li>
-                            <li class="d-flex mt-3 mb-3 py-1 pl-3 pr-2 justify-content-between align-items-center w-100">
-                                <p class="showAll pl-4 m-0">Показать все</p>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>     
-            
-            
-            
-        </aside>
 
-        <article>
 
+
+            </aside>
+
+            <article class="asideAndArticle d-flex flex-wrap flex-grow-1 m-0 ml-lg-3 p-0 pl-lg-1 align-items-start justify-content-around justify-content-lg-start">
+
+                <button class="navbar-toggler d-flex d-lg-none align-items-center mr-2 order-1" type="button" data-toggle="collapse" data-target=".asideCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mr-1"></span><span>Фильтрация</span>
+                </button>
+
+               <div class="filterRes d-flex flex-wrap align-items-center flex-grow-1 col-12 col-lg pt-2 pt-lg-0 order-3 order-lg-2">
+                   <div class="p-2"><span>Razer</span> <span class="ml-2">&#10006;</span></div>
+                   <div class="p-2"><span>Steelseries</span> <span class="ml-2">&#10006;</span></div>
+                   <div class="pl-1 pr-2"><span>Показано товаров: 516 из 1821</span> <span class="ml-0 ml-lg-3">сбросить</span></div>
+               </div>
+       
+               <div class="sortBlock d-flex align-items-center order-2 order-lg-3">
+                   <span>Сортировать по</span>
+                   <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Кнопка выпадающего списка
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="sortDropdown">
+                        <li class="dropdown-item">Action</li>
+                        <li class="dropdown-item">Another action</li>
+                        <li class="dropdown-item">Something else here</li>
+                      </div>
+                    </div>
+               </div>
+       
+       
         </article>
 
+        </div>  
+   
     </div>
 </div>
     
     
-    
+
 
 
     
@@ -452,8 +476,9 @@
 
 	
 
-    <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap-slider.js"></script>
 	<script type="text/javascript" src="./js/functions.js"></script>	
 	

@@ -15,6 +15,55 @@ $(document).ready(function () {
 //    alert('It is NOT InternetExplorer');
 //}    
     
+
+    
+///.topSearch script start
+$(".topSearch").on('mouseenter', function (e){;
+    var element = $(this);
+    $(document).mouseup(function (e){ 
+        if (!element.is(e.target) && element.has(e.target).length === 0) { 
+           $('.topSearch .offerSearchRes').removeClass('visible');
+        } else {
+            $('.topSearch .offerSearchRes').addClass('visible');
+        }
+    })
+  });     
+///.topSearch script end  
+    
+///#smSearch script start
+function offerSearchResTopPos(){
+    var firstTopLine = $('#firstTopLine');
+    var firstNavLine = $('#firstNavLine');
+    var smSearch = $('#smSearch');
+    var offerSearchRes = $('#smSearch.topSearch .offerSearchRes');
+    offerSearchRes.css({
+       top: firstNavLine.position().top + firstTopLine.height() + 'px',
+       left: smSearch.offset().left + 'px',
+       width: smSearch.width() + 'px'
+    });
+};
+if($(window).width() < 992) {
+   offerSearchResTopPos(); 
+};
+$(window).resize(function(){  
+    if($(window).width() < 992) {
+       offerSearchResTopPos(); 
+    };
+}); 
+$(window).scroll(function(){  
+    if($(window).width() < 992) {
+       offerSearchResTopPos(); 
+    };
+});  
+$('header').scroll(function(){
+    if($(window).width() < 992) {  
+        setTimeout(offerSearchResTopPos, 10);
+        
+    };
+});    
+///#smSearch script end      
+    
+    
 ///.sticky-top script start
     if($(window).width() < 992) {
        $('.sticky-top').css({
@@ -150,6 +199,7 @@ $(document).ready(function () {
 //        $('aside .customZ51Checkbox > p').not(this).sibling().find('.dropdown-menu').addClass('show');
 //        
 //    });
+    
     //aside .asideDropdown script start
     $('aside .customZ51Checkbox > p').click(function(e) {
         $(this).parent().toggleClass('visible');
@@ -176,10 +226,13 @@ $(document).ready(function () {
 //        });
 
 
-    //aside .priceVal script start 
-       $("#priceLine").slider({});
-    //aside .priceVal script end  
+//aside .priceVal script start 
+   $("#priceLine").slider({});
+//aside .priceVal script end  
+
+    
  
+
     
 });
  

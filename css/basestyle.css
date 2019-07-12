@@ -337,7 +337,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
   display: block;
 }
 .cssmenu > ul > li > a, .cssmenu > ul > li > span {
-  letter-spacing: 2px;    
+  letter-spacing: 1.851px;    
   cursor: pointer;
   color: var(--white);
   -webkit-transition: all 0.2s;

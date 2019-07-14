@@ -47,7 +47,7 @@ if($(window).width() < 992) {
 };
 $(window).resize(function(){  
     if($(window).width() < 992) {
-       offerSearchResTopPos(); 
+        setTimeout(offerSearchResTopPos, 10); 
     };
 }); 
 $(window).scroll(function(){  
@@ -124,35 +124,75 @@ $('header').scroll(function(){
         
         
     });  
+    
+    
+    ///.mainMenuSecondaryDropdownWidth script start  
+function mainMenuSecondaryDropdownWidth(){
+   var secondaryDropdown = $('.cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown');     
+   var mainWidth = $('.mainWidth').width();      
+   var menuWidth = $('.cd-dropdown-wrapper').width();      
+       secondaryDropdown.css({
+       maxWidth: mainWidth - menuWidth
+    });    
+        
+};
+if($(window).width() >= 992) {
+   mainMenuSecondaryDropdownWidth(); 
+} else {
+    $('.cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown').width('100%');
+};
+$(window).resize(function(){  
+    if($(window).width() >= 992) {
+         setTimeout(mainMenuSecondaryDropdownWidth, 10);
+    } else {
+    $('.cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown').width('100%');
+    };
+});   
+$(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
+    var block = $(".cd-dropdown-wrapper"); 
+    if (!block.is(e.target) && block.has(e.target).length === 0) { 
+        $('.cd-dropdown-wrapper .cd-dropdown').removeClass('dropdown-is-active');
+        $('.cd-dropdown-wrapper .cd-dropdown-trigger').removeClass('dropdown-is-active');
+        $('.cd-dropdown-wrapper .cd-dropdown-content').removeClass('move-out');
+    }
+}); 
+    
+    
+    
+       ///.mainMenuSecondaryDropdownWidth script end 
+    
+    
+    
+    
     ///#callUsDropdown script end
     
         ///.cssmenu script start
-        $('.cssmenu li.active').addClass('open').children('ul').show();
-            $('.cssmenu li.has-sub>span').on('click', function(){
-                $(this).removeAttr('href');
-                var element = $(this).parent('li');
-                
-                $(document).mouseup(function (e){ 
-                    if (!element.is(e.target) && element.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
-                        element.removeClass('open');
-                        element.find('li').removeClass('open');
-                        element.find('ul').slideUp(200);
-                    }
-                })
-                if (element.hasClass('open')) {
-                    element.removeClass('open');
-                    element.find('li').removeClass('open');
-                    element.find('ul').slideUp(200);
-                }
-                else {
-                    element.addClass('open');
-                    element.children('ul').slideDown(200);
-                    element.siblings('li').children('ul').slideUp(200);
-                    element.siblings('li').removeClass('open');
-                    element.siblings('li').find('li').removeClass('open');
-                    element.siblings('li').find('ul').slideUp(200);
-                }
-            });
+//        $('.cssmenu li.active').addClass('open').children('ul').show();
+//            $('.cssmenu li.has-sub>span').on('click', function(){
+//                $(this).removeAttr('href');
+//                var element = $(this).parent('li');
+//                
+//                $(document).mouseup(function (e){ 
+//                    if (!element.is(e.target) && element.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
+//                        element.removeClass('open');
+//                        element.find('li').removeClass('open');
+//                        element.find('ul').slideUp(200);
+//                    }
+//                })
+//                if (element.hasClass('open')) {
+//                    element.removeClass('open');
+//                    element.find('li').removeClass('open');
+//                    element.find('ul').slideUp(200);
+//                }
+//                else {
+//                    element.addClass('open');
+//                    element.children('ul').slideDown(200);
+//                    element.siblings('li').children('ul').slideUp(200);
+//                    element.siblings('li').removeClass('open');
+//                    element.siblings('li').find('li').removeClass('open');
+//                    element.siblings('li').find('ul').slideUp(200);
+//                }
+//            });
     jQuery(function($){
     $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
         var block = $("#block"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)

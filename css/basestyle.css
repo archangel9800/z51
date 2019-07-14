@@ -12,6 +12,7 @@ html{
     --grey2: #333333;
     --grey3: #222222;
     --green: #90dc00;
+    --hoverGreen: #9bc501;
     
 /*    4px*/
     --fnt0p25rem: 0.25rem;  
@@ -27,6 +28,8 @@ html{
     --fnt0p8125rem: 0.8125rem;
 /*    14px*/
     --fnt0p875rem: 0.875rem;
+/*    16px*/
+    --fnt1rem: 1rem;
 /*    18px*/
     --fnt1p125rem: 1.125rem;
 /*    20px*/
@@ -71,7 +74,7 @@ body a{
     -webkit-transition: all 0.2s; transition: all 0.2s;
 }
 [class*='buttonInv']:hover{
-    color: var(--green);
+    color: var(--hoverGreen);
 }
 
 [class*='buttonFGr']{
@@ -83,7 +86,7 @@ body a{
     letter-spacing: 1.3px;
 }
 [class*='buttonFGr']:hover{
-    background-color: var(--green);
+    background-color: var(--hoverGreen);
     color: black;
 }
 [class*='-v1']{
@@ -198,12 +201,12 @@ header .navbar-z51 .navbar-toggler {
 }
 header .navbar-z51 .navbar-toggler:focus, .navbar-z51 .navbar-toggler:hover {
     outline: none;
-    background-color: var(--green);
+    background-color: var(--hoverGreen);
 }
 /*header .navbar-z51style end*/
 
 header .logoImg img{
-    width: 171px;
+    width: 170px;
 }
 
 /*header jQuery.callUs start*/
@@ -318,8 +321,8 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;  
+    -ms-flex-pack: justify;
+    justify-content: space-between;  
 }
 .cssmenu ul,
 .cssmenu ul li, 
@@ -337,11 +340,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
   display: block;
 }
 .cssmenu > ul > li > a, .cssmenu > ul > li > span {
-  letter-spacing: 1.851px;    
-  cursor: pointer;
-  color: var(--white);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  
 }
 .cssmenu ul ul > li.has-sub > span::after {
   display: block;
@@ -535,13 +534,13 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 } 
 .home .home-icons a:hover{
     text-decoration: none;
-    color: var(--green);
+    color: var(--hoverGreen);
 } 
 .home .home-icons.active .icon-name{
-    color: var(--green);
+    color: var(--hoverGreen);
 } 
 .home .home-icons a:hover .icon-name{
-    color: var(--green);
+    color: var(--hoverGreen);
 }
 .home .home-icons [class*='counter']{
     text-align: center;
@@ -731,7 +730,7 @@ aside .asideTxt{
 }
 .asideAndArticle .navbar-toggler:focus, .asideAndArticle .navbar-toggler:hover {
     outline: none;
-    background-color: var(--green);
+    background-color: var(--hoverGreen);
 }
 @media only screen and (min-width: 0px){
     .asideCollapse{

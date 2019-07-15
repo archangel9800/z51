@@ -237,7 +237,7 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
 //    });
     
     //aside .asideDropdown script start
-    $('aside .customZ51Checkbox > p').click(function(e) {
+    $('.customDrop > p').click(function(e) {
         $(this).parent().toggleClass('visible');
     });
     //aside .asideDropdown script end

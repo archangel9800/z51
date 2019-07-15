@@ -10,7 +10,16 @@
   display: block;
   position: relative;
 }
-
+@media only screen and (min-width: 0px){
+    .cd-dropdown-wrapper{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .cd-dropdown-wrapper{
+        width: auto;
+    }
+}
 
 
 .cd-dropdown-wrapper .cd-dropdown-trigger {

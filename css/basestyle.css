@@ -469,11 +469,6 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 .home .home-icons.cart a:hover::before, .home .home-icons.active.cart a::before {
     background-image: url('../img/icons/svg/cart-hover.svg');
 }  
-@media only screen and (min-width: 0px){
-    .home {
-        height: auto;
-    }
-}
 @media only screen and (min-width: 992px){
     .home {
         height: 3rem;
@@ -597,7 +592,7 @@ aside .asideTxt{
   color: var(--white);
 }
 .asideAndArticle .navbar-toggler {
-    padding: 0.3rem 0.6rem;
+    padding: 0.7rem 0.9rem;
     font-size: 13px;
     line-height: 0;
     border: none;
@@ -637,36 +632,52 @@ aside .asideTxt{
 }
 /*.asideAndArticle style end*/
 
-/*.customZ51Checkbox style start*/
-.customZ51Checkbox label{
+/*.customDrop style start*/
+.customDrop label{
     color: var(--grey1);
     font-size: var(--fnt0p875rem);
     position: relative;
 }
-.customZ51Checkbox > p{
+.customDrop > p{
     cursor: pointer;
 }
-.customZ51Checkbox ul p{
+.customDrop ul p{
     color: var(--white);
     font-size: var(--fnt0p875rem);
 }
-.customZ51Checkbox > p::after{
+.customDrop > p::after{
     content: '';
     display: block;
     border-style: solid;
     border-width: 6px 6px 0 6px;
     border-color: var(--mainZ51Col) transparent;
 }
-.customZ51Checkbox.visible > p::after{
+.customDrop.visible > p::after{
     border-width: 0 6px 6px 6px;  
 }
-.customZ51Checkbox > ul{
-    height: 0;
+.customDrop > ul{
+    max-height: 0;
     overflow: hidden;
+    -webkit-transition: max-height .3s;
+    transition: max-height .3s;
 }
-.customZ51Checkbox.visible > ul{
-    height: auto;
+.customDrop.visible > ul{
+    max-height: calc(100vh * 2);
 }
+.customDrop.absDrop{
+    position: relative;
+}
+.customDrop.absDrop>ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.customDrop.absDrop ul li{
+    cursor: pointer;
+}
+/*.customDrop style end*/
+
+/*.customZ51Checkbox style start*/
 .customZ51Checkbox input[type=checkbox], input[type=radio] {
     display: none;
 }
@@ -802,10 +813,33 @@ aside .asideTxt{
 
 }
 
-
-
-
-
+.sortBlock *{
+    font-size: var(--fnt0p875rem);
+}
+.sortBlock span{
+    color: var(--grey1);
+}
+.sortBlock li, .sortBlock p{
+    color: var(--white);
+}
+.sortBlock .customDrop p{
+    border: 1px solid var(--grey1);
+	border-bottom: var(--transp);
+}
+.sortBlock .customDrop p::after{
+    margin-left: 1rem;
+}
+.sortBlock .customDrop {
+}
+.sortBlock .customDrop ul {
+    min-height: 1px;
+	border: 1px solid var(--grey1);
+    border-top: var(--transp);
+    background-color: var(--black);
+}
+.sortBlock li:hover{
+    background-color: rgba(255,255,255, 0.1);
+}    
 
 
 

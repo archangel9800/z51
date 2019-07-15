@@ -47,7 +47,7 @@ if($(window).width() < 992) {
 };
 $(window).resize(function(){  
     if($(window).width() < 992) {
-        setTimeout(offerSearchResTopPos, 10); 
+        offerSearchResTopPos(); 
     };
 }); 
 $(window).scroll(function(){  
@@ -57,7 +57,7 @@ $(window).scroll(function(){
 });  
 $('header').scroll(function(){
     if($(window).width() < 992) {  
-        setTimeout(offerSearchResTopPos, 10);
+        offerSearchResTopPos();
         
     };
 });    
@@ -138,14 +138,10 @@ function mainMenuSecondaryDropdownWidth(){
 };
 if($(window).width() >= 992) {
    mainMenuSecondaryDropdownWidth(); 
-} else {
-    $('.cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown').width('100%');
 };
 $(window).resize(function(){  
     if($(window).width() >= 992) {
-         setTimeout(mainMenuSecondaryDropdownWidth, 10);
-    } else {
-    $('.cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown').width('100%');
+         mainMenuSecondaryDropdownWidth();
     };
 });   
 $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу

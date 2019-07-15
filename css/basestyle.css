@@ -48,7 +48,7 @@ body>div:first-child{
 
 body{
     line-height: 1rem;
-    min-width: 400px;
+    min-width: 320px;
     font-family: 'Play', sans-serif;
     background: rgb(0,0,0);
 }
@@ -136,7 +136,8 @@ header{
     @supports ((position: -webkit-sticky) or (position: sticky)) {
         .overHeight {
             max-height: 100vh;
-            overflow: auto;
+            overflow-y: auto;
+            overflow-x: hidden;
         } 
     }
 }
@@ -309,132 +310,6 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 }
 /*header .navigation end*/
 
-/*header jQuery.cssmenu start*/
-.cssmenu *{
-    font-weight: bold;
-}
-.cssmenu ul li > span{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;  
-}
-.cssmenu ul,
-.cssmenu ul li, 
-.cssmenu ul li a {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  display: block;   
-}
-.cssmenu ul ul {
-  display: none;
-}
-.cssmenu > ul > li.active > ul {
-  display: block;
-}
-.cssmenu > ul > li > a, .cssmenu > ul > li > span {
-  
-}
-.cssmenu ul ul > li.has-sub > span::after {
-  display: block;
-  height: 0px;
-  width: 0px;
-  content: "";
-  border-width: 6px 0px 6px 6px;
-  border-style: solid;
-  border-color: transparent var(--grey1);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.cssmenu ul ul > li.has-sub > span:hover::after {
-  border-color: transparent var(--white);
-}
-.cssmenu ul ul > li.has-sub.open > span::after {
-    border-color: transparent var(--mainZ51Col);
-    -webkit-transform: rotate(90deg);transform: rotate(90deg);
-}
-.cssmenu ul li.menuName > span b{
-    color: var(--black);
-}
-.cssmenu ul li.menuName > span::after {
-  content: '';  
-  display: block;
-  background-color: transparent;
-  background-repeat: no-repeat; 
-  margin-left: 0.65rem;
-}
-.cssmenu ul > li.menuName.has-sub.open > span::after {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
-.cssmenu ul ul li a, .cssmenu ul ul li span {
-  padding: 0.625rem 3.125rem 0.625rem 1.375rem;
-  cursor: pointer;
-  color: var(--grey1);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.cssmenu ul ul li a:hover, .cssmenu ul ul li span:hover {
-  color: var(--white);
-  background-color: var(--grey2);    
-}
-.cssmenu ul ul > li.has-sub > span::before {
-  top: 16px;
-  background: var(--grey1);
-}
-.cssmenu .has-sub > ul {
-  background: var(--grey3);
-  width: 100%;
-  min-width: -webkit-max-content;min-width: -moz-max-content;min-width: max-content;
-}
-.cssmenu > ul > li{
-    position: relative;
-}
-.cssmenu > ul > li > ul{
-    left: 0;
-    top: 100%;
-    width: 100%; 
-}
-.cssmenu li.has-sub > ul ul li{
-  padding-left: 0.625rem;
-}
-.cssmenu ul ul li.has-sub.open > span{
-  color: var(--mainZ51Col);
-  padding-left: 0.875rem;
-}
-@media only screen and (min-width: 0px){
-    .cssmenu ul li.menuName > span:after {
-      width: 0px;
-      height: 0px;
-      background-image: none;
-      border-width: 6px 6px 0 6px;
-      border-style: solid;
-      border-color: var(--black) transparent;
-    }
-    .cssmenu > ul > li > ul{
-        position: static;
-    }
-}
-@media only screen and (min-width: 992px){
-    .cssmenu ul li.menuName > span:after {
-      width: 20px;
-      height: 13px;
-      background-image: url('../img/icons/svg/menu.svg');
-      border: 0;
-    }
-    .cssmenu > ul > li > ul{
-        position: absolute;
-    }
-}
-/*header jQuery.cssmenu style end*/
-
 /*.topSearch start*/
 .topSearch{
     position: relative;
@@ -521,6 +396,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 /*.home start*/
 .home li{
     display: block;
+    max-width: 75px;
 }  
 .home .home-icons .icon-name{
     text-align: center;
@@ -737,7 +613,7 @@ aside .asideTxt{
         top: 0;
         left: 0;
         height: 0;
-        min-width: 400px;
+        min-width: 320px;
         width: 100vw; 
         z-index: 2500;
         background-color: black;

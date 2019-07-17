@@ -103,7 +103,7 @@
 }
 .cd-dropdown-wrapper .cd-dropdown {
   position: fixed;
-  z-index: 1;
+  z-index: 2500;
   top: 0;
   left: 0;
   width: 100%;
@@ -623,8 +623,8 @@
     display: none;
   }
   .cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown a {
-    line-height: 20px;
-    height: 20px;
+    line-height: 18px;
+    height: 18px;
     font-size: var(--fnt0p875rem);
     padding-left: 0;
     color: var(--grey1);

@@ -1,14 +1,16 @@
 $(document).ready(function () {
 
 /* Sample function that returns boolean in case the browser is Internet Explorer*/
-//function isIE() {
-//  ua = navigator.userAgent;
-//  /* MSIE used to detect old browsers and Trident used to newer ones*/
-//  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
-//  return is_ie; 
-//}
+  
     
-/* Create an alert to show if the browser is IE or not */
+function isIE() {
+  ua = navigator.userAgent;
+  /* MSIE used to detect old browsers and Trident used to newer ones*/
+  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+  return is_ie; 
+}
+//    
+///* Create an alert to show if the browser is IE or not */
 //if (isIE()){
 //    alert('It is InternetExplorer');
 //}else{
@@ -22,9 +24,9 @@ $(".topSearch").on('mouseenter', function (e){;
     var element = $(this);
     $(document).mouseup(function (e){ 
         if (!element.is(e.target) && element.has(e.target).length === 0) { 
-           $('.topSearch .offerSearchRes').removeClass('visible');
+           $('.topSearch .offerSearchRes').removeClass('visibleBl');
         } else {
-            $('.topSearch .offerSearchRes').addClass('visible');
+            $('.topSearch .offerSearchRes').addClass('visibleBl');
         }
     })
   });     
@@ -93,7 +95,7 @@ $('header').scroll(function(){
         function DropDown(el) {
             this.dd = el;
             this.placeholder = this.dd.find('p > span');
-            this.opts = this.dd.find('ul.dropdown-menu > li');
+            this.opts = this.dd.find('ul > li');
             this.val = '';
             this.index = -1;
             this.initEvents();
@@ -106,8 +108,9 @@ $('header').scroll(function(){
                     var opt = $(this).find('span');
                     obj.val = opt.html();
                     obj.index = opt.index();
-                    obj.placeholder.html(obj.val);
+                    obj.placeholder.html(obj.val); $(this).parents().find('#callUsDropdown').removeClass('visibleBl');
                 });
+                    
             },
             getValue : function() {
                 return this.val;
@@ -118,34 +121,43 @@ $('header').scroll(function(){
         }
         $(function() {
             var dd = new DropDown( $('#callUsDropdown') );  
-
         });
-        
+//            $(this).removeClass('visibleBl');
         
         
     });  
-    
-    
+       ///#callUsDropdown script end 
+
     ///.mainMenuSecondaryDropdownWidth script start  
 function mainMenuSecondaryDropdownWidth(){
    var secondaryDropdown = $('.cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown');     
    var mainWidth = $('.mainWidth').width();      
-   var menuWidth = $('.cd-dropdown-wrapper').width();      
-       secondaryDropdown.css({
-       maxWidth: mainWidth - menuWidth
-    });    
-        
-};
-if($(window).width() >= 992) {
-   mainMenuSecondaryDropdownWidth(); 
-};
-$(window).resize(function(){  
-    if($(window).width() >= 992) {
-         mainMenuSecondaryDropdownWidth();
+   var menuWidth = $('.cd-dropdown-wrapper').width();  
+    
+    console.log(navigator.userAgent.search("Edge") >= 0);
+    console.log($(window).width() < 992);
+    
+    if (navigator.userAgent.search("Edge") >= 0 && $(window).width() >= 992) {
+         secondaryDropdown.css({
+           width: mainWidth - menuWidth
+        }); 
+    } else if (navigator.userAgent.search("Edge") >= 0 && $(window).width() < 992){
+           secondaryDropdown.css({
+           width: 100 + '%'
+        });    
+    } else{
+           secondaryDropdown.css({
+           maxWidth: mainWidth - menuWidth
+        });    
+    }
     };
+
+mainMenuSecondaryDropdownWidth(); 
+$(window).resize(function(){  
+         mainMenuSecondaryDropdownWidth();
 });   
 $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
-    var block = $(".cd-dropdown-wrapper"); 
+    var block = $(".cd-dropdown-wrapper").children(); 
     if (!block.is(e.target) && block.has(e.target).length === 0) { 
         $('.cd-dropdown-wrapper .cd-dropdown').removeClass('dropdown-is-active');
         $('.cd-dropdown-wrapper .cd-dropdown-trigger').removeClass('dropdown-is-active');
@@ -160,9 +172,9 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
     
     
     
-    ///#callUsDropdown script end
+
     
-        ///.cssmenu script start
+
 //        $('.cssmenu li.active').addClass('open').children('ul').show();
 //            $('.cssmenu li.has-sub>span').on('click', function(){
 //                $(this).removeAttr('href');
@@ -189,7 +201,7 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
 //                    element.siblings('li').find('ul').slideUp(200);
 //                }
 //            });
-    jQuery(function($){
+
     $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
         var block = $("#block"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
         if (!block.is(e.target) // проверка условия если клик был не по нашему блоку
@@ -197,34 +209,28 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
             block.hide(); // если условия выполняются - скрываем наш элемент
         }
     });
-});
+
 
     
     
-    ///.cssmenu script  end
-    
-    
-    ///jQuery.ellipsis script start
-        /*!
-     * jQuery.ellipsis
-     * https://github.com/jjenzz/jquery.ellipsis
-     * --------------------------------------------------------------------------
-     * Copyright (c) 2013 J. Smith (@jjenzz)
-     * Dual licensed under the MIT and GPL licenses:
-     * https://www.opensource.org/licenses/mit-license.php
-     * http://www.gnu.org/licenses/gpl.html
-     *
-     * adds a class to the last 'allowed' line of text so you can apply
-     * text-overflow: ellipsis;
-     */
-    (function(a){if(typeof define==="function"&&define.amd){define(["jquery"],a)}else{a(jQuery)}}(function(d){var c="ellipsis",b='<span style="white-space: nowrap;">',e={lines:"auto",ellipClass:"ellip",responsive:false};function a(h,q){var m=this,w=0,g=[],k,p,i,f,j,n,s;m.$cont=d(h);m.opts=d.extend({},e,q);function o(){m.text=m.$cont.text();m.opts.ellipLineClass=m.opts.ellipClass+"-line";m.$el=d('<span class="'+m.opts.ellipClass+'" />');m.$el.text(m.text);m.$cont.empty().append(m.$el);t()}function t(){if(typeof m.opts.lines==="number"&&m.opts.lines<2){m.$el.addClass(m.opts.ellipLineClass);return}n=m.$cont.height();if(m.opts.lines==="auto"&&m.$el.prop("scrollHeight")<=n){return}if(!k){return}s=d.trim(m.text).split(/\s+/);m.$el.html(b+s.join("</span> "+b)+"</span>");m.$el.find("span").each(k);if(p!=null){u(p)}}function u(x){s[x]='<span class="'+m.opts.ellipLineClass+'">'+s[x];s.push("</span>");m.$el.html(s.join(" "))}if(m.opts.lines==="auto"){var r=function(y,A){var x=d(A),z=x.position().top;j=j||x.height();if(z===f){g[w].push(x)}else{f=z;w+=1;g[w]=[x]}if(z+j>n){p=y-g[w-1].length;return false}};k=r}if(typeof m.opts.lines==="number"&&m.opts.lines>1){var l=function(y,A){var x=d(A),z=x.position().top;if(z!==f){f=z;w+=1}if(w===m.opts.lines){p=y;return false}};k=l}if(m.opts.responsive){var v=function(){g=[];w=0;f=null;p=null;m.$el.html(m.text);clearTimeout(i);i=setTimeout(t,100)};d(window).on("resize."+c,v)}o()}d.fn[c]=function(f){return this.each(function(){try{d(this).data(c,(new a(this,f)))}catch(g){if(window.console){console.error(c+": "+g)}}})}}));
 
-    $('.overflow').ellipsis();
-    $('.one-line').ellipsis({ lines: 1 });
-    $('.two-lines').ellipsis({ lines: 2 });
-    $('.box--responsive').ellipsis({ responsive: true });
-   ///jQuery.ellipsis script end
     
+//aside .textLimit script start
+    $(".textLimit").text(function(i, text) { 
+      if (text.length >= $(this).attr('data-textSize')) {
+        text = text.substring(0, $(this).attr('data-textSize'));
+        var lastIndex = text.lastIndexOf(" ");
+        text = text.substring(0, lastIndex) + '...';
+      }
+      $(this).text(text);
+//      if (text.length >= 50) {
+//        text = text.substring(0, 50);
+//        var lastIndex = text.lastIndexOf(" ");
+//        text = text.substring(0, lastIndex) + '...';
+//      }
+//      $(this).text(text);
+    });
+//aside .textLimit script end
     
 
 //    $('aside .customZ51Checkbox > .dropdown-menu').click(function(e) {
@@ -238,7 +244,14 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
     
     //aside .asideDropdown script start
     $('.customDrop > p').click(function(e) {
-        $(this).parent().toggleClass('visible');
+        $(this).parent().toggleClass('visibleBl');
+    });
+    $(document).mouseup(function (e){ 
+        var block = $(".hideClickNotThisDrop");
+        if (!block.is(e.target) && block.has(e.target).length === 0) { 
+            block.removeClass('visibleBl');
+        }
+        
     });
     //aside .asideDropdown script end
     

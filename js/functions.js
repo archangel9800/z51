@@ -3,12 +3,12 @@ $(document).ready(function () {
 /* Sample function that returns boolean in case the browser is Internet Explorer*/
   
     
-function isIE() {
-  ua = navigator.userAgent;
-  /* MSIE used to detect old browsers and Trident used to newer ones*/
-  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
-  return is_ie; 
-}
+//function isIE() {
+//  ua = navigator.userAgent;
+//  /* MSIE used to detect old browsers and Trident used to newer ones*/
+//  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+//  return is_ie; 
+//}
 //    
 ///* Create an alert to show if the browser is IE or not */
 //if (isIE()){
@@ -134,9 +134,6 @@ function mainMenuSecondaryDropdownWidth(){
    var mainWidth = $('.mainWidth').width();      
    var menuWidth = $('.cd-dropdown-wrapper').width();  
     
-    console.log(navigator.userAgent.search("Edge") >= 0);
-    console.log($(window).width() < 992);
-    
     if (navigator.userAgent.search("Edge") >= 0 && $(window).width() >= 992) {
          secondaryDropdown.css({
            width: mainWidth - menuWidth
@@ -215,12 +212,13 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
     
 
     
-//aside .textLimit script start
+//.textLimit script start
+  function textLimit(){  
     $(".textLimit").text(function(i, text) { 
       if (text.length >= $(this).attr('data-textSize')) {
         text = text.substring(0, $(this).attr('data-textSize'));
-        var lastIndex = text.lastIndexOf(" ");
-        text = text.substring(0, lastIndex) + '...';
+        var lastIndex = text.substr($(this).attr('data-textSize') - 3);
+        text = text.slice(lastIndex) + '...';
       }
       $(this).text(text);
 //      if (text.length >= 50) {
@@ -230,7 +228,9 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
 //      }
 //      $(this).text(text);
     });
-//aside .textLimit script end
+  }
+  textLimit();
+//.textLimit script end
     
 
 //    $('aside .customZ51Checkbox > .dropdown-menu').click(function(e) {

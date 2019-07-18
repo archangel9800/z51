@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 	<link type="text/css" rel="stylesheet" href="./css/bootstrap-reboot.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="./css/bootstrap.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="./css/bootstrap-slider.css" media="screen,projection"/>
@@ -338,7 +339,7 @@
             
             <ul class="home p-0 m-0 pt-2 pt-lg-0 flex-grow-1 flex-lg-grow-0 d-none d-lg-flex align-items-center justify-content-center">
                    <div class="p-0 m-0 d-flex align-items-end justify-content-center">
-                       <li class="cab home-icons active">
+                       <li class="cab home-icons active entered">
                            <a class="d-flex flex-wrap justify-content-center align-items-start" href="#"><span class="icon-name fntS075rem w-100">Кабинет</span>
                            </a>
                        </li>
@@ -553,8 +554,8 @@
                     </button>
                     
                     <div class="filterRes d-flex flex-wrap align-items-center flex-grow-1 col-12 col-lg pt-2 pt-lg-0 order-3 order-lg-2 pl-0">
-                       <div class="p-2"><span>Razer</span> <span class="ml-2">&#10006;</span></div>
-                       <div class="p-2"><span>Steelseries</span> <span class="ml-2">&#10006;</span></div>
+                       <div class="p-2 result"><span>Razer</span> <span class="ml-2">&#10006;</span></div>
+                       <div class="p-2 result"><span>Steelseries</span> <span class="ml-2">&#10006;</span></div>
                        <div class="pl-0 pl-sm-1 pr-2 col-12 col-sm"><span>Показано товаров: 516 из 1821</span> <span>сбросить</span></div>
                     </div>
                            
@@ -589,17 +590,20 @@
                                    <span>Код для заказа: </span>
                                    <span>55555</span>
                                    <div class="events">
-                                       <span class="present">Подарок</span>
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
                                    </div>
                                </div> 
                                <div class="events">
                                    <a class="action" href="#">Акция</a>
                                </div>
                            </div>
-                           
-                           <a href="#">
+
+                           <a class="goodName" href="#">
                                <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
-                               <p><span class="textLimit" data-textSize="80">SteelSeries Rival 650</span></p>
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
                            </a>
                            <div class="goodInfoBottom">
                                <div class="w-100 d-flex flex-row justify-content-between align-items-end">
@@ -611,16 +615,18 @@
                                            <span>1999</span><span>грн.</span>
                                        </div>
                                        <div class="buyStat">
-                                           <span class="buy">Купить</span>
-                                           <span class="inCart">В корзине</span>
-                                           <a href="#" class="preOrder active">Предзаказ</a>
+                                           <a href="#">Предзаказ</a>
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+<!--                                           <span class="inCart">В корзине</span>-->
                                        </div>
                                    </div>
                                    <div class="deliveryPickup">
-                                       <span class="d-flex">Самовывоз,<br> доставка</span>
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
                                        <div class="pt-3 d-flex justify-content-around">
-                                           <div class="good-icons wish active" title="Добавить в список хеланий"></div>
-                                           <div class="good-icons comparison" title="Добавить в сравнение"></div>
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
                                        </div>
                                    </div>
                                </div>
@@ -628,29 +634,33 @@
                             <div class="goodInfoHidden">
                                 <ul class="goodCh">
                                     <li>
-                                        <span>Тип сенсора:</span><span>Оптический</span>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
                                     </li>
                                     <li>
-                                        <span>Разрешение:</span><span>12000 dpi</span>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
                                     </li>
                                     <li>
-                                        <span>Частота:</span><span>1000 Hz</span>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
                                     </li>
                                     <li>
-                                        <span>Время отклика:</span><span>1 ms</span>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
                                     </li>
                                     <li>
-                                        <span>Количество кнопок:</span><span>7</span>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
                                     </li>
                                 </ul>      
                             </div>   
                             <div class="goodRate justify-content-center d-flex flex-wrap">
                                 <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
-                                <a href="#">37 отзывов</a>
+                                <a href="#">*****: 37 отзывов</a>
                             </div>          
                        </div>
                    </div>
-
                    
                    <div class="goodWrap">
                        <div class="goodbl">
@@ -659,17 +669,20 @@
                                    <span>Код для заказа: </span>
                                    <span>55555</span>
                                    <div class="events">
-                                       <span class="present">Подарок</span>
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
                                    </div>
                                </div> 
                                <div class="events">
                                    <a class="action" href="#">Акция</a>
                                </div>
                            </div>
-                           
-                           <a href="#">
+
+                           <a class="goodName" href="#">
                                <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
-                               <p><span class="textLimit" data-textSize="80">SteelSeries Rival 650</span></p>
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
                            </a>
                            <div class="goodInfoBottom">
                                <div class="w-100 d-flex flex-row justify-content-between align-items-end">
@@ -681,16 +694,18 @@
                                            <span>1999</span><span>грн.</span>
                                        </div>
                                        <div class="buyStat">
-                                           <span class="buy">Купить</span>
-                                           <span class="inCart active">В корзине</span>
-                                           <a href="#" class="preOrder">Предзаказ</a>
+<!--                                           <a href="#">Предзаказ</a>-->
+                                           <span>Купить</span>
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+<!--                                           <span class="inCart">В корзине</span>-->
                                        </div>
                                    </div>
                                    <div class="deliveryPickup">
-                                       <span class="d-flex">Самовывоз,<br> доставка</span>
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
                                        <div class="pt-3 d-flex justify-content-around">
-                                           <div class="good-icons wish active" title="Добавить в список хеланий"></div>
-                                           <div class="good-icons comparison" title="Добавить в сравнение"></div>
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
                                        </div>
                                    </div>
                                </div>
@@ -698,29 +713,33 @@
                             <div class="goodInfoHidden">
                                 <ul class="goodCh">
                                     <li>
-                                        <span>Тип сенсора:</span><span>Оптический</span>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
                                     </li>
                                     <li>
-                                        <span>Разрешение:</span><span>12000 dpi</span>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
                                     </li>
                                     <li>
-                                        <span>Частота:</span><span>1000 Hz</span>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
                                     </li>
                                     <li>
-                                        <span>Время отклика:</span><span>1 ms</span>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
                                     </li>
                                     <li>
-                                        <span>Количество кнопок:</span><span>7</span>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
                                     </li>
                                 </ul>      
                             </div>   
                             <div class="goodRate justify-content-center d-flex flex-wrap">
                                 <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
-                                <a href="#">37 отзывов</a>
+                                <a href="#">*****: 37 отзывов</a>
                             </div>          
                        </div>
                    </div>
-
                    
                    <div class="goodWrap">
                        <div class="goodbl">
@@ -729,17 +748,20 @@
                                    <span>Код для заказа: </span>
                                    <span>55555</span>
                                    <div class="events">
-                                       <span class="present">Подарок</span>
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
                                    </div>
                                </div> 
                                <div class="events">
                                    <a class="action" href="#">Акция</a>
                                </div>
                            </div>
-                           
-                           <a href="#">
+
+                           <a class="goodName" href="#">
                                <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
-                               <p><span class="textLimit" data-textSize="80">SteelSeries Rival 650</span></p>
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
                            </a>
                            <div class="goodInfoBottom">
                                <div class="w-100 d-flex flex-row justify-content-between align-items-end">
@@ -751,16 +773,18 @@
                                            <span>1999</span><span>грн.</span>
                                        </div>
                                        <div class="buyStat">
-                                           <span class="buy active">Купить</span>
-                                           <span class="inCart">В корзине</span>
-                                           <a href="#" class="preOrder">Предзаказ</a>
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+                                           <span class="notify">Уведомить о наличии</span>
+<!--                                           <span class="inCart">В корзине</span>-->
                                        </div>
                                    </div>
                                    <div class="deliveryPickup">
-                                       <span class="d-flex">Самовывоз,<br> доставка</span>
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
                                        <div class="pt-3 d-flex justify-content-around">
-                                           <div class="good-icons wish active" title="Добавить в список хеланий"></div>
-                                           <div class="good-icons comparison" title="Добавить в сравнение"></div>
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
                                        </div>
                                    </div>
                                </div>
@@ -768,29 +792,33 @@
                             <div class="goodInfoHidden">
                                 <ul class="goodCh">
                                     <li>
-                                        <span>Тип сенсора:</span><span>Оптический</span>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
                                     </li>
                                     <li>
-                                        <span>Разрешение:</span><span>12000 dpi</span>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
                                     </li>
                                     <li>
-                                        <span>Частота:</span><span>1000 Hz</span>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
                                     </li>
                                     <li>
-                                        <span>Время отклика:</span><span>1 ms</span>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
                                     </li>
                                     <li>
-                                        <span>Количество кнопок:</span><span>7</span>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
                                     </li>
                                 </ul>      
                             </div>   
                             <div class="goodRate justify-content-center d-flex flex-wrap">
                                 <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
-                                <a href="#">37 отзывов</a>
+                                <a href="#">*****: 37 отзывов</a>
                             </div>          
                        </div>
                    </div>
-
                    
                    <div class="goodWrap">
                        <div class="goodbl">
@@ -799,17 +827,20 @@
                                    <span>Код для заказа: </span>
                                    <span>55555</span>
                                    <div class="events">
-                                       <span class="present">Подарок</span>
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
                                    </div>
                                </div> 
                                <div class="events">
                                    <a class="action" href="#">Акция</a>
                                </div>
                            </div>
-                           
-                           <a href="#">
+
+                           <a class="goodName" href="#">
                                <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
-                               <p><span class="textLimit" data-textSize="80">SteelSeries Rival 650</span></p>
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
                            </a>
                            <div class="goodInfoBottom">
                                <div class="w-100 d-flex flex-row justify-content-between align-items-end">
@@ -821,16 +852,18 @@
                                            <span>1999</span><span>грн.</span>
                                        </div>
                                        <div class="buyStat">
-                                           <span class="buy">Купить</span>
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
                                            <span class="inCart">В корзине</span>
-                                           <a href="#" class="preOrder active">Предзаказ</a>
                                        </div>
                                    </div>
                                    <div class="deliveryPickup">
-                                       <span class="d-flex">Самовывоз,<br> доставка</span>
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
                                        <div class="pt-3 d-flex justify-content-around">
-                                           <div class="good-icons wish active" title="Добавить в список хеланий"></div>
-                                           <div class="good-icons comparison" title="Добавить в сравнение"></div>
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
                                        </div>
                                    </div>
                                </div>
@@ -838,35 +871,41 @@
                             <div class="goodInfoHidden">
                                 <ul class="goodCh">
                                     <li>
-                                        <span>Тип сенсора:</span><span>Оптический</span>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
                                     </li>
                                     <li>
-                                        <span>Разрешение:</span><span>12000 dpi</span>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
                                     </li>
                                     <li>
-                                        <span>Частота:</span><span>1000 Hz</span>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
                                     </li>
                                     <li>
-                                        <span>Время отклика:</span><span>1 ms</span>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
                                     </li>
                                     <li>
-                                        <span>Количество кнопок:</span><span>7</span>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
                                     </li>
                                 </ul>      
                             </div>   
                             <div class="goodRate justify-content-center d-flex flex-wrap">
                                 <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
-                                <a href="#">37 отзывов</a>
+                                <a href="#">*****: 37 отзывов</a>
                             </div>          
                        </div>
                    </div>
 
-              
+                   
+          
            
                   <a class="banerInGoods" href="#">
                       <img src="./img/img/%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1.jpg" alt="">
                   </a>
-                   
+                                      
                    <div class="goodWrap">
                        <div class="goodbl">
                            <div class="goodInfoTop d-flex flex-row justify-content-between">
@@ -874,17 +913,20 @@
                                    <span>Код для заказа: </span>
                                    <span>55555</span>
                                    <div class="events">
-                                       <span class="present">Подарок</span>
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
                                    </div>
                                </div> 
                                <div class="events">
                                    <a class="action" href="#">Акция</a>
                                </div>
                            </div>
-                           
-                           <a href="#">
+
+                           <a class="goodName" href="#">
                                <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
-                               <p><span class="textLimit" data-textSize="80">SteelSeries Rival 650</span></p>
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
                            </a>
                            <div class="goodInfoBottom">
                                <div class="w-100 d-flex flex-row justify-content-between align-items-end">
@@ -896,16 +938,18 @@
                                            <span>1999</span><span>грн.</span>
                                        </div>
                                        <div class="buyStat">
-                                           <span class="buy">Купить</span>
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
                                            <span class="inCart">В корзине</span>
-                                           <a href="#" class="preOrder active">Предзаказ</a>
                                        </div>
                                    </div>
                                    <div class="deliveryPickup">
-                                       <span class="d-flex">Самовывоз,<br> доставка</span>
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
                                        <div class="pt-3 d-flex justify-content-around">
-                                           <div class="good-icons wish active" title="Добавить в список хеланий"></div>
-                                           <div class="good-icons comparison" title="Добавить в сравнение"></div>
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
                                        </div>
                                    </div>
                                </div>
@@ -913,30 +957,35 @@
                             <div class="goodInfoHidden">
                                 <ul class="goodCh">
                                     <li>
-                                        <span>Тип сенсора:</span><span>Оптический</span>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
                                     </li>
                                     <li>
-                                        <span>Разрешение:</span><span>12000 dpi</span>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
                                     </li>
                                     <li>
-                                        <span>Частота:</span><span>1000 Hz</span>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
                                     </li>
                                     <li>
-                                        <span>Время отклика:</span><span>1 ms</span>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
                                     </li>
                                     <li>
-                                        <span>Количество кнопок:</span><span>7</span>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
                                     </li>
                                 </ul>      
                             </div>   
                             <div class="goodRate justify-content-center d-flex flex-wrap">
                                 <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
-                                <a href="#">37 отзывов</a>
+                                <a href="#">*****: 37 отзывов</a>
                             </div>          
                        </div>
                    </div>
 
-                   
+                                      
                    <div class="goodWrap">
                        <div class="goodbl">
                            <div class="goodInfoTop d-flex flex-row justify-content-between">
@@ -944,17 +993,20 @@
                                    <span>Код для заказа: </span>
                                    <span>55555</span>
                                    <div class="events">
-                                       <span class="present">Подарок</span>
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
                                    </div>
                                </div> 
                                <div class="events">
                                    <a class="action" href="#">Акция</a>
                                </div>
                            </div>
-                           
-                           <a href="#">
+
+                           <a class="goodName" href="#">
                                <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
-                               <p><span class="textLimit" data-textSize="80">SteelSeries Rival 650</span></p>
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
                            </a>
                            <div class="goodInfoBottom">
                                <div class="w-100 d-flex flex-row justify-content-between align-items-end">
@@ -966,16 +1018,18 @@
                                            <span>1999</span><span>грн.</span>
                                        </div>
                                        <div class="buyStat">
-                                           <span class="buy">Купить</span>
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
                                            <span class="inCart">В корзине</span>
-                                           <a href="#" class="preOrder active">Предзаказ</a>
                                        </div>
                                    </div>
                                    <div class="deliveryPickup">
-                                       <span class="d-flex">Самовывоз,<br> доставка</span>
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
                                        <div class="pt-3 d-flex justify-content-around">
-                                           <div class="good-icons wish active" title="Добавить в список хеланий"></div>
-                                           <div class="good-icons comparison" title="Добавить в сравнение"></div>
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
                                        </div>
                                    </div>
                                </div>
@@ -983,30 +1037,35 @@
                             <div class="goodInfoHidden">
                                 <ul class="goodCh">
                                     <li>
-                                        <span>Тип сенсора:</span><span>Оптический</span>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
                                     </li>
                                     <li>
-                                        <span>Разрешение:</span><span>12000 dpi</span>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
                                     </li>
                                     <li>
-                                        <span>Частота:</span><span>1000 Hz</span>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
                                     </li>
                                     <li>
-                                        <span>Время отклика:</span><span>1 ms</span>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
                                     </li>
                                     <li>
-                                        <span>Количество кнопок:</span><span>7</span>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
                                     </li>
                                 </ul>      
                             </div>   
                             <div class="goodRate justify-content-center d-flex flex-wrap">
                                 <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
-                                <a href="#">37 отзывов</a>
+                                <a href="#">*****: 37 отзывов</a>
                             </div>          
                        </div>
                    </div>
 
-                   
+                                      
                    <div class="goodWrap">
                        <div class="goodbl">
                            <div class="goodInfoTop d-flex flex-row justify-content-between">
@@ -1014,17 +1073,20 @@
                                    <span>Код для заказа: </span>
                                    <span>55555</span>
                                    <div class="events">
-                                       <span class="present">Подарок</span>
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
                                    </div>
                                </div> 
                                <div class="events">
                                    <a class="action" href="#">Акция</a>
                                </div>
                            </div>
-                           
-                           <a href="#">
+
+                           <a class="goodName" href="#">
                                <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
-                               <p><span class="textLimit" data-textSize="80">SteelSeries Rival 650</span></p>
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
                            </a>
                            <div class="goodInfoBottom">
                                <div class="w-100 d-flex flex-row justify-content-between align-items-end">
@@ -1036,16 +1098,18 @@
                                            <span>1999</span><span>грн.</span>
                                        </div>
                                        <div class="buyStat">
-                                           <span class="buy">Купить</span>
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
                                            <span class="inCart">В корзине</span>
-                                           <a href="#" class="preOrder active">Предзаказ</a>
                                        </div>
                                    </div>
                                    <div class="deliveryPickup">
-                                       <span class="d-flex">Самовывоз,<br> доставка</span>
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
                                        <div class="pt-3 d-flex justify-content-around">
-                                           <div class="good-icons wish active" title="Добавить в список хеланий"></div>
-                                           <div class="good-icons comparison" title="Добавить в сравнение"></div>
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
                                        </div>
                                    </div>
                                </div>
@@ -1053,30 +1117,35 @@
                             <div class="goodInfoHidden">
                                 <ul class="goodCh">
                                     <li>
-                                        <span>Тип сенсора:</span><span>Оптический</span>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
                                     </li>
                                     <li>
-                                        <span>Разрешение:</span><span>12000 dpi</span>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
                                     </li>
                                     <li>
-                                        <span>Частота:</span><span>1000 Hz</span>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
                                     </li>
                                     <li>
-                                        <span>Время отклика:</span><span>1 ms</span>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
                                     </li>
                                     <li>
-                                        <span>Количество кнопок:</span><span>7</span>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
                                     </li>
                                 </ul>      
                             </div>   
                             <div class="goodRate justify-content-center d-flex flex-wrap">
                                 <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
-                                <a href="#">37 отзывов</a>
+                                <a href="#">*****: 37 отзывов</a>
                             </div>          
                        </div>
                    </div>
 
-                   
+                                      
                    <div class="goodWrap">
                        <div class="goodbl">
                            <div class="goodInfoTop d-flex flex-row justify-content-between">
@@ -1084,17 +1153,20 @@
                                    <span>Код для заказа: </span>
                                    <span>55555</span>
                                    <div class="events">
-                                       <span class="present">Подарок</span>
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
                                    </div>
                                </div> 
                                <div class="events">
                                    <a class="action" href="#">Акция</a>
                                </div>
                            </div>
-                           
-                           <a href="#">
+
+                           <a class="goodName" href="#">
                                <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
-                               <p><span class="textLimit" data-textSize="80">SteelSeries Rival 650</span></p>
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
                            </a>
                            <div class="goodInfoBottom">
                                <div class="w-100 d-flex flex-row justify-content-between align-items-end">
@@ -1106,16 +1178,18 @@
                                            <span>1999</span><span>грн.</span>
                                        </div>
                                        <div class="buyStat">
-                                           <span class="buy">Купить</span>
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
                                            <span class="inCart">В корзине</span>
-                                           <a href="#" class="preOrder active">Предзаказ</a>
                                        </div>
                                    </div>
                                    <div class="deliveryPickup">
-                                       <span class="d-flex">Самовывоз,<br> доставка</span>
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
                                        <div class="pt-3 d-flex justify-content-around">
-                                           <div class="good-icons wish active" title="Добавить в список хеланий"></div>
-                                           <div class="good-icons comparison" title="Добавить в сравнение"></div>
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
                                        </div>
                                    </div>
                                </div>
@@ -1123,37 +1197,1016 @@
                             <div class="goodInfoHidden">
                                 <ul class="goodCh">
                                     <li>
-                                        <span>Тип сенсора:</span><span>Оптический</span>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
                                     </li>
                                     <li>
-                                        <span>Разрешение:</span><span>12000 dpi</span>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
                                     </li>
                                     <li>
-                                        <span>Частота:</span><span>1000 Hz</span>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
                                     </li>
                                     <li>
-                                        <span>Время отклика:</span><span>1 ms</span>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
                                     </li>
                                     <li>
-                                        <span>Количество кнопок:</span><span>7</span>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
                                     </li>
                                 </ul>      
                             </div>   
                             <div class="goodRate justify-content-center d-flex flex-wrap">
                                 <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
-                                <a href="#">37 отзывов</a>
+                                <a href="#">*****: 37 отзывов</a>
                             </div>          
                        </div>
                    </div>
 
-                   
-       
-                  <div class="pagination">
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
 
-                  </div>
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+                                      
+                   <div class="goodWrap">
+                       <div class="goodbl">
+                           <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="orderCode">
+                                   <span>Код для заказа: </span>
+                                   <span>55555</span>
+                                   <div class="events">
+                                       <span>Подарок</span>
+                                       <span class="redEvent">Лучшая цена</span>
+                                       <span class="orangeEvent">Топ продаж</span>
+                                       <span class="darkvioletEvent">Выбор геймера</span>
+                                   </div>
+                               </div> 
+                               <div class="events">
+                                   <a class="action" href="#">Акция</a>
+                               </div>
+                           </div>
+
+                           <a class="goodName" href="#">
+                               <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                               <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                           </a>
+                           <div class="goodInfoBottom">
+                               <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                   <div class="priceBl">
+                                       <div class="oldPrice">
+                                           <strike>2999</strike><span>грн.</span>
+                                       </div>
+                                       <div class="newPrice">
+                                           <span>1999</span><span>грн.</span>
+                                       </div>
+                                       <div class="buyStat">
+<!--                                           <a href="#">Предзаказ</a>-->
+<!--                                           <span>Купить</span>-->
+<!--                                           <span class="notify">Уведомить о наличии</span>-->
+                                           <span class="inCart">В корзине</span>
+                                       </div>
+                                   </div>
+                                   <div class="deliveryPickup">
+                                       <span class="d-flex">Доступно <br>в кредит</span>
+                                       <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                       <div class="pt-3 d-flex justify-content-around">
+                                           <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                           <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="goodInfoHidden">
+                                <ul class="goodCh">
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Тип сенсора:</span>
+                                        <span class="textLimit" data-textSize="11">Оптический</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Разрешение:</span>
+                                        <span class="textLimit" data-textSize="11">12000 dpi</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Частота:</span>
+                                        <span class="textLimit" data-textSize="11">1000 Hz</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Время отклика:</span>
+                                        <span class="textLimit" data-textSize="11">1 ms</span>
+                                    </li>
+                                    <li>
+                                        <span class="textLimit" data-textSize="19">Количество кнопок:</span>
+                                        <span class="textLimit" data-textSize="15">7</span>
+                                    </li>
+                                </ul>      
+                            </div>   
+                            <div class="goodRate justify-content-center d-flex flex-wrap">
+                                <div class="rateit" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                <a href="#">*****: 37 отзывов</a>
+                            </div>          
+                       </div>
+                   </div>
+
+          
                    
                </div>
                
+                   
+       
+              <div class="pagNav d-flex flex-wrap justify-content-center w-100">
+                    <span class="btnBrdr">Показать еще 12 товаров</span>
+                    <nav class="col-12 d-flex p-0 justify-content-center pagBlock">
+                      <ul class="d-flex p-0 m-0 justify-content-center align-items-stretch">
+                        <li class="arrow"><a href="#"></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">11</a></li>
+                        <li class="arrow"><a href="#"></a></li>
+                      </ul>
+                    </nav>
+              </div>
        
         </article>
 
@@ -1172,8 +2225,8 @@
     
     
     
-    <div style="height: 3000px; width: 100%;"></div>
-    <div style="height: 3000px; "></div>
+    <div style="height: 400px; width: 100%;"></div>
+
 
 
                   

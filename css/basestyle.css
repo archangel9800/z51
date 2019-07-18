@@ -7,6 +7,8 @@ html{
     --mainContCol: #a5d300;
     --white: #fff;
     --red: #ff002f;
+    --orange: orange;
+    --darkviolet: darkviolet;
     --black: #000;
     --transp: transparent;
     --grey1: #8e8e8e;
@@ -14,7 +16,7 @@ html{
     --grey3: #222222;
     --green: #90dc00;
     --hoverGreen: #9bc501;
-    --hoverWhite: rgba(255,255,255, 0.9);
+    --hoverWhite: rgba(255,255,255, 0.1);
     
 /*    4px*/
     --fnt0p25rem: 0.25rem;  
@@ -76,25 +78,31 @@ body a{
 
 }
 
-[class*='buttonInv']{
-    color: var(--mainZ51Col);
-    -webkit-transition: all 0.2s; transition: all 0.2s;
+.btnBrdr{
+    color: var(--mainContCol);
+    border: 2px solid var(--mainContCol);
+    text-transform: uppercase;
+    font-size: var(--fnt0p875rem);
+    line-height: 0.75rem;
+    transition: all 0.1s;
+    cursor: pointer;
 }
-[class*='buttonInv']:hover{
-    color: var(--hoverGreen);
+.btnBrdr:hover{
+    color: var(--white);
+    background-color: var(--hoverGreen);
 }
 
-[class*='buttonFGr']{
+.buttonFGr{
     background-color: var(--mainZ51Col);
-    color: black;
+    color: var(--black);
     border: none;
-    -webkit-transition: all 0.2s; transition: all 0.2s;
+    -webkit-transition: all 0.1s; transition: all 0.1s;
     border-radius: 0;
     letter-spacing: 1.3px;
 }
-[class*='buttonFGr']:hover{
+.buttonFGr:hover{
     background-color: var(--hoverGreen);
-    color: black;
+    color: var(--white);
 }
 [class*='-v1']{
     padding: 8px 14px;
@@ -149,7 +157,7 @@ header .slogan {
     display: block;
     border-style: solid;
     border-width: 0.375rem 0.375rem 0 0.375rem;
-    border-color: var(--mainZ51Col) transparent;
+    border-color: var(--mainZ51Col) var(--transp);
 }
 .customDrop.visibleBl > p::after{
     border-width: 0 0.375rem 0.375rem 0.375rem;  
@@ -278,13 +286,13 @@ header .callUs p::before {
     height: 0;
     border-width: 0.375rem 0.375rem 0 0.375rem;
     border-style: solid;
-    border-color: var(--mainZ51Col) transparent;  
+    border-color: var(--mainZ51Col) var(--transp);  
     margin-right: 0.8rem;
     margin-left: 0.2rem;
 }
 header .callUs .visibleBl p::before {
     border-width: 0 0.375rem 0.375rem 0.375rem;  
-    border-color: var(--mainZ51Col) transparent;
+    border-color: var(--mainZ51Col) var(--transp);
 }
 header .callUs #callUsDropdown p::after{
     display: none;
@@ -341,8 +349,8 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 
 /*header .navigation start*/
 .navigation a{
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
     text-decoration: none;
     color: var(--mainZ51Col);
 }
@@ -354,7 +362,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
     content: '';
     border-bottom: 1px dotted var(--transp);
     height: 2px;
-    transition: all 0.2s;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
 }
 .navigation .langBl a:hover::after, .navigation .langBl .active a::after{
     border-color: var(--white);
@@ -451,7 +459,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 }  
 .home .home-icons .icon-name{
     text-align: center;
-    -webkit-transition: all 0.2s; transition: all 0.2s;
+    -webkit-transition: all 0.1s; transition: all 0.1s;
     margin-top: 0.4rem;
     line-height: 0.625rem;
 } 
@@ -481,7 +489,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
     display: block;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-transition: all 0.2s; transition: all 0.2s;
+    -webkit-transition: all 0.1s; transition: all 0.1s;
 } 
 .home .home-icons.cab a::before{
     background-image: url('../img/icons/svg/cab.svg');
@@ -519,6 +527,15 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 .home .home-icons.cart a:hover::before, .home .home-icons.active.cart a::before {
     background-image: url('../img/icons/svg/cart-hover.svg');
 }  
+.home .home-icons.entered a::before{
+    background-image: url('../img/icons/svg/user.svg');
+    height: 20px;
+    width: 23px;
+    background-size: 23px 20px;
+} 
+.home .home-icons.entered a:hover::before, .home .home-icons.active.entered a::before {
+    background-image: url('../img/icons/svg/user-hover.svg');
+}  
 @media only screen and (min-width: 992px){
     .home {
         height: 3rem;
@@ -529,8 +546,8 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
 /*header .breadcrumbs style start*/
 .contentWrapper .breadcrumbs li a{
     display: block;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
     text-decoration: none;
     color: var(--grey1);
 }
@@ -560,7 +577,7 @@ header .navigation .navbar-collapse .navbar-nav .nav-item a{
     height: 0;
      border-width: 0.375rem 0px 0.375rem 0.375rem;
     border-style: solid;
-    border-color: transparent var(--mainZ51Col); 
+    border-color: var(--transp) var(--mainZ51Col); 
     margin: 0 1.2em;
 }
 .contentWrapper .breadcrumbs li:last-child::after {
@@ -606,7 +623,9 @@ aside .asideTxt{
     letter-spacing: 2.2px;
     text-transform: uppercase;
     color: var(--white);
+    transition: all 0.1s;
 }
+
 @media only screen and (min-width: 0px){
     aside{
         width: 0;
@@ -677,7 +696,7 @@ aside .asideTxt{
         height: auto;
         width: auto;  
         z-index: auto;
-        background-color: transparent;
+        background-color: var(--transp);
     }
 }
 /*.asideAndArticle style end*/
@@ -693,6 +712,9 @@ aside .asideTxt{
     content: '';
     cursor: pointer;
 }
+.customZ51Checkbox label{
+    cursor: pointer;
+}
 .customZ51Checkbox label::before{
     top: -2px;
     left: -3px;
@@ -701,8 +723,8 @@ aside .asideTxt{
     background-color: var(--transp);
     border-radius: 0 !important;
     outline: 1px solid var(--grey3);
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
 }
 .customZ51Checkbox label:hover::before{
     outline: 1px solid var(--grey2);
@@ -721,6 +743,13 @@ aside .asideTxt{
     -webkit-box-shadow: var(--transp);
             box-shadow: var(--transp);
 }
+.customZ51Checkbox .asideTxt:hover{
+    color: var(--mainContCol);
+}
+.customZ51Checkbox label:hover{
+    color: var(--mainContCol);
+}
+
 .customZ51Checkbox .showAll{
     cursor: pointer;
     color: var(--mainContCol);
@@ -775,29 +804,36 @@ aside .asideTxt{
 /*.priceVal style end*/
 
 /*.filterRes style start*/
-.filterRes>div{
+.filterRes .result{
     outline: 1px solid var(--grey1);
     outline-offset: -1px;
     line-height: 0.5rem;
     margin-left: 0.625rem;
+    cursor: pointer;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+}
+.filterRes span{
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+}
+.filterRes .result:hover{
+    outline-color: var(--mainContCol);
+}
+.filterRes .result:hover span:first-child{
+    color: var(--mainContCol);
 }
 .filterRes>div:first-child {
     margin-left: 0;
 }
-.filterRes>div:last-child {
-    outline: none;
-}
 .filterRes>div>span{
     line-height: 0.5rem;
 }
-.filterRes>div>span:first-child{
+.filterRes .result span:first-child{
     color: var(--grey1);
     font-size: var(--fnt0p75rem);
 }
-.filterRes>div>span:last-child{
+.filterRes .result span:last-child{
     color: var(--mainContCol);
     font-size: var(--fnt0p625rem);
-    cursor: pointer;
 }
 .filterRes>div:last-child span{
     color: var(--grey1);
@@ -807,6 +843,11 @@ aside .asideTxt{
 .filterRes>div:last-child span:last-child{
     color: var(--white);
     border-bottom: 1px dotted var(--white);
+    cursor: pointer;
+}
+.filterRes>div:last-child span:last-child:hover{
+    color: var(--mainContCol);
+    border-color: var(--mainContCol);
 }
 @media only screen and (min-width: 0px){
     .filterRes>div:last-child {
@@ -835,6 +876,9 @@ aside .asideTxt{
     border: 1px solid var(--grey1);
 	border-bottom: var(--transp);
 }
+.sortBlock .customDrop p:hover{
+    background-color: var(--hoverWhite);
+}
 .sortBlock .customDrop p::after{
     margin-left: 1rem;
 }
@@ -846,16 +890,16 @@ aside .asideTxt{
     z-index: 3;
 }
 .sortBlock li:hover{
-    background-color: rgba(255,255,255, 0.1);
+    background-color: var(--hoverWhite);
 }    
 /*.sortBlock style end*/
 
 /*.goodWrap style start*/
+
 .goodWrap{
     position: relative;
     width: 18.75rem;
     height: 31.125rem;
-    margin: 1.25rem 0 0 1.25rem;
 }
 .goods a{
     text-decoration: none;
@@ -905,7 +949,7 @@ aside .asideTxt{
     border: 2px solid var(--mainContCol);
     text-transform: uppercase;
     font-size: var(--fnt0p875rem);
-    line-height: 0.625rem;
+    line-height: 0.75rem;
     margin-bottom: 0.3125rem;
     transition: all 0.1s;
 }
@@ -913,12 +957,38 @@ aside .asideTxt{
     color: var(--white);
     background-color: var(--hoverGreen);
 }
-.goods .goodbl .events .present{
+.goods .goodbl .events .redEvent{
     color: var(--red);
     border-color: var(--red);
 }
+.goods .goodbl .events .orangeEvent{
+    color: var(--orange);
+    border-color: var(--orange);
+}
+.goods .goodbl .events .darkvioletEvent{
+    color: var(--darkviolet);
+    border-color: var(--darkviolet);
+}
+@media only screen and (min-width: 0px){
+    .goods{
+        padding-right: 0.625rem;
+    }
+    .goods .goodWrap{
+        margin: 0.625rem 0 0 0.625rem;
+    }
+}
+@media only screen and (min-width: 992px){
+    .goods{
+        padding-right: 0rem;
+    }
+    .goods .goodWrap{
+        margin: 1.25rem 0 0 1.25rem;
+    }
+}
 
-.goods .goodbl > a{
+
+
+.goods .goodbl .goodName{
     text-decoration: none;
     display: block;
     width: 100%;
@@ -927,7 +997,7 @@ aside .asideTxt{
     margin-bottom: 0.875rem;
     height: 312px;
 }
-.goods .goodbl > a p{
+.goods .goodbl .goodName p{
     height: 3.125rem;
     width: calc(100% - 2.25rem);
     margin: 0 auto; 
@@ -935,19 +1005,35 @@ aside .asideTxt{
     -webkit-box-align: center;-ms-flex-align: center;align-items: center;
     -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
 }
-.goods .goodbl > a p span{
+.goods .goodbl .goodName p span{
     text-align: center;
     display: block;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+    position: relative;
+}
+.goods .goodbl .goodName p span:before {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    background: -webkit-gradient(linear, left top, right top, from(var(--transp)), color-stop(var(--mainContCol)), color-stop(var(--mainContCol)), to(var(--transp)));background: linear-gradient(to right, var(--transp), var(--mainContCol), var(--mainContCol), var(--transp));
     transition: all 0.2s;
 }
-.goods .goodbl > a:hover span{
+.goods .goodbl .goodName:hover p span:before {
+    width: 100%;
+    left: 0;
+}
+.goods .goodbl > .goodName:hover span{
     color: var(--mainContCol);
 }
-.goods .goodbl > a img{
+.goods .goodbl > .goodName img{
     display: block;
     width: calc(100% - 2.25rem);
     margin: 0 auto;
 }
+
 .goods .goodbl .goodInfoBottom {
     width: calc(100% - 2.25rem);
     margin: 0 auto;
@@ -969,12 +1055,15 @@ aside .asideTxt{
      font-size: var(--fnt2p25rem);
      line-height: 2.25rem;
 }
+.goods .goodInfoBottom .priceBl .newPrice span:last-child{
+     color: var(--grey1);
+}
 .goods .goodInfoBottom .priceBl .buyStat{
     padding-top: 0.875rem;
 }
 .goods .goodInfoBottom .priceBl .buyStat > *{
     font-weight: bold;
-    display: none;
+    display: block;
     cursor: pointer;
     color: var(--black);
     text-transform: uppercase;
@@ -989,15 +1078,25 @@ aside .asideTxt{
 }
 .goods .goodInfoBottom .priceBl .buyStat > *:hover{
     background-color: var(--hoverGreen);  
-}
-.goods .goodInfoBottom .priceBl .buyStat .active{
-    display: block;
+    color: var(--white);
 }
 .goods .goodInfoBottom .priceBl .buyStat .inCart{
     background-color: var(--white);
+    color: var(--black);
 }
 .goods .goodInfoBottom .priceBl .buyStat .inCart:hover{
-    background-color: var(--hoverWhite);
+    background-color: var(--mainContCol);
+    color: var(--white);
+}
+.goods .goodInfoBottom .priceBl .buyStat .notify{
+    background-color: var(--white);
+    color: var(--black);
+    padding: 0.16rem 0;
+    font-size: var(--fnt0p875rem);
+}
+.goods .goodInfoBottom .priceBl .buyStat .notify:hover{
+    background-color: var(--mainContCol);
+    color: var(--white);
 }
 .goods .goodInfoBottom .deliveryPickup{
     color: var(--grey1);
@@ -1015,7 +1114,10 @@ aside .asideTxt{
     margin-top: 0.1875rem;
     margin-right: 0.25rem;
 }
-.goods .goodInfoBottom .deliveryPickup .good-icons::before{
+.goods .goodInfoBottom .deliveryPickup span.notAvailable::before{
+    background-color: var(--red);
+}
+.goods .goodInfoBottom .deliveryPickup .goodIcons::before{
     cursor: pointer;
     -webkit-transition: all 0.1s;transition: all 0.1s;
     cursor: pointer;
@@ -1027,6 +1129,9 @@ aside .asideTxt{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+.goods .goodInfoBottom .deliveryPickup .goodIcons:hover::before{
+    border-color: var(--mainContCol);
 }
 .goods .goodInfoBottom .deliveryPickup .wish::before {
     background-size: 1rem 1rem;
@@ -1113,8 +1218,55 @@ aside .asideTxt{
 }
 /*.goodWrap style end*/
 
+/*.pagNav style start*/
+.pagNav .btnBrdr {
+    padding: 0.9375rem 2rem;
+    margin-top: 2.5rem;
+}
+.pagNav .pagBlock{
+    display: block;
+    margin-top: 2.5rem;
+    margin-bottom: 5.625rem;
+}
+.pagNav .pagBlock ul{
+    border: 1px solid var(--grey1);
+    border-right: none;
+}
+.pagNav .pagBlock li{
+    list-style: none;
+}
+.pagNav .pagBlock li a{
+    text-align: center;
+    height: 100%;
+    width: 2.375rem;
+    padding: 0.65rem 0rem; 
+    text-decoration: none;
+    color: var(--white);
+    border-right: 1px solid var(--grey1);
+    transition: all 0.1s;
+    display: flex;
+    -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+    -webkit-box-align: center;-ms-flex-align: center;align-items: center;
+}
+.pagNav .pagBlock li a:hover{
+    color: var(--mainContCol);
+    background-color: var(--hoverWhite);
+}
 
-
+.pagNav .pagBlock li.arrow a::before{
+        content: '';
+        display: block;
+        border-style: solid;
+}
+.pagNav .pagBlock li.arrow:first-child a::before{
+        border-width: 0.375rem 0.375rem 0.375rem 0px;
+        border-color: var(--transp) var(--mainZ51Col);
+}
+.pagNav .pagBlock li.arrow:last-child a::before{
+        border-width: 0.375rem 0px 0.375rem 0.375rem;
+        border-color: var(--transp) var(--mainZ51Col);
+}
+/*.pagNav style start*/
 
 
 

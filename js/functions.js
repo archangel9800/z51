@@ -279,7 +279,13 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
    $("#priceLine").slider({});
 //aside .priceVal script end  
 
-    
+$(".btnNav").on("click", function (event) {
+
+    event.preventDefault();
+        var id  = $(this).attr('data-go'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
  
 
     

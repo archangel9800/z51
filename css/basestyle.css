@@ -1550,7 +1550,7 @@ flex: 0 0 auto;
     font-size: var(--fnt1p125rem);
     color: var(--white);
 }
-.productTop .deliveryPayWarranty .delivery > span{
+.productTop .deliveryPayWarranty > div > span{
     display: block;
 }
 .productTop .deliveryPayWarranty span{

@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+   
+    
 /* Sample function that returns boolean in case the browser is Internet Explorer*/
   
     
@@ -105,7 +107,7 @@ $('header').scroll(function(){
                 var obj = this;
 
                 obj.opts.on('click',function(){
-                    var opt = $(this).find('span');
+                    var opt = $(this);
                     obj.val = opt.html();
                     obj.index = opt.index();
                     obj.placeholder.html(obj.val); $(this).parents().find('#callUsDropdown').removeClass('visibleBl');
@@ -132,38 +134,37 @@ $('header').scroll(function(){
 function mainMenuSecondaryDropdownWidth(){
    var secondaryDropdown = $('.cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown');     
    var mainWidth = $('.mainWidth').width();      
-   var menuWidth = $('.cd-dropdown-wrapper').width();  
-    
+   var menuWidth = $('.cd-dropdown-wrapper').width();
     if (navigator.userAgent.search("Edge") >= 0 && $(window).width() >= 992) {
          secondaryDropdown.css({
            width: mainWidth - menuWidth
         }); 
     } else if (navigator.userAgent.search("Edge") >= 0 && $(window).width() < 992){
            secondaryDropdown.css({
-           width: 100 + '%'
+           width: mainWidth
         });    
-    } else{
+    } else if (navigator.userAgent.search("Edge") < 0 && $(window).width() >= 992){
            secondaryDropdown.css({
            maxWidth: mainWidth - menuWidth
         });    
+    }else if (navigator.userAgent.search("Edge") < 0 && $(window).width() < 992){
+           secondaryDropdown.css({
+           maxWidth: mainWidth
+        });    
     }
     };
-
-mainMenuSecondaryDropdownWidth(); 
-$(window).resize(function(){  
-         mainMenuSecondaryDropdownWidth();
-});   
-$(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
-    var block = $(".cd-dropdown-wrapper").children(); 
-    if (!block.is(e.target) && block.has(e.target).length === 0) { 
-        $('.cd-dropdown-wrapper .cd-dropdown').removeClass('dropdown-is-active');
-        $('.cd-dropdown-wrapper .cd-dropdown-trigger').removeClass('dropdown-is-active');
-        $('.cd-dropdown-wrapper .cd-dropdown-content').removeClass('move-out');
-    }
-}); 
-    
-    
-    
+    mainMenuSecondaryDropdownWidth(); 
+    $(window).resize(function(){  
+             mainMenuSecondaryDropdownWidth();
+    });   
+    $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
+        var block = $(".cd-dropdown-wrapper").children(); 
+        if (!block.is(e.target) && block.has(e.target).length === 0) { 
+            $('.cd-dropdown-wrapper .cd-dropdown').removeClass('dropdown-is-active');
+            $('.cd-dropdown-wrapper .cd-dropdown-trigger').removeClass('dropdown-is-active');
+            $('.cd-dropdown-wrapper .cd-dropdown-content').removeClass('move-out');
+        }
+    }); 
        ///.mainMenuSecondaryDropdownWidth script end 
     
     
@@ -241,7 +242,10 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
 //        $('aside .customZ51Checkbox > p').not(this).sibling().find('.dropdown-menu').addClass('show');
 //        
 //    });
-    
+//        $(document).click(function(e) {
+//        console.log($(this)[0])
+//    })
+//    
     //aside .asideDropdown script start
     $('.customDrop > p').click(function(e) {
         $(this).parent().toggleClass('visibleBl');
@@ -279,6 +283,7 @@ $(document).mouseup(function (e){ // отслеживаем событие кл�
    $("#priceLine").slider({});
 //aside .priceVal script end  
 
+///.btnNav script start 
 $(".btnNav").on("click", function (event) {
 
     event.preventDefault();
@@ -286,8 +291,41 @@ $(".btnNav").on("click", function (event) {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
- 
+//.btnNav script end   
 
+    
+    
+
+
+    
+//      function includerHtml(){
+//    var includes = $('[data-include]');
+//    jQuery.each(includes, function(){
+//      var file = 'views/' + $(this).data('include') + '.html';
+//      $(this).load(file);
+//    });
+//  };
+//  includerHtml(); 
+    
+
+    
+
+//    $("a.galleryModal").fancybox({
+//		'transitionIn'	:	'elastic',
+//		'transitionOut'	:	'elastic',
+//		'speedIn'		:	600, 
+//		'speedOut'		:	200, 
+//		'overlayShow'	:	false
+//	});
+
+    
+    
+    
+    
+    
+    
+    
+    
     
 });
  

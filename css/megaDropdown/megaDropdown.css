@@ -21,6 +21,13 @@
     }
 }
 
+.cd-dropdown-trigger b{
+    font-size: var(--fnt1p125rem);
+    color: var(--black);
+}
+.cd-dropdown-trigger:hover  b{
+    color: var(--white);
+}
 
 .cd-dropdown-wrapper .cd-dropdown-trigger {
     display: -webkit-box;
@@ -74,18 +81,18 @@
         filter: invert(100%);
     }
 }
-.cd-dropdown-wrapper .cd-dropdown h2, .cd-dropdown-wrapper .cd-dropdown-content a, .cd-dropdown-wrapper .cd-dropdown-content ul a {
+.cd-dropdown-wrapper .cd-dropdown .mobName, .cd-dropdown-wrapper .cd-dropdown-content a, .cd-dropdown-wrapper .cd-dropdown-content ul a {
   height: 50px;
   line-height: 50px;
 }
 @media only screen and (min-width: 768px) {
-  .cd-dropdown-wrapper .cd-dropdown h2, .cd-dropdown-wrapper .cd-dropdown-content a, .cd-dropdown-wrapper .cd-dropdown-content ul a {
+  .cd-dropdown-wrapper .cd-dropdown .mobName, .cd-dropdown-wrapper .cd-dropdown-content a, .cd-dropdown-wrapper .cd-dropdown-content ul a {
     height: 60px;
     line-height: 60px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .cd-dropdown-wrapper .cd-dropdown h2, .cd-dropdown-wrapper .cd-dropdown-content a, .cd-dropdown-wrapper .cd-dropdown-content ul a {
+  .cd-dropdown-wrapper .cd-dropdown .mobName, .cd-dropdown-wrapper .cd-dropdown-content a, .cd-dropdown-wrapper .cd-dropdown-content ul a {
     height: 50px;
     line-height: 50px;
   }
@@ -97,7 +104,7 @@
     color: var(--white);
 
 }
-.cd-dropdown-wrapper .cd-dropdown h2, .cd-dropdown-wrapper .cd-dropdown-content a, .cd-dropdown-wrapper .cd-dropdown-content ul a, .cd-dropdown-wrapper .cd-dropdown-content .cd-divider {
+.cd-dropdown-wrapper .cd-dropdown .mobName, .cd-dropdown-wrapper .cd-dropdown-content a, .cd-dropdown-wrapper .cd-dropdown-content ul a, .cd-dropdown-wrapper .cd-dropdown-content .cd-divider {
   padding: 0 1.25rem;
     
 }
@@ -127,13 +134,16 @@
   -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
   transition: transform 0.5s 0s, visibility 0s 0.5s;
 }
-.cd-dropdown-wrapper .cd-dropdown h2 {
+.cd-dropdown-wrapper .cd-dropdown .mobName {
   /* dropdown title - mobile version only */
   position: relative;
   z-index: 1;
   color: #585a70;
   background-color: var(--mainZ51Col);
   border-bottom: 1px solid #242643;
+  font-size: var(--fnt1p625rem);
+  color: var(--white);
+  margin: 0;    
 }
 .cd-dropdown-wrapper .cd-dropdown .cd-close {
   /* 'X' close icon - mobile version only */
@@ -225,7 +235,7 @@
     right: 0;
     left: auto;
   }
-  .cd-dropdown-wrapper .cd-dropdown h2, .cd-dropdown-wrapper .cd-dropdown .cd-close {
+  .cd-dropdown-wrapper .cd-dropdown .mobName, .cd-dropdown-wrapper .cd-dropdown .cd-close {
     /* on desktop - hide title and 'X' */
     display: none;
   }

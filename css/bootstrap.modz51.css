@@ -1,3 +1,5 @@
+
+
 /*// Малые девайсы («ландшафтные телефоны», >= 0px) xs*/
 @media only screen and (min-width: 0px) { 
     .position-fixed-xs{
@@ -15,6 +17,63 @@
         position: sticky;
       }
     }  
+}
+
+/*// Малые девайсы («ландшафтные телефоны», >= 450px) wsm*/
+@media only screen and (min-width: 450px) { 
+    .position-fixed-wsm{
+        position: fixed;
+    }
+    .position-static-wsm{
+        position: static;
+    }
+    .position-absolute-wsm{
+        position: absolute;
+    }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+      .position-sticky-wsm {
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    } 
+
+  .flex-wsm-grow-0 {
+    -ms-flex-positive: 0 !important;
+    flex-grow: 0 !important;
+  }
+  .flex-wsm-grow-1 {
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+  } 
+  .d-wsm-none {
+    display: none !important;
+  }
+  .d-wsm-inline {
+    display: inline !important;
+  }
+  .d-wsm-inline-block {
+    display: inline-block !important;
+  }
+  .d-wsm-block {
+    display: block !important;
+  }
+  .d-wsm-table {
+    display: table !important;
+  }
+  .d-wsm-table-row {
+    display: table-row !important;
+  }
+  .d-wsm-table-cell {
+    display: table-cell !important;
+  }
+  .d-wsm-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .d-wsm-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }  
 }
 
 /*// Малые девайсы («ландшафтные телефоны», >= 576px) sm*/

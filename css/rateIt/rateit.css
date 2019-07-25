@@ -57,7 +57,7 @@
 
             .rateit .rateit-selected {
                 background: url(star.gif) left -16px;
-                color: var(--mainContCol);
+                color: rgb(var(--mainContCol));
             }
 
             .rateit .rateit-selected-rtl {
@@ -66,7 +66,7 @@
 
             .rateit .rateit-preset {
                 background: url(star.gif) left -48px;
-                color: var(--mainContCol);
+                color: rgb(var(--mainContCol));
             }
 
             .rateit .rateit-preset-rtl {
@@ -105,7 +105,7 @@
     }
 
     .rateit-font .rateit-empty {
-        color: var(--grey2);
+        color: rgb(var(--grey2));
     }
 
     .rateit-font .rateit-range > div {

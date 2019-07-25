@@ -152,6 +152,7 @@
     } 
 }
 
+/*// Экстрабольшие девайсы (большие десктопы, >= 1480px) xxl*/
 @media (min-width: 1480px) {
     .position-fixed-xxl{
         position: fixed;

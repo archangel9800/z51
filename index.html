@@ -81,7 +81,7 @@
 
                     <ul class="home p-0 m-0 pt-0 pt-lg-0 flex-grow-0 d-flex d-lg-none order-3 order-sm-4">
                        <div class="p-0 m-0 d-flex align-items-end justify-content-center justify-content-lg-end">
-                           <li class="cart home-icons">
+                           <li class="cart homeIcons">
                                <a class="d-flex flex-wrap justify-content-center align-items-end" href="#">
                                    <span class="cart-counter">2</span>
                                    <span class="icon-name w-100">Корзина</span>
@@ -116,17 +116,17 @@
 
                 <div class="headerNavCollapse collapse navbar-collapse flex-grow-1 flex-lg-grow-0 home">
                     <ul class="m-0 p-0 py-3 align-items-end d-flex d-lg-none  justify-content-center justify-content-lg-end">
-                       <li class="cab home-icons active">
+                       <li class="cab homeIcons active">
                            <a class="d-flex flex-wrap justify-content-center align-items-end" href="#"><span class="icon-name w-100">Кабинет</span>
                            </a>
                        </li>
-                       <li class="wish home-icons">
+                       <li class="wish homeIcons">
                            <a class="d-flex flex-wrap justify-content-center align-items-end" href="#">
                                <span class="wish-counter">12</span>
                                <span class="icon-name w-100">Wishlist</span>
                            </a>
                        </li>
-                       <li class="comparison home-icons">
+                       <li class="comparison homeIcons">
                            <a class="d-flex flex-wrap justify-content-center align-items-end" href="#">
                                <span class="comparison-counter">9</span>
                                <span class="icon-name w-100">Сравнение</span>
@@ -357,23 +357,23 @@
 
                 <ul class="home p-0 m-0 pt-2 pt-lg-0 flex-grow-1 flex-lg-grow-0 d-none d-lg-flex align-items-center justify-content-center">
                        <div class="p-0 m-0 d-flex align-items-end justify-content-center">
-                           <li class="cab home-icons active entered">
+                           <li class="cab homeIcons active entered">
                                <a class="d-flex flex-wrap justify-content-center align-items-end" href="#"><span class="icon-name w-100">Кабинет</span>
                                </a>
                            </li>
-                           <li class="wish home-icons">
+                           <li class="wish homeIcons">
                                <a class="d-flex flex-wrap justify-content-center align-items-end" href="#">
                                    <span class="wish-counter">12</span>
                                    <span class="icon-name w-100">Wishlist</span>
                                </a>
                            </li>
-                           <li class="comparison home-icons">
+                           <li class="comparison homeIcons">
                                <a class="d-flex flex-wrap justify-content-center align-items-end" href="#">
                                    <span class="comparison-counter">9</span>
                                    <span class="icon-name w-100">Сравнение</span>
                                </a>
                            </li>
-                           <li class="cart home-icons">
+                           <li class="cart homeIcons">
                                <a class="d-flex flex-wrap justify-content-center align-items-end" href="#">
                                    <span class="cart-counter">2</span>
                                    <span class="icon-name w-100">Корзина</span>
@@ -446,35 +446,92 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-6 order-2 order-md-3 order-xl-2 p-0 d-flex flex-wrap align-items-end">
-                    <div class="col-12 col-xl-12 p-0 order-2 order-xl-1" style="background-color: fuchsia; height: 50px;">описание отзывы</div>
-                    <div class="col-12 col-xl-12 p-0 order-3 order-xl-2" style="background-color: cyan; height: 100px;">купить</div>
-                    <div class="col-12 col-xl-12 p-0 order-4 order-xl-3" style="background-color: orange; height: 250px;">звезды</div>
+                <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 order-2 order-md-3 order-xl-2 p-0 d-flex flex-wrap">
+                   
+                    <div class="col-12 col-xl-12 p-0 px-1 px-lg-3 order-2 order-xl-1">
+                        <div class="descriptionOther px-2 px-lg-4 py-2 grey2Bg">
+                            <ul class="d-flex flex-wrap justify-content-around p-0 m-0">
+                                <li class="py-2"><a class="fnt0p875rem hoverLinkW cont active" href="#">Описание товара</a></li>
+                                <li class="py-2"><a class="fnt0p875rem hoverLinkW cont" href="#">Характеристики</a></li>
+                                <li class="py-2"><a class="fnt0p875rem hoverLinkW cont" href="#">Видео</a></li>
+                                <li class="py-2"><a class="fnt0p875rem hoverLinkW cont" href="#">Отзывы и вопросы <span>(5)</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-xl-12 p-0 px-1 px-lg-3 mt-2 mt-lg-3 order-3 order-xl-2">
+                        <div class="prodPrice w100 p-2 px-xxl-4 pt-xxl-4 pb-xxl-3">
+                            <div class="p-0 p-lg-1 d-flex flex-wrap align-items-center justify-content-around">
+                                <div class="price mr-2 mb-2 mr-xxl-4">
+                                    <span class="fnt0p875rem whiteFnt d-block">Цена</span>
+                                    <span class="whiteFnt fnt3rem d-block font-weight-bold">22 999<span class="fnt0p875rem">грн.</span></span>
+                                    <span class="fnt0p875rem d-block"><strike class="fnt1p5rem">24 999</strike>грн.</span>
+                                </div>
+                                <div class="buy mr-2 mb-2 mr-xxl-4">
+                                    <span class="fnt1p25rem d-block text-uppercase buttonFGr cont">Купить</span>
+                                </div>
+                                <div class="credit mr-2 mb-2">
+                                    <span class="fnt1p25rem d-block text-uppercase btnBrdr cont">Кредитная линия</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-xl-12 p-0 order-4 order-xl-3 px-1 px-lg-3 py-3 py-lg-4">
+                        <div class="py-0 py-lg-2 pl-3 pl-lg-0 d-flex flex-wrap prodInfo">
+                           <div class="col-12 col-wsm-6 p-0 pr-3">
+                               <span class="fnt0p875rem d-block">Код для заказа: <span class="whiteFnt">62406</span> </span>
+                               <span class="fnt0p875rem d-block mt-2 py-1">Производитель: <a class="hoverLinkG cont" href="#">Steelseries</a></span>
+                               <span class="fnt0p875rem d-block mt-4 pt-2">Подключение: <a class="hoverLinkG cont" href="#">Проводное;</a></span>
+                               <span class="fnt0p875rem d-block mt-2 py-1">Интерфейс подключения: <span>USB;</span></span>
+                               <span class="fnt0p875rem d-block mt-2 py-1">Форм-фактор:  <span>Полноразмерная;</span></span>
+                               <span class="fnt0p875rem d-block mt-2 py-1">Тип датчика:   <a class="hoverLinkG cont" href="#">Оптический;</a></span>
+                               <span class="fnt0p875rem d-block mt-2 py-1">Разрешение:   <span>120000 dpi;</span></span>
+                           </div>
+                           <div class="col-12 col-wsm-6 p-0 mt-4 mt-wsm-0">
+                               <span class="fnt0p875rem d-block">Рейтинг пользователей</span>
+                               <div class="goodRate align-items-center d-flex flex-wrap">
+                                    <div class="rateit mr-2" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
+                                    <span class="whiteFnt">37 отзывов</span>
+                               </div> 
+                               <div class="mt-4">
+                                   <div class="prodInfoIcons toComparison d-flex flex-wrap mt-2 py-1"><span class="fnt0p875rem">Добавить к сравнению</span></div>
+                                   <div class="prodInfoIcons toWish active d-flex flex-wrap mt-2 py-1"><span class="fnt0p875rem">В списке желаний</span></div>
+                               </div>
+                               <div class="mt-4 pt-4 d-flex">
+                                   <div class="d-flex shareIcons like mr-3 align-items-center py-1 px-2"><span class="fnt0p625rem whiteFnt">Нравится</span><span class="fnt0p625rem whiteFnt">&nbsp;0</span></div>
+                                   <div class="d-flex shareIcons twit align-items-center py-1 px-2"><span class="fnt0p625rem whiteFnt">Твитнуть</span></div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                    
                     <div class="col-12 col-xl-12 p-0 order-1 order-xl-4" style="background-color: grey; height: 100px;">акция</div>
+                    
                 </div>
                 
-                <div class="col-12 col-sm-11 col-md-4 col-lg-3 col-xl-2 order-3 order-md-2 order-xl-3 p-3 deliveryPayWarranty d-flex flex-wrap">
-                    <div class="delivery pl-0 pt-0 pb-4 col-12 col-wsm-6 col-sm-4 col-md-12 order-1 order-md-1">
-                        <p class="m-0">Доставка</p>
-                        <span class="pt-3"><span>Самовывоз из магазина:</span> <br>
-                        <span>Киев, Харьков, Одесса, Львов</span>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 order-3 order-md-2 order-xl-3 p-3 grey3Bg d-flex flex-wrap">
+                    <div class="pl-0 pt-0 pb-4 col-12 col-wsm-6 col-sm-4 col-md-12 order-1 order-md-1">
+                        <p class="m-0 fnt1p125rem whiteFnt">Доставка</p>
+                        <span class="pt-3 fnt0p8125rem d-block"><span class="whiteFnt">Самовывоз из магазина:</span> <br>
+                        <span class="mainContColFnt">Киев, Харьков, Одесса, Львов</span>
                         </span>
-                        <span class="pt-3"><span>Курьер</span> <span>Киев:</span> <br>
+                        <span class="pt-3 fnt0p8125rem d-block"><span class="whiteFnt">Курьер</span> <span>Киев:</span> <br>
                         передача в курьерскую службу <br>
-                        <span>[сегодня]</span>
+                        <span class="mainContColFnt">[сегодня]</span>
                         </span>
-                        <span class="pt-3"><span>Новая Почта:</span><br>
+                        <span class="pt-3 fnt0p8125rem d-block"><span class="whiteFnt">Новая Почта:</span><br>
                         отгрузка в службу доставки <br>
-                        <span>[завтра]</span>
+                        <span class="mainContColFnt">[завтра]</span>
                         </span>
                     </div>
-                    <div class="pay pb-4 pl-0 col-12 col-wsm-6 col-sm-4 col-md-12 order-3 order-md-2 col-md-12">
-                        <p class="m-0">Оплата</p>
-                        <span class="pt-3">Наличными, Безналичными, VISA/Mastercard</span>
+                    <div class="pb-4 pl-0 col-12 col-wsm-6 col-sm-4 col-md-12 order-3 order-md-2 col-md-12">
+                        <p class="m-0 fnt1p125rem whiteFnt">Оплата</p>
+                        <span class="pt-3 fnt0p8125rem d-block">Наличными, Безналичными, VISA/Mastercard</span>
                     </div>
-                    <div class="warranty pb-4 pl-0 col-12 col-wsm-6 col-sm-4 col-md-12 order-2 order-md-12">
-                        <p class="m-0">Гарантия: <span>24 месяца</span></p>
-                        <span class="pt-3">Обмен и возврат товара осуществляется в течение 14 дней после покупки, согласно закону Украины "О защите прав потребителей Украины"</span>
+                    <div class="pb-4 pl-0 col-12 col-wsm-6 col-sm-4 col-md-12 order-2 order-md-12">
+                        <p class="m-0 fnt1p125rem whiteFnt">Гарантия: <span class="mainContColFnt fnt1p125rem">24 месяца</span></p>
+                        <span class="pt-3 fnt0p8125rem d-block">Обмен и возврат товара осуществляется в течение 14 дней после покупки, согласно закону Украины "О защите прав потребителей Украины"</span>
                     </div>
                 </div>
                 

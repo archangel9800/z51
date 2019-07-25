@@ -1,19 +1,18 @@
 :root{
-    --mainZ51Col: #a5d300;
-    --mainContCol: #a5d300;
-    --white: #fff;
-    --red: #ff002f;
-    --orange: orange;
-    --darkviolet: darkviolet;
-    --black: #000;
+    --mainZ51Col: 165,211,0;
+    --mainContCol: 50,211,0;
+    --white: 255,255,255;
+    --red: 255,0,47;
+    --orange: 255,140,0;
+    --darkviolet: 148,0,211;
+    --black: 0,0,0;
     --transp: transparent;
-    --grey1: #8e8e8e;
-    --grey2: #333333;
-    --grey3: #222222;
-    --grey4: #666666;
-    --green: #90dc00;
-    --hoverGreen: #9bc501;
-    --hoverWhite: rgba(255,255,255, 0.1);
+    --grey1: 142,142,142;
+    --grey2: 51,51,51;
+    --grey3: 34,34,34;
+    --grey4: 102,102,102;
+    --faceColor: 66,103,178;
+    --twitColor: 49,200,246;
     
 /*    4px*/
     --fnt0p25rem: 0.25rem;  
@@ -39,6 +38,8 @@
     --fnt1p25rem: 1.25rem;
 /*    22px*/
     --fnt1p1375rem: 1.375rem;
+/*    24px*/
+    --fnt1p5rem: 1.5rem;
 /*    26px*/
     --fnt1p625rem: 1.625rem;
 /*    30px*/

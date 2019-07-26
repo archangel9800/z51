@@ -1185,10 +1185,7 @@ aside .asideTxt{
     width: 18.75rem;
     height: 31.125rem;
 }
-.goods a{
-    
-}
-.goods .goodbl {
+.goodWrap .goodbl {
     position: absolute;
     top: 0;
     left: 0;
@@ -1200,31 +1197,31 @@ aside .asideTxt{
     z-index: 1;
     box-shadow: 0px 0px 15px 8px var(--transp);
 }
-.goods .goodbl:hover {
+.goodWrap .goodbl:hover {
     box-shadow: 0px 0px 15px 8px rgb(var(--mainContCol));
     z-index: 2;
     max-height: calc(100vh * 2);
 }
-.goods .goodbl .goodInfoTop{
+.goodWrap .goodbl .goodInfoTop{
     position: absolute;
     top: 1.125rem;
     left: 1.125rem;
     width: calc(100% - 2.25rem);
 }
-.goods .goodbl .orderCode{
+.goodWrap .goodbl .orderCode{
     padding: 0.125rem 0 0 0;
 }
-.goods .goodbl .orderCode .events{
+.goodWrap .goodbl .orderCode .events{
     margin-top: 0.3125rem;
 }
-.goods .goodbl .orderCode > span{
+.goodWrap .goodbl .orderCode > span{
     font-size: var(--fnt0p75rem);
     color: rgb(var(--grey1));
 }
-.goods .goodbl .orderCode > span:last-child{
+.goodWrap .goodbl .orderCode > span:last-child{
     color: rgb(var(--white));
 }
-.goods .goodbl .events > *{
+.goodWrap .goodbl .events > *{
     display: block;
     width: 76px;
     text-align: center;
@@ -1237,42 +1234,42 @@ aside .asideTxt{
     margin-bottom: 0.3125rem;
     transition: all 0.1s;
 }
-.goods .goodbl .events > a:hover{
+.goodWrap .goodbl .events > a:hover{
     color: rgb(var(--white));
     background-color: rgba(var(--mainContCol), 0.9);
 }
-.goods .goodbl .events .redEvent{
+.goodWrap .goodbl .events .redEvent{
     color: rgb(var(--red));
     border-color: rgb(var(--red));
 }
-.goods .goodbl .events .orangeEvent{
+.goodWrap .goodbl .events .orangeEvent{
     color: rgb(var(--orange));
     border-color: rgb(var(--orange));
 }
-.goods .goodbl .events .darkvioletEvent{
+.goodWrap .goodbl .events .darkvioletEvent{
     color: rgb(var(--darkviolet));
     border-color: rgb(var(--darkviolet));
 }
 @media only screen and (min-width: 0px){
-    .goods{
+    .goodWrap{
         padding-right: 0.625rem;
     }
-    .goods .goodWrap{
+    .goodWrap .goodWrap{
         margin: 0.625rem 0 0 0.625rem;
     }
 }
 @media only screen and (min-width: 992px){
-    .goods{
+    .goodWrap{
         padding-right: 0rem;
     }
-    .goods .goodWrap{
+    .goodWrap .goodWrap{
         margin: 1.25rem 0 0 1.25rem;
     }
 }
 
 
 
-.goods .goodbl .goodName{
+.goodWrap .goodbl .goodName{
     
     display: block;
     width: 100%;
@@ -1281,7 +1278,7 @@ aside .asideTxt{
     margin-bottom: 0.875rem;
     height: 312px;
 }
-.goods .goodbl .goodName p{
+.goodWrap .goodbl .goodName p{
     height: 3.125rem;
     width: calc(100% - 2.25rem);
     margin: 0 auto; 
@@ -1289,13 +1286,13 @@ aside .asideTxt{
     -webkit-box-align: center;-ms-flex-align: center;align-items: center;
     -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
 }
-.goods .goodbl .goodName p span{
+.goodWrap .goodbl .goodName p span{
     text-align: center;
     display: block;
     -webkit-transition: all 0.1s;transition: all 0.1s;
     position: relative;
 }
-.goods .goodbl .goodName p span:before {
+.goodWrap .goodbl .goodName p span:before {
     content: "";
     width: 0;
     height: 2px;
@@ -1305,47 +1302,47 @@ aside .asideTxt{
     background: -webkit-gradient(linear, left top, right top, from(var(--transp)), color-stop(rgb(var(--mainContCol))), color-stop(rgb(var(--mainContCol))), to(var(--transp)));background: linear-gradient(to right, var(--transp), rgb(var(--mainContCol)), rgb(var(--mainContCol)), var(--transp));
     transition: all 0.2s;
 }
-.goods .goodbl .goodName:hover p span:before {
+.goodWrap .goodbl .goodName:hover p span:before {
     width: 100%;
     left: 0;
 }
-.goods .goodbl > .goodName:hover span{
+.goodWrap .goodbl > .goodName:hover span{
     color: rgb(var(--mainContCol));
 }
-.goods .goodbl > .goodName img{
+.goodWrap .goodbl > .goodName img{
     display: block;
     width: calc(100% - 2.25rem);
     margin: 0 auto;
 }
 
-.goods .goodbl .goodInfoBottom {
+.goodWrap .goodbl .goodInfoBottom {
     width: calc(100% - 2.25rem);
     margin: 0 auto;
     height: 100px;
  
 }
-.goods .goodInfoBottom .priceBl .oldPrice, .goods .goodInfoBottom .priceBl .newPrice *{
+.goodWrap .goodInfoBottom .priceBl .oldPrice, .goodWrap .goodInfoBottom .priceBl .newPrice *{
      font-size: var(--fnt0p875rem);
      color: rgb(var(--grey1));
 }
-.goods .goodInfoBottom .priceBl strike{
+.goodWrap .goodInfoBottom .priceBl strike{
      font-size: var(--fnt1p25rem);
      line-height: 1.25rem;
 }
-.goods .goodInfoBottom .priceBl .newPrice span{
+.goodWrap .goodInfoBottom .priceBl .newPrice span{
      color: rgb(var(--mainContCol));
 }
-.goods .goodInfoBottom .priceBl .newPrice span:first-child{
+.goodWrap .goodInfoBottom .priceBl .newPrice span:first-child{
      font-size: var(--fnt2p25rem);
      line-height: 2.25rem;
 }
-.goods .goodInfoBottom .priceBl .newPrice span:last-child{
+.goodWrap .goodInfoBottom .priceBl .newPrice span:last-child{
      color: rgb(var(--grey1));
 }
-.goods .goodInfoBottom .priceBl .buyStat{
+.goodWrap .goodInfoBottom .priceBl .buyStat{
     padding-top: 0.875rem;
 }
-.goods .goodInfoBottom .priceBl .buyStat > *{
+.goodWrap .goodInfoBottom .priceBl .buyStat > *{
     font-weight: bold;
     display: block;
     cursor: pointer;
@@ -1360,36 +1357,36 @@ aside .asideTxt{
     background-color: rgb(var(--mainContCol));  
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
-.goods .goodInfoBottom .priceBl .buyStat > *:hover{
+.goodWrap .goodInfoBottom .priceBl .buyStat > *:hover{
     background-color: rgba(var(--mainZ51Col), 0.9);  
     color: rgb(var(--white));
 }
-.goods .goodInfoBottom .priceBl .buyStat .inCart{
+.goodWrap .goodInfoBottom .priceBl .buyStat .inCart{
     background-color: rgb(var(--white));
     color: rgb(var(--black));
 }
-.goods .goodInfoBottom .priceBl .buyStat .inCart:hover{
+.goodWrap .goodInfoBottom .priceBl .buyStat .inCart:hover{
     background-color: rgb(var(--mainContCol));
     color: rgb(var(--white));
 }
-.goods .goodInfoBottom .priceBl .buyStat .notify{
+.goodWrap .goodInfoBottom .priceBl .buyStat .notify{
     background-color: rgb(var(--white));
     color: rgb(var(--black));
     padding: 0.16rem 0;
     font-size: var(--fnt0p875rem);
 }
-.goods .goodInfoBottom .priceBl .buyStat .notify:hover{
+.goodWrap .goodInfoBottom .priceBl .buyStat .notify:hover{
     background-color: rgb(var(--mainContCol));
     color: rgb(var(--white));
 }
-.goods .goodInfoBottom .deliveryPickup{
+.goodWrap .goodInfoBottom .deliveryPickup{
     color: rgb(var(--grey1));
 }
-.goods .goodInfoBottom .deliveryPickup span{
+.goodWrap .goodInfoBottom .deliveryPickup span{
     color: rgb(var(--grey1));
     font-size: var(--fnt0p875rem);
 }
-.goods .goodInfoBottom .deliveryPickup span::before{
+.goodWrap .goodInfoBottom .deliveryPickup span::before{
     display: block;
     content: '';
     width: 0.625rem;
@@ -1398,10 +1395,10 @@ aside .asideTxt{
     margin-top: 0.1875rem;
     margin-right: 0.25rem;
 }
-.goods .goodInfoBottom .deliveryPickup span.notAvailable::before{
+.goodWrap .goodInfoBottom .deliveryPickup span.notAvailable::before{
     background-color: rgb(var(--red));
 }
-.goods .goodInfoBottom .deliveryPickup .goodIcons::before{
+.goodWrap .goodInfoBottom .deliveryPickup .goodIcons::before{
     cursor: pointer;
     -webkit-transition: all 0.1s;transition: all 0.1s;
     cursor: pointer;
@@ -1414,89 +1411,89 @@ aside .asideTxt{
     background-size: contain;
     background-position: center;
 }
-.goods .goodInfoBottom .deliveryPickup .goodIcons:hover::before{
+.goodWrap .goodInfoBottom .deliveryPickup .goodIcons:hover::before{
     border-color: rgb(var(--mainContCol));
 }
-.goods .goodInfoBottom .deliveryPickup .wish::before {
+.goodWrap .goodInfoBottom .deliveryPickup .wish::before {
     background-size: 1rem 1rem;
     background-image: url('../img/icons/svg/wish.svg');
 }
-.goods .goodInfoBottom .deliveryPickup .wish.active::before,
-.goods .goodInfoBottom .deliveryPickup .wish:hover::before {
+.goodWrap .goodInfoBottom .deliveryPickup .wish.active::before,
+.goodWrap .goodInfoBottom .deliveryPickup .wish:hover::before {
     background-image: url('../img/icons/svg/wish-hover.svg');
 }
-.goods .goodInfoBottom .deliveryPickup .comparison::before {
+.goodWrap .goodInfoBottom .deliveryPickup .comparison::before {
     background-size: 1rem 1rem;
     background-image: url('../img/icons/svg/comparison.svg');
 }
-.goods .goodInfoBottom .deliveryPickup .comparison.active::before,
-.goods .goodInfoBottom .deliveryPickup .comparison:hover::before {
+.goodWrap .goodInfoBottom .deliveryPickup .comparison.active::before,
+.goodWrap .goodInfoBottom .deliveryPickup .comparison:hover::before {
     background-image: url('../img/icons/svg/comparison-hover.svg');
 }
-.goods .goodInfoHidden{
+.goodWrap .goodInfoHidden{
     width: calc(100% - 2.25rem);
     margin: 1.25rem auto 1.25rem auto;
     padding: 1.5625rem 0;
     border-bottom: 1px solid rgb(var(--grey2));
     border-top: 1px solid rgb(var(--grey2));
 }
-.goods .goodInfoHidden ul{
+.goodWrap .goodInfoHidden ul{
     padding: 0;
     margin: 0;
 }
-.goods .goodInfoHidden li{
+.goodWrap .goodInfoHidden li{
     display: -webkit-box;display: -ms-flexbox;display: flex;
     -webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;
     list-style-type: none;
     margin-bottom: 0.5rem;
 }
-.goods .goodInfoHidden li:last-child{
+.goodWrap .goodInfoHidden li:last-child{
     margin-bottom: 0;
 }
-.goods .goodInfoHidden li span:first-child{
+.goodWrap .goodInfoHidden li span:first-child{
     color: rgb(var(--grey1)); 
 }
-.goods .goodInfoHidden li span:last-child{
+.goodWrap .goodInfoHidden li span:last-child{
     color: rgb(var(--white)); 
 }
-.goods .goodRate{ 
+.goodWrap .goodRate{ 
     width: calc(100% - 2.25rem);
     margin: 1.25rem auto; 
     padding-bottom: 1.5625rem;
     border-bottom: 1px solid rgb(var(--grey2));
 }
-.goods .goodRate a{ 
+.goodWrap .goodRate a{ 
     
     text-align: center;
     color: rgb(var(--grey1));
     font-size: var(--fnt0p875rem);
     transition: all 0.1s;
 }
-.goods .goodRate a:hover{ 
+.goodWrap .goodRate a:hover{ 
     color: rgb(var(--white));
 }
 
-.goods .banerInGoods{
+.goodWrap .banerIngoodWrap{
     
     transition: all 0.1s;
     width: calc(100% - 1.25rem);
     margin: 1.25rem 0 0 1.25rem;
     opacity: 0.9;
 }
-.goods .banerInGoods:hover{
+.goodWrap .banerIngoodWrap:hover{
     opacity: 1;
 }
-.goods .banerInGoods img{
+.goodWrap .banerIngoodWrap img{
     width: 100%;
     display: block
 }
 @media only screen and (min-width: 0px){
-    .goods .banerInGoods{
+    .goodWrap .banerIngoodWrap{
         display: none;
     }
 }
 @media only screen and (min-width: 1590px){
-    .goods .banerInGoods{
+    .goodWrap .banerIngoodWrap{
         display: block;
     }
 }
@@ -1878,8 +1875,23 @@ flex: 0 0 auto;
 }
 
 
+.goodsCarousel .placeholderOfHidden{
+    margin-top: 1.25rem;
+    border-top: 1px solid rgb(var(--grey2));
+}
 
 
+@media only screen and (min-width: 0px){
+    .goodsCarousel{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 1580px){
+    .goodsCarousel{
+        display: block;
+    }
+}
 
 
 

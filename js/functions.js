@@ -319,10 +319,26 @@ $(".btnNav").on("click", function (event) {
 //	});
 
     
-    
-    
-    
-    
+function goodsCarouselInit(){
+  var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 5,
+      spaceBetween: 20,
+       centeredSlides: true,
+      // init: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+ };    
+if($(window).width() >= 1580) {
+    goodsCarouselInit();
+}    
+$(window).resize(function(){  
+   if($(window).width() >= 1580) {
+    goodsCarouselInit();
+   }
+}); 
     
     
     

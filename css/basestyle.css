@@ -12,6 +12,10 @@ body{
 body *{
     color: rgb(var(--grey1));
 }
+body a{ 
+    text-decoration: none !important;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+}
 
 /*main style start*/
 
@@ -82,6 +86,79 @@ body *{
 }
 .grey4Fnt{
     color: rgb(var(--grey4));
+}
+
+/*    4px*/
+.lH0p25rem{
+    line-height: var(--fnt0p25rem)
+}
+/*    5px*/
+.lH0p3125rem{
+    line-height: var(--fnt0p3125rem)
+}
+/*    6px*/
+.lH0p375rem {
+    line-height: var(--fnt0p375rem)
+}
+/*    8px*/
+.lH0p5rem {
+    line-height: var(--fnt0p5rem)
+}
+/*    10px*/
+.lH0p625rem {
+    line-height: var(--fnt0p625rem)
+}
+/*    12px*/
+.lH0p75rem {
+    line-height: var(--fnt0p75rem)
+}
+/*    13px*/
+.lH0p8125rem {
+    line-height: var(--fnt0p8125rem)
+}
+/*    14px*/
+.lH0p875rem {
+    line-height: var(--fnt0p875rem)
+}
+/*    16px*/
+.lH1rem {
+    line-height: var(--fnt1rem)
+}
+/*    18px*/
+.lH1p125rem {
+    line-height: var(--fnt1p125rem)
+}
+/*    20px*/
+.lH1p25rem {
+    line-height: var(--fnt1p25rem)
+}
+/*    22px*/
+.lH1p1375rem {
+    line-height: var(--fnt1p1375rem)
+}
+/*    24px*/
+.lH1p5rem {
+    line-height: var(--fnt1p5rem)
+}
+/*    26px*/
+.lH1p625rem {
+    line-height: var(--fnt1p625rem)
+}
+/*    30px*/
+.lH1p875rem {
+    line-height: var(--fnt1p875rem)
+}
+/*    36px*/
+.lH2p25rem {
+    line-height: var(--fnt2p25rem)
+}
+/*    40px*/
+.lH2p5rem {
+    line-height: var(--fnt2p5rem)
+}
+/*    48px*/
+.lH3rem {
+    line-height: var(--fnt3rem)
 }
 
 /*    4px*/
@@ -259,7 +336,6 @@ body .buttonFGr.cont:hover{
 
 body .hoverLinkW{ 
     color: rgb(var(--white));
-    text-decoration: none;
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
 body .hoverLinkW:hover, body .hoverLinkW.active{ 
@@ -271,7 +347,6 @@ body .hoverLinkW.cont:hover, body .hoverLinkW.cont.active{
 
 body .hoverLinkG{ 
     color: rgb(var(--mainZ51Col));
-    text-decoration: none;
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
 body .hoverLinkG.cont{ 
@@ -479,7 +554,7 @@ header{
     border-radius: 0;
 }
 .callUs #callUsDropdown a{
-    text-decoration: none;
+    
 }
 .callUs #callUsDropdown>a{
     font-size: var(--fnt0p75rem);
@@ -551,7 +626,7 @@ header{
 .navigation a{
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
-    text-decoration: none;
+    
     color: rgb(var(--mainZ51Col));
 }
 .navigation a:hover, .navigation .active a{
@@ -621,7 +696,7 @@ header{
 }
 .topSearch .offerSearchRes .offerProduct a{
     transition: all 0.1s;
-    text-decoration: none;
+    
     color: rgb(var(--white));
 }
 .topSearch .offerSearchRes .offerProduct a:hover{
@@ -664,7 +739,7 @@ header{
     line-height: 0.625rem;
 } 
 .home .homeIcons a{
-    text-decoration: none;
+    
     color: rgb(var(--grey1));
 } 
 .home .homeIcons span{
@@ -677,7 +752,7 @@ header{
    color: rgb(var(--grey1));
 } 
 .home .homeIcons a:hover{
-    text-decoration: none;
+    
     color: rgba(var(--mainZ51Col), 0.9);
 } 
 .home .homeIcons.active .icon-name{
@@ -757,7 +832,7 @@ header{
     display: block;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
-    text-decoration: none;
+    
     color: rgb(var(--grey1));
 }
 .contentWrapper .breadcrumbs li a:hover{
@@ -799,7 +874,7 @@ header{
 /*header .breadcrumbs style end*/
 
 /*header .catName style start*/
-.contentWrapper .catName h1{
+.contentWrapper .catName{
     font-size: var(--fnt3rem);
     color: rgb(var(--mainContCol));
     letter-spacing: 1.4px;
@@ -813,12 +888,12 @@ header{
     margin-left: 0.5rem;
 }
 @media only screen and (min-width: 0px){
-    .contentWrapper .catName h1{
+    .contentWrapper .catName{
         font-size: var(--fnt1p875rem);
     }
 }
 @media only screen and (min-width: 992px){
-    .contentWrapper .catName h1{
+    .contentWrapper .catName{
         font-size: var(--fnt3rem);
     } 
 }
@@ -1111,7 +1186,7 @@ aside .asideTxt{
     height: 31.125rem;
 }
 .goods a{
-    text-decoration: none;
+    
 }
 .goods .goodbl {
     position: absolute;
@@ -1164,7 +1239,7 @@ aside .asideTxt{
 }
 .goods .goodbl .events > a:hover{
     color: rgb(var(--white));
-    background-color: rgba(var(--mainZ51Col), 0.9);
+    background-color: rgba(var(--mainContCol), 0.9);
 }
 .goods .goodbl .events .redEvent{
     color: rgb(var(--red));
@@ -1198,7 +1273,7 @@ aside .asideTxt{
 
 
 .goods .goodbl .goodName{
-    text-decoration: none;
+    
     display: block;
     width: 100%;
     margin-top: 3.125rem;
@@ -1276,7 +1351,7 @@ aside .asideTxt{
     cursor: pointer;
     color: rgb(var(--black));
     text-transform: uppercase;
-    text-decoration: none;
+    
     width: 8.75rem;
     height: 1.875rem;
     line-height: 0.8125rem;
@@ -1391,7 +1466,7 @@ aside .asideTxt{
     border-bottom: 1px solid rgb(var(--grey2));
 }
 .goods .goodRate a{ 
-    text-decoration: none;
+    
     text-align: center;
     color: rgb(var(--grey1));
     font-size: var(--fnt0p875rem);
@@ -1402,7 +1477,7 @@ aside .asideTxt{
 }
 
 .goods .banerInGoods{
-    text-decoration: none;
+    
     transition: all 0.1s;
     width: calc(100% - 1.25rem);
     margin: 1.25rem 0 0 1.25rem;
@@ -1449,7 +1524,7 @@ aside .asideTxt{
     height: 100%;
     width: 2.375rem;
     padding: 0.65rem 0rem; 
-    text-decoration: none;
+    
     color: rgb(var(--white));
     border-right: 1px solid rgb(var(--grey1));
     transition: all 0.1s;
@@ -1514,7 +1589,7 @@ flex: 0 0 auto;
     color: rgb(var(--mainZ51Col));
 }
 .footerFirstLine nav a{
-    text-decoration: none;
+    
     font-size: var(--fnt0p875rem);
     color: rgb(var(--white));
     -webkit-transition: all 0.1s;transition: all 0.1s;
@@ -1721,7 +1796,7 @@ flex: 0 0 auto;
     text-transform: uppercase;
 }
 
-.productTop .prodPrice {
+.productTop .prodPrice, .productTop .actionDesc {
     border: 2px solid rgb(var(--mainContCol));
 }
 @media only screen and (min-width: 0px){

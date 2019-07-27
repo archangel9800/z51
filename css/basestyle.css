@@ -292,7 +292,7 @@ h6{
 body .btnBrdr{
     line-height: 0.9;
     color: rgb(var(--mainZ51Col));
-    border: 2px solid rgb(var(--mainZ51Col));
+    border: 0.125rem solid rgb(var(--mainZ51Col));
     text-transform: uppercase;
     font-size: rgb(var(--mainZ51Col));
     line-height: 0.75rem;
@@ -301,7 +301,7 @@ body .btnBrdr{
 }
 body .btnBrdr.cont{
     color: rgb(var(--mainContCol));
-    border: 2px solid rgb(var(--mainContCol));
+    border: 0.125rem solid rgb(var(--mainContCol));
 }
 body .btnBrdr:hover{
     color: rgb(var(--white));
@@ -366,7 +366,7 @@ body .hoverLinkG:hover, body .hoverLinkG.active{
 }
 
 .sepLine{
-    height: 1px;
+    height: 0.0625rem;
     background-color: rgb(var(--grey3));
 }
 
@@ -635,8 +635,8 @@ header{
 .navigation .langBl a::after{
     display: block;
     content: '';
-    border-bottom: 1px dotted var(--transp);
-    height: 2px;
+    border-bottom: 0.0625rem dotted var(--transp);
+    height: 0.125rem;
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
 .navigation .langBl a:hover::after, .navigation .langBl .active a::after{
@@ -681,12 +681,12 @@ header{
     position: fixed;
 }
 .topSearch .offerSearchRes .offerProduct {
-    border-left: 2px solid rgb(var(--grey2)); 
-    border-right: 2px solid rgb(var(--grey2)); 
+    border-left: 0.125rem solid rgb(var(--grey2)); 
+    border-right: 0.125rem solid rgb(var(--grey2)); 
     transition: all 0.1s;
 }
 .topSearch .offerSearchRes .offerProduct:last-child {
-    border-bottom: 2px solid rgb(var(--grey2));  
+    border-bottom: 0.125rem solid rgb(var(--grey2));  
 }
 .topSearch .offerSearchRes .offerProduct:hover {
     background-color: rgb(var(--grey2));
@@ -763,7 +763,7 @@ header{
 }
 .home .homeIcons [class*='counter']{
     text-align: center;
-    border: 1px solid rgb(var(--grey1));
+    border: 0.0625rem solid rgb(var(--grey1));
     margin-left: 3px;
     width: auto;
     min-width: 1.125rem;
@@ -881,7 +881,7 @@ header{
 }
 .contentWrapper .line{
     background-color: rgb(var(--white));
-    height: 2px;
+    height: 0.125rem;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1009,16 +1009,16 @@ aside .asideTxt{
     height: 1.25rem;
     background-color: var(--transp);
     border-radius: 0 !important;
-    outline: 1px solid rgb(var(--grey3));
+    outline: 0.0625rem solid rgb(var(--grey3));
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
 }
 .customZ51Checkbox label:hover::before{
-    outline: 1px solid rgb(var(--grey2));
+    outline: 0.0625rem solid rgb(var(--grey2));
 }
 .customZ51Checkbox input:checked ~  label::after {
     top: 3px;
-    left: 2px;
+    left: 0.125rem;
     background-image: none;
     width: 0.625rem;
     height: 0.625rem;
@@ -1054,7 +1054,7 @@ aside .asideTxt{
 .priceVal .priceInp input{
     color: rgb(var(--grey1));
     background-color: var(--transp);
-    border: 1px solid rgb(var(--grey3));
+    border: 0.0625rem solid rgb(var(--grey3));
     width: 6.875rem;
     text-align: center;
     padding: 0.6rem 0 0.6rem 0;
@@ -1092,7 +1092,7 @@ aside .asideTxt{
 
 /*.filterRes style start*/
 .filterRes .result{
-    outline: 1px solid rgb(var(--grey1));
+    outline: 0.0625rem solid rgb(var(--grey1));
     outline-offset: -1px;
     line-height: 0.5rem;
     margin-right: 0.625rem;
@@ -1126,7 +1126,7 @@ aside .asideTxt{
 }
 .filterRes>div:last-child span:last-child{
     color: rgb(var(--white));
-    border-bottom: 1px dotted rgb(var(--white));
+    border-bottom: 0.0625rem dotted rgb(var(--white));
     cursor: pointer;
 }
 .filterRes>div:last-child span:last-child:hover{
@@ -1157,7 +1157,7 @@ aside .asideTxt{
     color: rgb(var(--white));
 }
 .sortBlock .customDrop p{
-    border: 1px solid rgb(var(--grey1));
+    border: 0.0625rem solid rgb(var(--grey1));
 	border-bottom: var(--transp);
 }
 .sortBlock .customDrop p:hover{
@@ -1167,8 +1167,8 @@ aside .asideTxt{
     margin-left: 1rem;
 }
 .sortBlock .customDrop ul {
-    min-height: 1px;
-	border: 1px solid rgb(var(--grey1));
+    min-height: 0.0625rem;
+	border: 0.0625rem solid rgb(var(--grey1));
     border-top: var(--transp);
     background-color: rgb(var(--black));
     z-index: 3;
@@ -1190,23 +1190,26 @@ aside .asideTxt{
     top: 0;
     left: 0;
     width: 100%;
-    border: 1px solid rgb(var(--grey2));
-    max-height: 31.125rem;
-    overflow: hidden;
-    background-color: rgb(var(--black));
     z-index: 1;
+    border: 0.0625rem solid rgb(var(--grey2));
+    background-color: rgb(var(--black));
     box-shadow: 0px 0px 15px 8px var(--transp);
+    
 }
 .goodWrap .goodbl:hover {
     box-shadow: 0px 0px 15px 8px rgb(var(--mainContCol));
     z-index: 2;
-    max-height: calc(100vh * 2);
 }
-.goodWrap .goodbl .goodInfoTop{
+.goodWrap .goodbl .goodInfoTopL, .goodWrap .goodbl .goodInfoTopR{
     position: absolute;
     top: 1.125rem;
     left: 1.125rem;
-    width: calc(100% - 2.25rem);
+    width: auto;
+    max-width: 5rem;
+}
+.goodWrap .goodbl .goodInfoTopR{
+    right: 1.125rem;
+    left: auto;
 }
 .goodWrap .goodbl .orderCode{
     padding: 0.125rem 0 0 0;
@@ -1217,17 +1220,18 @@ aside .asideTxt{
 .goodWrap .goodbl .orderCode > span{
     font-size: var(--fnt0p75rem);
     color: rgb(var(--grey1));
+    white-space: nowrap;
 }
-.goodWrap .goodbl .orderCode > span:last-child{
+.goodWrap .goodbl .orderCode > span > span{
     color: rgb(var(--white));
 }
 .goodWrap .goodbl .events > *{
     display: block;
-    width: 76px;
+    width: 4.75rem;
     text-align: center;
     padding: 0.3125rem 0;
     color: rgb(var(--mainContCol));
-    border: 2px solid rgb(var(--mainContCol));
+    border: 0.125rem solid rgb(var(--mainContCol));
     text-transform: uppercase;
     font-size: var(--fnt0p875rem);
     line-height: 0.75rem;
@@ -1253,30 +1257,44 @@ aside .asideTxt{
 @media only screen and (min-width: 0px){
     .goodWrap{
         padding-right: 0.625rem;
-    }
-    .goodWrap .goodWrap{
         margin: 0.625rem 0 0 0.625rem;
     }
 }
 @media only screen and (min-width: 992px){
     .goodWrap{
         padding-right: 0rem;
-    }
-    .goodWrap .goodWrap{
         margin: 1.25rem 0 0 1.25rem;
     }
 }
 
+.banerInGoods{
+    width: 100%;
+    margin-top: 1.25rem;
+}
+.banerInGoods img{
+    width: 100%;
+    display: block;
+}
+@media only screen and (min-width: 0px){
+    .banerInGoods{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 1580px){
+    .banerInGoods{
+        display: block;
+    }
+}
 
 
 .goodWrap .goodbl .goodName{
-    
     display: block;
     width: 100%;
-    margin-top: 3.125rem;
+    margin-top: 2.5625rem;
     color: rgb(var(--white));
     margin-bottom: 0.875rem;
-    height: 312px;
+    height: 19.6875rem;
 }
 .goodWrap .goodbl .goodName p{
     height: 3.125rem;
@@ -1291,11 +1309,12 @@ aside .asideTxt{
     display: block;
     -webkit-transition: all 0.1s;transition: all 0.1s;
     position: relative;
+    color: rgb(var(--white));
 }
 .goodWrap .goodbl .goodName p span:before {
     content: "";
     width: 0;
-    height: 2px;
+    height: 0.125rem;
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -1317,8 +1336,7 @@ aside .asideTxt{
 
 .goodWrap .goodbl .goodInfoBottom {
     width: calc(100% - 2.25rem);
-    margin: 0 auto;
-    height: 100px;
+    margin: 0 auto 1.125rem auto;
  
 }
 .goodWrap .goodInfoBottom .priceBl .oldPrice, .goodWrap .goodInfoBottom .priceBl .newPrice *{
@@ -1358,7 +1376,7 @@ aside .asideTxt{
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
 .goodWrap .goodInfoBottom .priceBl .buyStat > *:hover{
-    background-color: rgba(var(--mainZ51Col), 0.9);  
+    background-color: rgba(var(--mainContCol), 0.9);  
     color: rgb(var(--white));
 }
 .goodWrap .goodInfoBottom .priceBl .buyStat .inCart{
@@ -1406,7 +1424,7 @@ aside .asideTxt{
     content: '';
     width: 1.75rem;
     height: 1.75rem;
-    border: 1px solid rgb(var(--grey2));
+    border: 0.0625rem solid rgb(var(--grey2));
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -1430,12 +1448,22 @@ aside .asideTxt{
 .goodWrap .goodInfoBottom .deliveryPickup .comparison:hover::before {
     background-image: url('../img/icons/svg/comparison-hover.svg');
 }
+
+
+.InfoHidden{
+    position: -webkit-sticky;position: sticky;
+    top: calc(100% + 0.0625rem);
+    left: 0;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+}
 .goodWrap .goodInfoHidden{
     width: calc(100% - 2.25rem);
-    margin: 1.25rem auto 1.25rem auto;
+    margin: 0 auto 1.25rem auto;
     padding: 1.5625rem 0;
-    border-bottom: 1px solid rgb(var(--grey2));
-    border-top: 1px solid rgb(var(--grey2));
+    border-bottom: 0.0625rem solid rgb(var(--grey2));
+    border-top: 0.0625rem solid rgb(var(--grey2));
 }
 .goodWrap .goodInfoHidden ul{
     padding: 0;
@@ -1460,7 +1488,7 @@ aside .asideTxt{
     width: calc(100% - 2.25rem);
     margin: 1.25rem auto; 
     padding-bottom: 1.5625rem;
-    border-bottom: 1px solid rgb(var(--grey2));
+    border-bottom: 0.0625rem solid rgb(var(--grey2));
 }
 .goodWrap .goodRate a{ 
     
@@ -1472,6 +1500,13 @@ aside .asideTxt{
 .goodWrap .goodRate a:hover{ 
     color: rgb(var(--white));
 }
+.goodWrap .goodbl:hover .InfoHidden{
+    height: auto;
+}
+
+
+
+
 
 .goodWrap .banerIngoodWrap{
     
@@ -1510,7 +1545,7 @@ aside .asideTxt{
     margin-bottom: 5.625rem;
 }
 .pagNav .pagBlock ul{
-    border: 1px solid rgb(var(--grey1));
+    border: 0.0625rem solid rgb(var(--grey1));
     border-right: none;
 }
 .pagNav .pagBlock li{
@@ -1523,7 +1558,7 @@ aside .asideTxt{
     padding: 0.65rem 0rem; 
     
     color: rgb(var(--white));
-    border-right: 1px solid rgb(var(--grey1));
+    border-right: 0.0625rem solid rgb(var(--grey1));
     transition: all 0.1s;
     display: flex;
     -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
@@ -1753,7 +1788,7 @@ flex: 0 0 auto;
 .productTop #prodCarousel .carousel-indicators li{
     width: 20%;
     height: auto;
-    border: 1px solid rgb(var(--grey2));
+    border: 0.0625rem solid rgb(var(--grey2));
     opacity: 0.6;
     margin-right: 4%;
     margin-left: 0;
@@ -1794,7 +1829,7 @@ flex: 0 0 auto;
 }
 
 .productTop .prodPrice, .productTop .actionDesc {
-    border: 2px solid rgb(var(--mainContCol));
+    border: 0.125rem solid rgb(var(--mainContCol));
 }
 @media only screen and (min-width: 0px){
     .productTop .prodPrice .buy .buttonFGr{
@@ -1832,8 +1867,8 @@ flex: 0 0 auto;
 .productTop .prodInfo .prodInfoIcons span::after{
     display: block;
     content: '';
-    border-bottom: 1px dotted var(--transp);
-    height: 2px;
+    border-bottom: 0.0625rem dotted var(--transp);
+    height: 0.125rem;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
 }
@@ -1877,7 +1912,7 @@ flex: 0 0 auto;
 
 .goodsCarousel .placeholderOfHidden{
     margin-top: 1.25rem;
-    border-top: 1px solid rgb(var(--grey2));
+    border-top: 0.0625rem solid rgb(var(--grey2));
 }
 
 

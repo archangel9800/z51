@@ -323,7 +323,7 @@ function goodsCarouselInit(){
   var swiper = new Swiper('.swiper-container', {
       slidesPerView: 5,
       spaceBetween: 20,
-       centeredSlides: true,
+//       centeredSlides: true,
       // init: false,
       navigation: {
         nextEl: '.swiper-button-next',

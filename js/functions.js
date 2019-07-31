@@ -328,20 +328,39 @@ function goodsCarouselInit(){
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1360: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        1040: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        }
       }
     });
  };    
-if($(window).width() >= 1580) {
+    
+    
+if($(window).width() >= 600) {
     goodsCarouselInit();
 }    
 $(window).resize(function(){  
-   if($(window).width() >= 1580) {
+   if($(window).width() >= 600) {
     goodsCarouselInit();
    }
 }); 
     
-    
-    
+
     
 });
  

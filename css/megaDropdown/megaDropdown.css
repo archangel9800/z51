@@ -40,7 +40,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    letter-spacing: 1.9px;    
+    letter-spacing: 1.85px;    
     cursor: pointer;
     color: rgb(var(--black));
     background-color: rgb(var(--mainZ51Col));
@@ -61,6 +61,9 @@
   margin-left: 0.9rem;
 }
 @media only screen and (min-width: 0px){
+    .cd-dropdown-wrapper .cd-dropdown-trigger {
+       width: auto;
+    }
     .cd-dropdown-wrapper .cd-dropdown-trigger::after {
        width: 0px;
       height: 0px;
@@ -71,6 +74,9 @@
     }
 }
 @media only screen and (min-width: 992px){
+    .cd-dropdown-wrapper .cd-dropdown-trigger {
+       width: 300px;
+    }
     .cd-dropdown-wrapper .cd-dropdown-trigger::after {
        width: 20px;
       height: 13px;

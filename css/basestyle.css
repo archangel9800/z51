@@ -16,6 +16,10 @@ body a{
     text-decoration: none !important;
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
+body input{ 
+    border: none;
+    outline: none;
+}
 
 /*main style start*/
 
@@ -256,6 +260,11 @@ body>div:first-child, .cbalink{
     overflow: hidden;
 }
 
+.marginLRAuto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media only screen and (min-width: 0px){
 
 }
@@ -335,6 +344,7 @@ body .buttonFGr.cont:hover{
 }
 
 body .hoverLinkW{ 
+    cursor: pointer;
     color: rgb(var(--white));
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
@@ -346,6 +356,7 @@ body .hoverLinkW.cont:hover, body .hoverLinkW.cont.active{
 }
 
 body .hoverLinkG{ 
+    cursor: pointer;
     color: rgb(var(--mainZ51Col));
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
@@ -357,6 +368,31 @@ body .hoverLinkG:hover, body .hoverLinkG.active{
 }
 
 
+
+[class*='hoverDottedBorder'] {
+    cursor: pointer;
+}
+[class*='hoverDottedBorder']::after {
+    cursor: pointer;
+    display: block;
+    content: '';
+    border-bottom: 0.0625rem dotted var(--transp);
+    height: 0.125rem;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.hoverDottedBorderGrey {
+    color: rgb(var(--grey1));
+}
+.hoverDottedBorderGrey:hover::after {
+    border-color: rgb(var(--grey1));
+}
+.hoverDottedBorderWhite {
+    color: rgb(var(--grey1));
+}
+.hoverDottedBorderWhite:hover::after {
+    border-color: rgb(var(--white));
+}
 
 
 .slogan {
@@ -416,7 +452,11 @@ body .hoverLinkG:hover, body .hoverLinkG.active{
 }
 /*.customDrop style end*/
 
-/*hiddenDrop*/
+/*.fancybox style start*/
+.fancybox-container .fancybox-slide {
+    padding: 10px;
+}
+/*.fancybox style end*/
 
 header{
     position: relative;
@@ -768,7 +808,7 @@ header{
     width: auto;
     min-width: 1.125rem;
 }
-.home .homeIcons a::before, .productTop .prodInfo .prodInfoIcons:before{
+.home .homeIcons a::before, .productTop .prodInfo .prodInfoIcons:before, .goodsCarousel .prodInfoIcons:before{
     content: "";
     display: block;
     background-position: center;
@@ -793,7 +833,7 @@ header{
 .home .homeIcons.wish a:hover::before, .home .homeIcons.active.wish a::before, .productTop .prodInfo .toWish.active:before {
     background-image: url('../img/icons/svg/wish-hover.svg');
 } 
-.home .homeIcons.comparison a::before, .productTop .prodInfo .toComparison:before {
+.home .homeIcons.comparison a::before, .productTop .prodInfo .toComparison:before, .goodsCarousel .prodInfoIcons:before {
     background-image: url('../img/icons/svg/comparison.svg');
     height: 17px;
     width: 19px;
@@ -1287,7 +1327,6 @@ aside .asideTxt{
     }
 }
 
-
 .goodWrap .goodbl .goodName{
     display: block;
     width: 100%;
@@ -1449,7 +1488,6 @@ aside .asideTxt{
     background-image: url('../img/icons/svg/comparison-hover.svg');
 }
 
-
 .InfoHidden{
     position: -webkit-sticky;position: sticky;
     top: calc(100% + 0.0625rem);
@@ -1503,10 +1541,6 @@ aside .asideTxt{
 .goodWrap .goodbl:hover .InfoHidden{
     height: auto;
 }
-
-
-
-
 
 .goodWrap .banerIngoodWrap{
     
@@ -1780,7 +1814,7 @@ flex: 0 0 auto;
 
 
 
-
+/*.productTop style start*/
 .productTop #prodCarousel .carousel-indicators{
     width: 90%;
     margin: 0 auto;
@@ -1816,7 +1850,6 @@ flex: 0 0 auto;
     transform: rotate(180deg);
 }
 
-
 .productTop .descriptionOther li{
     list-style-type: none;
     margin-right: 0.625rem;
@@ -1844,11 +1877,9 @@ flex: 0 0 auto;
         padding: 0.875rem 2rem;
      }
     .productTop .prodPrice .credit .btnBrdr{
-        padding: 1rem 1.1rem;
+        padding: 0.9375rem 1.1rem;
      }
 }
-
-
 
 .productTop .prodInfo .rateit {
     height: 2.8125rem;
@@ -1858,22 +1889,9 @@ flex: 0 0 auto;
     line-height: 2.8125rem;
 }
 
-.productTop .prodInfo .prodInfoIcons{
-    cursor: pointer;
-}
-.productTop .prodInfo .prodInfoIcons::before{
+
+.productTop .prodInfo .prodInfoIcons::before, .goodsCarousel .prodInfoIcons::before{
     margin-right: 0.5rem;
-}
-.productTop .prodInfo .prodInfoIcons span::after{
-    display: block;
-    content: '';
-    border-bottom: 0.0625rem dotted var(--transp);
-    height: 0.125rem;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-}
-.productTop .prodInfo .prodInfoIcons:hover span::after{
-    border-color: rgb(var(--grey1));
 }
 
 .productTop .prodInfo .shareIcons{
@@ -1908,10 +1926,14 @@ flex: 0 0 auto;
 	background-image: url('../img/icons/svg/twitter-logo.svg');
     
 }
+/*.productTop style end*/
 
-
+/*.goodsCarousel style start*/
 .goodsCarousel .goodWrap{
-    margin: 1.25rem 0;
+    margin: 1.25rem auto;
+    width: 100%;
+    min-width: 15.625rem;
+    max-width: 18.75rem;
 }
 .goodsCarousel .goodWrap .goodbl{
     box-shadow: none;
@@ -1931,21 +1953,108 @@ flex: 0 0 auto;
 }
 @media only screen and (min-width: 0px){
     .goodsCarousel {
-        display: none !important;
+        display: none;
     }
 
 }
-@media only screen and (min-width: 1580px){
+@media only screen and (min-width: 600px){
     .goodsCarousel {
-        display: block !important;
+        display: block;
     }
 }
+/*.goodsCarousel style end*/
+
+/*.videoWrap style start*/
+.videoWrap{
+    padding: 1.25rem 0 1.25rem 1.25rem;
+}
+.videoWrap .videoPadding{
+    padding-right: 1.25rem;
+    width: 100%;
+}
+.videoWrap .videoLink{
+    position: relative;
+    width: 100%;
+    display: block;
+    border: 3px solid rgb(var(--grey1));
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+}
+.videoWrap .videoLink .btnLink{
+    background-color: rgb(var(--black), 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+}
+.videoWrap .videoLink .btnLink::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin: -12px 0 0 -7px;
+    border-left: 24px solid rgb(var(--mainContCol));
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+}
+.videoWrap .videoLink .btnLink::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border: 0.1875rem solid rgb(var(--mainContCol));
+    border-radius: 5rem;
+    margin: -2.5rem 0 0 -2.375rem;
+}
+.videoWrap .videoLink:hover {
+    border: 3px solid rgb(var(--mainContCol))
+}
+.videoWrap .videoLink:hover .btnLink{
+    background-color: rgb(var(--black), 0.3);
+}
+
+.videoWrap .subscribe .youTube{
+    background-color: rgb(var(--red));
+    font-size: var(--fnt0p875rem);
+    border-radius: 0.1875rem;
+    overflow: hidden;
+}
+.videoWrap .subscribe .youTube::before{
+    content: "";
+    display: block;
+    background-position: center;
+    height: 1.4rem;
+    width: 1.6rem;
+    background-size: 1.6rem 1.4rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../img/icons/svg/youtube.svg');
+    margin: 0 0.375rem; 
+}
+.videoWrap .subscribe .youTube span:first-child {
+    padding-right: 0.5rem;
+    color: rgb(var(--white));
+}
+.videoWrap .subscribe .youTube span:last-child {
+    background-color: rgb(var(--white));
+    height: 100%;
+    padding: 0 0.5rem;
+}
+/*.videoWrap style end*/
 
 
-
-
-
-
-
-
+/*.subscribeInput style start*/
+.subscribeInput input[type=submit]{
+    padding: 0.8125rem 1.125rem 0.8125rem 1.125rem;
+}
+.subscribeInput input[type=email]{
+    max-width: 25rem;
+    padding: 0.625rem;
+}
+/*.subscribeInput style end*/
 

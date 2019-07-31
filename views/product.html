@@ -11,7 +11,7 @@
                 <div class="line ml-2 flex-grow-1 d-none d-sm-block"></div>
             </div>
 
-            <div class="productTop w-100 d-flex flex-wrap justify-content-around align-items-stretch pb-4">
+            <div class="productTop w-100 d-flex flex-wrap justify-content-around align-items-stretch pb-2">
                
                 <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-4 order-1 order-md-1 p-0">
                     <div id="prodCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -76,10 +76,10 @@
                                     <span class="fnt0p875rem d-block"><s class="fnt1p5rem">24 999</s>грн.</span>
                                 </div>
                                 <div class="buy mr-2 mb-2 mr-xxl-4">
-                                    <span class="fnt1p25rem d-block text-uppercase buttonFGr cont">Купить</span>
+                                    <span class="fnt1p25rem d-block text-uppercase buttonFGr cont lH1rem">Купить</span>
                                 </div>
                                 <div class="credit mr-2 mb-2">
-                                    <span class="fnt1p25rem d-block text-uppercase btnBrdr cont">Кредитная линия</span>
+                                    <span class="fnt1p25rem d-block text-uppercase btnBrdr cont lH1rem">Кредитная линия</span>
                                 </div>
                             </div>
                         </div>
@@ -98,13 +98,13 @@
                            </div>
                            <div class="col-12 col-wsm-6 p-0 mt-4 mt-wsm-0">
                                <span class="fnt0p875rem d-block">Рейтинг пользователей</span>
-                               <div class="goodRate align-items-center d-flex flex-wrap">
+                               <div class="goodRate d-flex flex-column">
                                     <div class="rateit mr-2" data-rateit-value="2.5" data-rateit-mode="font" style="font-size:50px" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div> 
-                                    <span class="whiteFnt">37 отзывов</span>
+                                    <span class="whiteFnt mt-1">37 отзывов</span>
                                </div> 
                                <div class="mt-4">
-                                   <div class="prodInfoIcons toComparison d-flex flex-wrap mt-2 py-1"><span class="fnt0p875rem">Добавить к сравнению</span></div>
-                                   <div class="prodInfoIcons toWish active d-flex flex-wrap mt-2 py-1"><span class="fnt0p875rem">В списке желаний</span></div>
+                                   <div class="prodInfoIcons toComparison d-flex flex-wrap mt-2 py-1"><span class="fnt0p875rem hoverDottedBorderGrey">Добавить к сравнению</span></div>
+                                   <div class="prodInfoIcons toWish active d-flex flex-wrap mt-2 py-1"><span class="fnt0p875rem hoverDottedBorderGrey">В списке желаний</span></div>
                                </div>
                                <div class="mt-4 pt-4 d-flex">
                                    <div class="d-flex shareIcons like mr-3 align-items-center py-1 px-2"><span class="fnt0p625rem whiteFnt">Нравится</span><span class="fnt0p625rem whiteFnt">&nbsp;0</span></div>
@@ -154,18 +154,22 @@
                 
             </div> 
          
-            <div class="goodsCarousel w-100">
+            <div class="goodsCarousel my-4 w-100">
                  
-                   <div class="swiper-container">
+                 <div class="d-flex flex-wrap align-items-center justify-content-between mb-2">
+                     <p class="mainContColFnt text-uppercase mb-0 mt-2 mr-4 fnt1p5rem">Похожие товары</p>
+                     <div class="prodInfoIcons toComparison d-flex flex-wrap mt-2"><span class="hoverDottedBorderGrey">Сравнить все</span></div>
+                 </div>
+                 
+                   <div class="swiper-container w-100">
                     <div class="swiper-wrapper">
                      
                       <div class="swiper-slide">                       
-                          <div class="goodWrap">
+                        <div class="goodWrap">
                            <div class="goodbl">
-                               <div class="goodInfoTop d-flex flex-row justify-content-between">
+                               <div class="goodInfoTopL">
                                    <div class="orderCode">
-                                       <span>Код для заказа: </span>
-                                       <span>55555</span>
+                                       <span>Код для заказа: <span>55555</span></span>
                                        <div class="events">
                                            <span>Подарок</span>
                                            <span class="redEvent">Лучшая цена</span>
@@ -173,6 +177,8 @@
                                            <span class="darkvioletEvent">Выбор геймера</span>
                                        </div>
                                    </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
                                    <div class="events">
                                        <a class="action" href="#">Акция</a>
                                    </div>
@@ -207,8 +213,331 @@
                                            </div>
                                        </div>
                                    </div>
-                               </div>  
-                                <div class="placeholderOfHidden"></div>         
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
                            </div>
                        </div>
                     </div>
@@ -223,8 +552,1434 @@
                 
             </div>
          
-          
+            <div class="description w-100">
+                
+                <style type="text/css">   
+    .desk_wrap{
+        width: 100%;
+        overflow: hidden;
+    }  
+    .desk_wrap *{
+          box-sizing: border-box;
+          color: inherit;
+     }
+    .desk_wrap .gri-cont{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .desk_wrap [class*='gr-'] {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;-ms-flex-align: center;align-items: center;
+    }
+    .desk_wrap [class*='bgImg'] {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }   
+        @media only screen and (min-width: 0px) {
+        .desk_wrap .colum2list {
+            -webkit-column-count: 1; column-count: 1;
+        }
+        .desk_wrap .flexDirColumReverse{
+            -webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;
+        } 
+        .desk_wrap .reverse{
+            -ms-flex-wrap: wrap-reverse;flex-wrap: wrap-reverse;
+        } 
+        .desk_wrap [class*='Right768'] {
+            background-position: right;
+        } 
+        .desk_wrap [class*='Left768'] {
+            background-position: left;
+        } 
+        .desk_wrap [class*='w0-f0']  { width: 0%; }
+        .desk_wrap [class*='w1-f0']  { width: 8.33333333%; }
+        .desk_wrap [class*='w2-f0']  { width: 16.66666667%; }
+        .desk_wrap [class*='w3-f0']  { width: 25%; }
+        .desk_wrap [class*='w4-f0']  { width: 33.33333333%; }
+        .desk_wrap [class*='w5-f0']  { width: 41.66666667%; }
+        .desk_wrap [class*='w6-f0']  { width: 50%; }
+        .desk_wrap [class*='w7-f0']  { width: 58.33333333%; }
+        .desk_wrap [class*='w8-f0']  { width: 66.66666667%; }
+        .desk_wrap [class*='w9-f0']  { width: 75%; }
+        .desk_wrap [class*='w10-f0'] { width: 83.33333333%; }
+        .desk_wrap [class*='w11-f0'] { width: 91.66666667%; }
+        .desk_wrap [class*='w12-f0'] { width: 100%; }
+
+        .desk_wrap [class*='f0-lt-w0']  { margin-left: 0%; }
+        .desk_wrap [class*='f0-lt-w1']  { margin-left: 8.33333333%; }
+        .desk_wrap [class*='f0-lt-w2']  { margin-left: 16.66666667%; }
+        .desk_wrap [class*='f0-lt-w3']  { margin-left: 25%; }
+        .desk_wrap [class*='f0-lt-w4']  { margin-left: 33.33333333%; }
+        .desk_wrap [class*='f0-lt-w5']  { margin-left: 41.66666667%; }
+        .desk_wrap [class*='f0-lt-w6']  { margin-left: 50%; }
+        .desk_wrap [class*='f0-lt-w7']  { margin-left: 58.33333333%; }
+        .desk_wrap [class*='f0-lt-w8']  { margin-left: 66.66666667%; }
+        .desk_wrap [class*='f0-lt-w9']  { margin-left: 75%; }
+        .desk_wrap [class*='f0-lt-w10'] { margin-left: 83.33333333%; }
+        .desk_wrap [class*='f0-lt-w11'] { margin-left: 91.66666667%; }
+        .desk_wrap [class*='f0-lt-w12'] { margin-left: 100%; }
+
+        .desk_wrap [class*='f0-tp-h0']  { margin-top: 0%; }
+        .desk_wrap [class*='f0-tp-h1']  { margin-top: 8.33333333%; }
+        .desk_wrap [class*='f0-tp-h2']  { margin-top: 16.66666667%; }
+        .desk_wrap [class*='f0-tp-h3']  { margin-top: 25%; }
+        .desk_wrap [class*='f0-tp-h4']  { margin-top: 33.33333333%; }
+        .desk_wrap [class*='f0-tp-h5']  { margin-top: 41.66666667%; }
+        .desk_wrap [class*='f0-tp-h6']  { margin-top: 50%; }
+        .desk_wrap [class*='f0-tp-h7']  { margin-top: 58.33333333%; }
+        .desk_wrap [class*='f0-tp-h8']  { margin-top: 66.66666667%; }
+        .desk_wrap [class*='f0-tp-h9']  { margin-top: 75%; }
+        .desk_wrap [class*='f0-tp-h10'] { margin-top: 83.33333333%; }
+        .desk_wrap [class*='f0-tp-h11'] { margin-top: 91.66666667%; }
+        .desk_wrap [class*='f0-tp-h12'] { margin-top: 100%; }
+
+        .desk_wrap [class*='f0-bt-h0']  { margin-bottom: 0%; }
+        .desk_wrap [class*='f0-bt-h1']  { margin-bottom: 8.33333333%; }
+        .desk_wrap [class*='f0-bt-h2']  { margin-bottom: 16.66666667%; }
+        .desk_wrap [class*='f0-bt-h3']  { margin-bottom: 25%; }
+        .desk_wrap [class*='f0-bt-h4']  { margin-bottom: 33.33333333%; }
+        .desk_wrap [class*='f0-bt-h5']  { margin-bottom: 41.66666667%; }
+        .desk_wrap [class*='f0-bt-h6']  { margin-bottom: 50%; }
+        .desk_wrap [class*='f0-bt-h7']  { margin-bottom: 58.33333333%; }
+        .desk_wrap [class*='f0-bt-h8']  { margin-bottom: 66.66666667%; }
+        .desk_wrap [class*='f0-bt-h9']  { margin-bottom: 75%; }
+        .desk_wrap [class*='f0-bt-h10'] { margin-bottom: 83.33333333%; }
+        .desk_wrap [class*='f0-bt-h11'] { margin-bottom: 91.66666667%; }
+        .desk_wrap [class*='f0-bt-h12'] { margin-bottom: 100%; }      
+    }  
+        @media only screen and (min-width: 600px)  {   
+        .desk_wrap .colum2list {
+            -webkit-column-count: 2; column-count: 2;
+        }
+        .desk_wrap [class*='w0-f600']  { width: 0%; }
+        .desk_wrap [class*='w1-f600']  { width: 8.33333333%; }
+        .desk_wrap [class*='w2-f600']  { width: 16.66666667%; }
+        .desk_wrap [class*='w3-f600']  { width: 25%; }
+        .desk_wrap [class*='w4-f600']  { width: 33.33333333%; }
+        .desk_wrap [class*='w5-f600']  { width: 41.66666667%; }
+        .desk_wrap [class*='w6-f600']  { width: 50%; }
+        .desk_wrap [class*='w7-f600']  { width: 58.33333333%; }
+        .desk_wrap [class*='w8-f600']  { width: 66.66666667%; }
+        .desk_wrap [class*='w9-f600']  { width: 75%; }
+        .desk_wrap [class*='w10-f600'] { width: 83.33333333%; }
+        .desk_wrap [class*='w11-f600'] { width: 91.66666667%; }
+        .desk_wrap [class*='w12-f600'] { width: 100%; }
+
+        .desk_wrap [class*='f600-lt-w0']  { margin-left: 0%; }
+        .desk_wrap [class*='f600-lt-w1']  { margin-left: 8.33333333%; }
+        .desk_wrap [class*='f600-lt-w2']  { margin-left: 16.66666667%; }
+        .desk_wrap [class*='f600-lt-w3']  { margin-left: 25%; }
+        .desk_wrap [class*='f600-lt-w4']  { margin-left: 33.33333333%; }
+        .desk_wrap [class*='f600-lt-w5']  { margin-left: 41.66666667%; }
+        .desk_wrap [class*='f600-lt-w6']  { margin-left: 50%; }
+        .desk_wrap [class*='f600-lt-w7']  { margin-left: 58.33333333%; }
+        .desk_wrap [class*='f600-lt-w8']  { margin-left: 66.66666667%; }
+        .desk_wrap [class*='f600-lt-w9']  { margin-left: 75%; }
+        .desk_wrap [class*='f600-lt-w10'] { margin-left: 83.33333333%; }
+        .desk_wrap [class*='f600-lt-w11'] { margin-left: 91.66666667%; }
+        .desk_wrap [class*='f600-lt-w12'] { margin-left: 100%; }  
+
+        .desk_wrap [class*='f600-tp-h0']  { margin-top: 0%; }
+        .desk_wrap [class*='f600-tp-h1']  { margin-top: 8.33333333%; }
+        .desk_wrap [class*='f600-tp-h2']  { margin-top: 16.66666667%; }
+        .desk_wrap [class*='f600-tp-h3']  { margin-top: 25%; }
+        .desk_wrap [class*='f600-tp-h4']  { margin-top: 33.33333333%; }
+        .desk_wrap [class*='f600-tp-h5']  { margin-top: 41.66666667%; }
+        .desk_wrap [class*='f600-tp-h6']  { margin-top: 50%; }
+        .desk_wrap [class*='f600-tp-h7']  { margin-top: 58.33333333%; }
+        .desk_wrap [class*='f600-tp-h8']  { margin-top: 66.66666667%; }
+        .desk_wrap [class*='f600-tp-h9']  { margin-top: 75%; }
+        .desk_wrap [class*='f600-tp-h10'] { margin-top: 83.33333333%; }
+        .desk_wrap [class*='f600-tp-h11'] { margin-top: 91.66666667%; }
+        .desk_wrap [class*='f600-tp-h12'] { margin-top: 100%; }
+
+        .desk_wrap [class*='f600-bt-h0']  { margin-bottom: 0%; }
+        .desk_wrap [class*='f600-bt-h1']  { margin-bottom: 8.33333333%; }
+        .desk_wrap [class*='f600-bt-h2']  { margin-bottom: 16.66666667%; }
+        .desk_wrap [class*='f600-bt-h3']  { margin-bottom: 25%; }
+        .desk_wrap [class*='f600-bt-h4']  { margin-bottom: 33.33333333%; }
+        .desk_wrap [class*='f600-bt-h5']  { margin-bottom: 41.66666667%; }
+        .desk_wrap [class*='f600-bt-h6']  { margin-bottom: 50%; }
+        .desk_wrap [class*='f600-bt-h7']  { margin-bottom: 58.33333333%; }
+        .desk_wrap [class*='f600-bt-h8']  { margin-bottom: 66.66666667%; }
+        .desk_wrap [class*='f600-bt-h9']  { margin-bottom: 75%; }
+        .desk_wrap [class*='f600-bt-h10'] { margin-bottom: 83.33333333%; }
+        .desk_wrap [class*='f600-bt-h11'] { margin-bottom: 91.66666667%; }
+        .desk_wrap [class*='f600-bt-h12'] { margin-bottom: 100%; }        
+    } 
+        @media only screen and (min-width: 768px)  {
+        .desk_wrap .flexDirColumReverse{
+            -webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;
+        } 
+        .desk_wrap .reverse{
+            -ms-flex-wrap: wrap;flex-wrap: wrap;
+        }
+        .desk_wrap [class*='Right768'] {
+            background-position: center;
+        } 
+        .desk_wrap [class*='Left768'] {
+            background-position: center;
+        }     
+        .desk_wrap [class*='w0-f768']  { width: 0%; }
+        .desk_wrap [class*='w1-f768']  { width: 8.33333333%; }
+        .desk_wrap [class*='w2-f768']  { width: 16.66666667%; }
+        .desk_wrap [class*='w3-f768']  { width: 25%; }
+        .desk_wrap [class*='w4-f768']  { width: 33.33333333%; }
+        .desk_wrap [class*='w5-f768']  { width: 41.66666667%; }
+        .desk_wrap [class*='w6-f768']  { width: 50%; }
+        .desk_wrap [class*='w7-f768']  { width: 58.33333333%; }
+        .desk_wrap [class*='w8-f768']  { width: 66.66666667%; }
+        .desk_wrap [class*='w9-f768']  { width: 75%; }
+        .desk_wrap [class*='w10-f768'] { width: 83.33333333%; }
+        .desk_wrap [class*='w11-f768'] { width: 91.66666667%; }
+        .desk_wrap [class*='w12-f768'] { width: 100%; }
+
+        .desk_wrap [class*='f768-lt-w0']  { margin-left: 0%; }
+        .desk_wrap [class*='f768-lt-w1']  { margin-left: 8.33333333%; }
+        .desk_wrap [class*='f768-lt-w2']  { margin-left: 16.66666667%; }
+        .desk_wrap [class*='f768-lt-w3']  { margin-left: 25%; }
+        .desk_wrap [class*='f768-lt-w4']  { margin-left: 33.33333333%; }
+        .desk_wrap [class*='f768-lt-w5']  { margin-left: 41.66666667%; }
+        .desk_wrap [class*='f768-lt-w6']  { margin-left: 50%; }
+        .desk_wrap [class*='f768-lt-w7']  { margin-left: 58.33333333%; }
+        .desk_wrap [class*='f768-lt-w8']  { margin-left: 66.66666667%; }
+        .desk_wrap [class*='f768-lt-w9']  { margin-left: 75%; }
+        .desk_wrap [class*='f768-lt-w10'] { margin-left: 83.33333333%; }
+        .desk_wrap [class*='f768-lt-w11'] { margin-left: 91.66666667%; }
+        .desk_wrap [class*='f768-lt-w12'] { margin-left: 100%; }  
+
+        .desk_wrap [class*='f768-tp-h0']  { margin-top: 0%; }
+        .desk_wrap [class*='f768-tp-h1']  { margin-top: 8.33333333%; }
+        .desk_wrap [class*='f768-tp-h2']  { margin-top: 16.66666667%; }
+        .desk_wrap [class*='f768-tp-h3']  { margin-top: 25%; }
+        .desk_wrap [class*='f768-tp-h4']  { margin-top: 33.33333333%; }
+        .desk_wrap [class*='f768-tp-h5']  { margin-top: 41.66666667%; }
+        .desk_wrap [class*='f768-tp-h6']  { margin-top: 50%; }
+        .desk_wrap [class*='f768-tp-h7']  { margin-top: 58.33333333%; }
+        .desk_wrap [class*='f768-tp-h8']  { margin-top: 66.66666667%; }
+        .desk_wrap [class*='f768-tp-h9']  { margin-top: 75%; }
+        .desk_wrap [class*='f768-tp-h10'] { margin-top: 83.33333333%; }
+        .desk_wrap [class*='f768-tp-h11'] { margin-top: 91.66666667%; }
+        .desk_wrap [class*='f768-tp-h12'] { margin-top: 100%; }
+
+        .desk_wrap [class*='f768-bt-h0']  { margin-bottom: 0%; }
+        .desk_wrap [class*='f768-bt-h1']  { margin-bottom: 8.33333333%; }
+        .desk_wrap [class*='f768-bt-h2']  { margin-bottom: 16.66666667%; }
+        .desk_wrap [class*='f768-bt-h3']  { margin-bottom: 25%; }
+        .desk_wrap [class*='f768-bt-h4']  { margin-bottom: 33.33333333%; }
+        .desk_wrap [class*='f768-bt-h5']  { margin-bottom: 41.66666667%; }
+        .desk_wrap [class*='f768-bt-h6']  { margin-bottom: 50%; }
+        .desk_wrap [class*='f768-bt-h7']  { margin-bottom: 58.33333333%; }
+        .desk_wrap [class*='f768-bt-h8']  { margin-bottom: 66.66666667%; }
+        .desk_wrap [class*='f768-bt-h9']  { margin-bottom: 75%; }
+        .desk_wrap [class*='f768-bt-h10'] { margin-bottom: 83.33333333%; }
+        .desk_wrap [class*='f768-bt-h11'] { margin-bottom: 91.66666667%; }
+        .desk_wrap [class*='f768-bt-h12'] { margin-bottom: 100%; }        
+    }  
+    .desk_wrap h3,.desk_wrap h4,.desk_wrap h5,.desk_wrap h2,.desk_wrap p,.desk_wrap ul{ 
+        color: rgb(55, 55, 55);
+    }
+    .desk_wrap h3,.desk_wrap h4,.desk_wrap h5{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-weight: bold;
+    }
+    .desk_wrap li, .desk_wrap h4, .desk_wrap p{
+            margin-top: 10px;
+            margin-bottom: 10px;  
+    }
+    .desk_wrap h3{
+            font-size: 18px;
+            text-transform: uppercase;
+            color: black;
+        }
+    .desk_wrap h4{
+            font-size: 16px;
+        }
+    .desk_wrap img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .desk_wrap .boldFnt {
+        font-weight: bold;
+    }    
+    .desk_wrap .borderBtTp{
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+    }  
+    .desk_wrap .flexDirColum{
+        -webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;
+    }    
+    .desk_wrap .vertCenter {
+        -ms-flex-item-align: center;align-self: center;     
+    }
+    .desk_wrap .vertTop {
+        -webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;    
+    }
+    .desk_wrap .vertBot{
+        -webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;  
+    }
+    .desk_wrap .vertStretch{
+        -webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;
+    }
+    .desk_wrap .horCenter {
+	    -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+    }
+    .desk_wrap .spaceAround {
+	    -ms-flex-pack:distribute;justify-content:space-around;
+    }
+    .desk_wrap .spaceBetween {
+	    -webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;
+    }
+    .desk_wrap .horEnd {
+	    -webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;
+    }
+    .desk_wrap .margin0auto{
+        margin: 0 auto;
+    }
+    .desk_wrap .alignCenter{
+        text-align: center;
+    }
+    .desk_wrap .alignRight{
+        text-align: right;
+    }
+    .desk_wrap .wordBreak {
+     word-wrap: break-word;        
+}
+    .desk_wrap .padding0{
+            padding: 0;
+        } 
+    .desk_wrap .margin0{
+            margin: 0;
+        }
+    .desk_wrap .uppercase{
+                 text-transform: uppercase;
+             }
+    .desk_wrap .marginT0{
+            margin-top: 0;
+        } 
+    .desk_wrap .marginB0{
+            margin-bottom: 0;
+        } 
+    .desk_wrap .marginB10{
+            margin-bottom: 10px;
+        }
+    .desk_wrap .height100 {
+        height: 100%;
+    }
+    .desk_wrap .marginLRauto {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .desk_wrap .dispBl{
+        display: block;
+    }
+    .desk_wrap .relPos{
+        position: relative;
+    } 
+    .desk_wrap .absPos{
+         position: absolute;
+         left: 0;
+         top: 0;
+     }
+    .desk_wrap .zIp1{
+        z-index: 1;
+    }
+    .desk_wrap .zIp2{
+        z-index: 2;
+    }  
+    .desk_wrap .zIm1{
+        z-index: -1;
+    }  
+    .desk_wrap .textShadow{
+        text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+    }          
+    .desk_wrap .list{
+        padding-left: 25px;
+    }
+      
+    .desk_wrap .lightGreyBg {
+        background-color: #f0f0f0;
+    }
+    
+    .desk_wrap .whiteFnt {
+        color: white;
+    }    
+
+    .desk_wrap .borderTop{
+        border-top: 2px solid #1d1d1d;
+    }
+    
+    .whiteBg{
+        background-color: white;
+    }
+    
+    .desk_wrap .blackBg{
+        background-color: black;
+    }
+    
+</style>
+     
+                <div class="desk_wrap whiteBg">
+
+    <div class="gri-cont reverse padding0 horCenter block1">
+        <img class="w12-f0 w8-f768 margin0 dispBl" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl1-img1.jpg" alt="Rival 650 Wireless">
+        <div class="w11-f0 w4-f768">
+            <div class="w12-f0 w10-f768 marginLRauto">
+                <h3>Rival 650 Wireless 12345</h3>
+                <p><b>Первая в мире высокопроизводительная беспроводная мышь</b></p>
+                <ul class="list">
+                    <li>Эксклюзивная технология Quantum WirelessTM поддерживает частоту 1000Гц (1мс) без задержек</li>
+                    <li>Быстрая 15-минутная подзарядка позволит играть 10+ часов в беспроводном режиме</li>
+                    <li>Честная точность слежения 1 к 1 благодаря оптическому сенсору TrueMove3</li>
+                    <li>Второй сенсор, который предназначен для отслеживания высоты отрыва</li>
+                    <li>256 вариантов конфигурации веса и баланса</li>
+                </ul>
+            </div>
+        </div>
+    </div>      
+   
+    <div class="gri-cont blackBg vertTop spaceAround block2">
+        <div class="w11-f0 w8-f600 w6-f768">
+            <h3 class="alignCenter whiteFnt">Беспроводная точность нового поколения</h3>
+            <p class="alignCenter whiteFnt">Представляем вам настоящую киберспортивную беспроводную мышь! Rival 650 Wireless с технологией Quantum Wireless™ - это 1мс отклик без потерь и задержек, быстрая подзарядка и самый точный в мире сенсор. </p>
+        </div>
+        <div class="w12-f0"></div>
+        <img class="w11-f0 w9-f768 margin0" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl2-img1.gif" alt="Беспроводная точность нового поколения">
+        <div class="w11-f0 w5-f600 w4-f768">
+            <h3 class="alignCenter whiteFnt">Quantum Wireless</h3>
+            <p class="alignCenter whiteFnt">Быстрая подзарядка. Время отклика 1 мс. Частота опроса 1000Гц.</p>
+        </div>
+        <div class="w11-f0 w5-f600 w4-f768">
+            <h3 class="alignCenter whiteFnt">Оптический сенсор TrueMove3+</h3>
+            <p class="alignCenter whiteFnt">2 сенсора. Честная точность 1 к 1. Моментальное определение отрыва от поверхности.</p>
         </div>
     </div>
-
    
+   <div class="gri-cont bgImg horCenter block3" style="background-image: url('https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl3-img1.jpg')">
+        <div class="w11-f0 borderBtTp">
+           <div class="w12-f0 w6-f768 f0-tp-h3 f0-bt-h3">
+                <h3 class="whiteFnt textShadow">Quantum Wireless</h3>
+                <p class="whiteFnt textShadow">Новейшая беспроводная технология позволяет достичь частоту опроса 1000Гц с временем отклика в 1мс и 24 часа работы от аккумулятора для максимальной точности даже во время самых ожесточенных баталий на мировых турнирах.</p>
+                <p class="whiteFnt textShadow">Anssi “mxey“ Pekonnen – FaZe Clan PUBG</p>
+           </div>
+        </div>
+    </div>
+   
+    <div class="gri-cont vertTop spaceAround block3-1">
+        <div class="w5-f0 w3-f600">
+            <h3 class="alignCenter">Время отклика 1 мс</h3>
+            <p class="alignCenter">Игра без лагов </p>
+        </div>
+        <div class="w5-f0 w3-f600">
+            <h3 class="alignCenter">Оптимизация частоты</h3>
+            <p class="alignCenter">Для крупных турниров</p>
+        </div>
+        <div class="w5-f0 w3-f600">
+            <h3 class="alignCenter">24+ часов работы от аккумулятора</h3>
+            <p class="alignCenter">Круглосуточная игра</p>
+        </div>
+    </div>
+        
+    <div class="gri-cont lightGreyBg horCenter block4">
+        <div class="w11-f0 w8-f600 w6-f768">
+            <h3 class="alignCenter">БЫСТРАЯ ЗАРЯДКА</h3>
+            <p class="alignCenter">Мышь Rival 650 Wireless поддерживает технологию быстрой зарядки. Всего 15 минут подзарядки хватит на 10+ часов игры. Вам больше никогда не придется подзаряжать мышь во время игры. </p>
+        </div>
+        <div class="w12-f0"></div>
+        <img class="w12-f0 margin0" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl4-img1.jpg" alt="БЫСТРАЯ ЗАРЯДКА">
+    </div>
+        
+    <div class="gri-cont blackBg spaceAround block5">
+        <div class="w11-f0 w8-f600 w6-f768">
+            <h3 class="alignCenter whiteFnt">2 СЕНСОРА ДЛЯ НЕПРЕВЗОЙДЕННОЙ ТОЧНОСТИ</h3>
+            <p class="alignCenter whiteFnt">Самая продвинутая в мире система сенсоров TrueMove3+ сочетает в себе сенсор с точностью слежения 1 к 1 и специализированный сенсор отрыва от поверхности. Впервые в жизни вы можете точно контролировать даже высоту отрыва мыши.  </p>
+        </div>
+        <div class="w12-f0"></div>
+        <img class="w11-f0 w10-f600 w9-f768 margin0" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl5-img1.jpg" alt="2 СЕНСОРА ДЛЯ НЕПРЕВЗОЙДЕННОЙ ТОЧНОСТИ">
+        <div class="w11-f0 w5-f600 w4-f768">
+            <h3 class="alignCenter whiteFnt">Сенсор высоты</h3>
+            <p class="alignCenter whiteFnt">Ошеломляющая точность контроля движения и чувствительность к отрыву от ковра начиная от 0.5 мм. Раскройте свой потенциал за счет улучшенной точности контроля и скорости движения.</p>
+        </div>
+        <div class="w11-f0 w5-f600 w4-f768">
+            <h3 class="alignCenter whiteFnt">Основной сенсор</h3>
+            <p class="alignCenter whiteFnt">TrueMove3 устанавливает новые стандарты точности для всех уже существующих или будущих игровых сенсоров. Благодаря ему вы получите абсолютную точность при прицеливании. Никакого ускорения, искажений при движении или задержек. </p>
+        </div>
+    </div>
+   
+    <div class="gri-cont padding0 horCenter block6">
+        <div class="gr-w12-f0 reverse horCenter">
+            <div class="w12-f0 w7-f768">
+                <img class="w12-f0 w12-f768 margin0 dispBl" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl7-img1.gif" alt="Определение высоты отрыва">
+            </div>
+            <div class="w11-f0 w5-f768 borderBtTp">
+                <div class="w12-f0 w10-f768 marginLRauto">
+                    <h4>Определение высоты отрыва улучшает точность </h4>
+                    <p>В то время как большинство игровых мышек определяют высоту отрыва ориентируясь только на показания основного сенсора, Rival 650 представляет уникальное решение с использованием второго сенсора для достижения максимально точного определения высоты отрыва. Вы больше никогда не увидите случайных передвижений курсора при подъеме или опускании мыши.  </p>
+                </div>
+            </div>
+        </div>
+        <div class="gr-w12-f0 lightGreyBg horCenter">
+            <div class="w11-f0 w5-f768 borderBtTp">
+                <div class="w12-f0 w10-f768 marginLRauto">
+                    <h4>Настоящая точность без искажений </h4>
+                    <p>Сенсор TrueMove3, созданный совместно с лидером отрасли компанией PixArt, поддерживает разрешение до 12 000 CPI и 350 IPS. Вместо того, чтобы сосредоточится только на большом значении CPI, TrueMove3 был создан для обеспечения настоящей точности движения 1 к 1. Перемещая мышь на определенное расстояние на ковре вы получите перемещение на то же расстояние на экране без задержек и искажений. </p>
+                </div>
+            </div>
+            <div class="w10-f0 w7-f768">
+                <img class="w12-f0 w11-f768 marginLRauto" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl6-img1.jpg" alt="Сенсор TrueMove3 график">
+            </div>
+        </div>
+    </div>
+       
+    <div class="gri-cont blackBg vertTop spaceAround block8">
+        <div class="w11-f0 w8-f600 w6-f768">
+            <h3 class="alignCenter whiteFnt">ИДЕАЛЬНЫЙ ВЕС И БАЛАНС</h3>
+            <p class="alignCenter whiteFnt">Новая модульная система грузиков предоставляет игрокам возможность настроить вес и центр тяжести мыши по своему желанию.  </p>
+        </div>
+        <div class="w12-f0"></div>
+        <img class="w11-f0 w9-f768 margin0" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl8-img1.gif" alt="ИДЕАЛЬНЫЙ ВЕС И БАЛАНС">
+        <div class="w11-f0 w5-f600 w4-f768">
+            <h3 class="alignCenter whiteFnt">256 Вариантов настройки баланса</h3>
+            <p class="alignCenter whiteFnt">Настройка веса и центра тяжести для достижения идеального баланса для любого типа хвата и стиля игры. </p>
+        </div>
+        <div class="w11-f0 w5-f600 w4-f768">
+            <h3 class="alignCenter whiteFnt">Настройка веса</h3>
+            <p class="alignCenter whiteFnt">Отсоединяемые боковые панели позволяют с легкостью добавлять или убирать вес, а так же надежно фиксируют грузики в корпусе мышки.</p>
+        </div>
+    </div>
+   
+   <div class="gri-cont bgImg horCenter block9" style="background-image: url('https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl9-img1.jpg')">
+        <div class="w11-f0 borderBtTp">
+           <div class="w12-f0-lt-w0 w6-f768-lt-w3 f0-tp-h1 f0-bt-h5">
+                <h3 class="whiteFnt alignCenter textShadow">Настройка в Engine</h3>
+                <p class="whiteFnt alignCenter textShadow">ПО SteelSeries Engine открывает доступ к огромному арсеналу настроек и приложений, позволяющих легко использовать различные режимы для 8-зональной RGB подсветки. Специальное приложение для Discord и GameSense позволяет настраивать уведомления чата, внутриигровые события и многое другое... </p>
+           </div>
+        </div>
+    </div>
+     
+    <div class="gri-cont blackBg spaceAround block10">
+        <div class="w11-f0 w8-f600 w6-f768">
+            <h3 class="alignCenter whiteFnt">ВЫСОКОПРОИЗВОДИТЕЛЬНАЯ НАЧИНКА </h3>
+            <p class="alignCenter whiteFnt">Мощный 32-битный процессор ARM позволяет сохранять настройки CPI, конфигурацию кнопок и настройки подсветки в самой мышке, чтобы вы могли их использовать на турнирах без установки дополнительного ПО. </p>
+        </div>
+        <div class="w12-f0"></div>
+        <img class="w5-f0 w3-f600 w2-f768 margin0" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl10-img1.jpg" alt="32-битный процессор ARM">
+    </div>
+            
+    <div class="gri-cont lightGreyBg horCenter block11">
+        <div class="w11-f0 w8-f600 w6-f768">
+            <h3 class="alignCenter">ЭРГОНОМИЧНЫЙ ДИЗАЙН</h3>
+            <p class="alignCenter">Каждая деталь мышки Rival 650 Wireless была продумана, чтобы добиться максимального уровня комфорта. В зависимости от того, какой тип хвата вы предпочитаете, эта мышь предоставит вам полный комфорт даже при долгой игре. </p>
+        </div>
+        <div class="w12-f0"></div>
+        <div class="w11-f0 w9-f600 w6-f768">
+             <img class="w12-f0 w11-f600 marginLRauto" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl11-img1.png" alt="Размеры мыши фото 1">
+        </div>
+        <div class="w11-f0 w9-f600 w6-f768">
+             <img class="w12-f0 w11-f600 marginLRauto" src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/bl11-img2.png" alt="Размеры мыши фото 2">
+        </div>
+    </div>
+        
+</div>
+
+            </div> 
+            
+            <div class="videoWrap w-100 grey3Bg d-flex flex-wrap justify-content-center">
+                <p class="text-uppercase mt-0 mt-lg-4 mb-2 mb-lg-3 mainContColFnt fnt1p5rem">Видео о товаре</p>
+                
+                <div class="w-100"></div>
+                
+                <div class="videoBlock col-10 col-md-6 col-lg-4 p-0">
+                  <div class="videoPadding">
+                        <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/s0eCRqMZ5FE">
+                           <div class="btnLink d-flex align-items-center justify-content-center"></div>
+                            <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/s0eCRqMZ5FE/maxresdefault.jpg" />
+                        </a>
+                        <a data-fancybox href="https://www.youtube.com/embed/s0eCRqMZ5FE" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                  </div>
+                </div>
+                
+                <div class="videoBlock col-10 col-md-6 col-lg-4 p-0">
+                  <div class="videoPadding">
+                        <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/A8KJwdVKTok">
+                           <div class="btnLink d-flex align-items-center justify-content-center"></div>
+                            <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/A8KJwdVKTok/maxresdefault.jpg" />
+                        </a>
+                        <a data-fancybox href="https://www.youtube.com/embed/A8KJwdVKTok" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                  </div>
+                </div>
+                
+                <div class="videoBlock col-10 col-md-6 col-lg-4 p-0">
+                  <div class="videoPadding">
+                        <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/dfYiIbqVhkA">
+                           <div class="btnLink d-flex align-items-center justify-content-center"></div>
+                            <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/dfYiIbqVhkA/maxresdefault.jpg" />
+                        </a>
+                        <a data-fancybox href="https://www.youtube.com/embed/dfYiIbqVhkA" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                  </div>
+                </div>
+                
+                <div class="w-100"></div>
+                
+                <a href="#" class="subscribe mt-2 mb-2 mb-lg-4 d-flex flex-wrap align-items-center justify-content-center text-center"><span class="mt-1 hoverLinkW cont fnt1p125rem">Подпишись на наш Youtube-канал! </span><span class="youTube d-flex align-items-center align-self-stretch mt-1 mx-3"><span>YouTube</span> <span class="d-flex align-items-center">999+</span></span></a>
+                
+            </div> 
+         
+            <div class="goodsCarousel my-4 w-100">
+                
+                 <div class="d-flex flex-wrap align-items-center justify-content-between mb-2">
+                     <p class="mainContColFnt text-uppercase mb-0 mt-2 mr-4 fnt1p5rem">Ваши просмотренные товары</p>
+                     <div class="d-flex flex-wrap mt-2"><span class="hoverLinkG cont">Сравнить все</span><span class="hoverDottedBorderGrey ml-3">Сохранить историю просмотра</span></div>
+                 </div>
+                 
+                   <div class="swiper-container w-100">
+                    <div class="swiper-wrapper">
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                   
+                    </div>
+                    <!-- Navigation -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    
+                  </div>
+
+                
+            </div>
+         
+        </div>
+    </div>   
+   
+    <div class="seoBlock my-4">
+        <div class="mainWidth overflowHidden customDrop seoDrop d-flex flex-wrap justify-content-center">
+           <div class="hiddenDrop col-12 m-0">
+               <h1>adfgadfgacdxsdfsdfsdfdsf</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus animi in, quidem, deleniti voluptas consequatur perspiciatis cupiditate laudantium minima repudiandae fugit. Consequuntur veritatis ex, a asperiores, dicta at ipsum.</p>
+               <h2>adfgadf</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus animi in, quidem, deleniti voluptas consequatur perspiciatis cupiditate laudantium minima repudiandae fugit. Consequuntur veritatis ex, a asperiores, dicta at ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus animi in, quidem, deleniti voluptas consequatur perspiciatis cupiditate laudantium minima repudiandae fugit. Consequuntur veritatis ex, a asperiores, dicta at ipsum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus animi in, quidem, deleniti voluptas consequatur perspiciatis cupiditate laudantium minima repudiandae fugit. Consequuntur veritatis ex, a asperiores, dicta at ipsum.</p>
+               <h3>adfgadf</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus animi in, quidem, deleniti voluptas consequatur perspiciatis cupiditate laudantium minima repudiandae fugit. Consequuntur veritatis ex, a asperiores, dicta at ipsum.</p>
+               <h4>adfgadfg</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus animi in, quidem, deleniti voluptas consequatur perspiciatis cupiditate laudantium minima repudiandae fugit. Consequuntur veritatis ex, a asperiores, dicta at ipsum.</p>
+               <h5>adfgadfg</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus animi in, quidem, deleniti voluptas consequatur perspiciatis cupiditate laudantium minima repudiandae fugit. Consequuntur veritatis ex, a asperiores, dicta at ipsum.</p>
+               <h6>adfgadfg</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus animi in, quidem, deleniti voluptas consequatur perspiciatis cupiditate laudantium minima repudiandae fugit. Consequuntur veritatis ex, a asperiores, dicta at ipsum.</p>
+                <ul>
+                    <li>sdfharehgfsdfh</li>
+                    <li>sdfharehgfsdfh</li>
+                    <li>sdfharehgfsdfh</li>
+                    <li>sdfharehgfsdfh</li>
+                </ul>
+           </div>
+          <p class="d-flex justify-content-between align-items-center">Подробнее</p>
+        </div>
+    </div>
+    
+    <div class="grey2Bg my-4">
+        <div class="px-1">
+            <div class="d-flex flex-wrap pb-4 pt-3 mainWidth align-items-center justify-content-center subscribeInput">
+            <p class="mb-0 mt-2 mx-4 fnt1p25rem whiteFnt text-center">Подпишитесь и узнавайте первыми о наших акциях, распродажах, конкурсах, скидках.</p>
+            <div class="d-flex flex-wrap flex-lg-nowrap mx-4 mb-0 flex-grow-1 justify-content-center">
+                <input class="lH1p25rem flex-grow-1 mt-2" type="email" placeholder="Ваш Email" name="emailaddress">
+                <input class="text-uppercase font-weight-bold buttonFGr cont mt-2" type="submit" value="Подписаться">
+            </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="px-1">
+       <div class="d-flex flex-wrap p-0 contentWrapper mainWidth">     
+               
+            <div class="goodsCarousel my-4 w-100">
+                
+                 <div class="d-flex flex-wrap align-items-center justify-content-between mb-2">
+                     <p class="mainContColFnt text-uppercase mb-0 mt-2 mr-4 fnt1p5rem">Ваши просмотренные товары</p>
+                 </div>
+                 
+                   <div class="swiper-container w-100">
+                    <div class="swiper-wrapper">
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                     
+                      <div class="swiper-slide">                       
+                        <div class="goodWrap">
+                           <div class="goodbl">
+                               <div class="goodInfoTopL">
+                                   <div class="orderCode">
+                                       <span>Код для заказа: <span>55555</span></span>
+                                       <div class="events">
+                                           <span>Подарок</span>
+                                           <span class="redEvent">Лучшая цена</span>
+                                           <span class="orangeEvent">Топ продаж</span>
+                                           <span class="darkvioletEvent">Выбор геймера</span>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="goodInfoTopR"> 
+                                   <div class="events">
+                                       <a class="action" href="#">Акция</a>
+                                   </div>
+                               </div>
+
+                               <a class="goodName" href="#">
+                                   <img src="https://www.3ona51.com/images/products/gaming-mouses/steelseries-rival-650-62456/600_1.jpg" alt="">
+                                   <p><span class="textLimit" data-textSize="97">Funko POP! Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader & Obi Wan Kenobi (Exc) (23232WM)</span></p>
+                               </a>
+                               <div class="goodInfoBottom">
+                                   <div class="w-100 d-flex flex-row justify-content-between align-items-end">
+                                       <div class="priceBl">
+                                           <div class="oldPrice">
+                                               <s>2999</s><span>грн.</span>
+                                           </div>
+                                           <div class="newPrice">
+                                               <span>1999</span><span>грн.</span>
+                                           </div>
+                                           <div class="buyStat">
+                                               <a href="#">Предзаказ</a>
+    <!--                                           <span>Купить</span>-->
+    <!--                                           <span class="notify">Уведомить о наличии</span>-->
+    <!--                                           <span class="inCart">В корзине</span>-->
+                                           </div>
+                                       </div>
+                                       <div class="deliveryPickup">
+                                           <span class="d-flex">Доступно <br>в кредит</span>
+                                           <span class="d-flex notAvailable">Нет  <br>в наличии</span>
+                                           <div class="pt-3 d-flex justify-content-around">
+                                               <div class="goodIcons wish active" title="Добавить в список хеланий"></div>
+                                               <div class="goodIcons comparison" title="Добавить в сравнение"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>     
+                           </div>
+                       </div>
+                    </div>
+                   
+                    </div>
+                    <!-- Navigation -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    
+                  </div>
+
+                
+            </div>
+         
+       </div>
+   </div>

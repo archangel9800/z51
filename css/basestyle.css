@@ -371,6 +371,7 @@ body .hoverLinkG:hover, body .hoverLinkG.active{
 
 [class*='hoverDottedBorder'] {
     cursor: pointer;
+    text-decoration: none;
 }
 [class*='hoverDottedBorder']::after {
     cursor: pointer;
@@ -381,14 +382,14 @@ body .hoverLinkG:hover, body .hoverLinkG.active{
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
 }
-.hoverDottedBorderGrey {
+.hoverDottedBorderGrey, .hoverDottedBorderGrey:hover {
     color: rgb(var(--grey1));
 }
 .hoverDottedBorderGrey:hover::after {
     border-color: rgb(var(--grey1));
 }
-.hoverDottedBorderWhite {
-    color: rgb(var(--grey1));
+.hoverDottedBorderWhite, .hoverDottedBorderWhite:hover {
+    color: rgb(var(--white));
 }
 .hoverDottedBorderWhite:hover::after {
     border-color: rgb(var(--white));
@@ -1223,7 +1224,12 @@ aside .asideTxt{
 .goodWrap{
     position: relative;
     width: 18.75rem;
-    height: 31.125rem;
+/*    height: 31.125rem;*/
+    height: 31.25rem;
+    overflow: hidden;
+}
+.goodWrap:hover{
+    overflow: visible;
 }
 .goodWrap .goodbl {
     position: absolute;
@@ -1889,7 +1895,6 @@ flex: 0 0 auto;
     line-height: 2.8125rem;
 }
 
-
 .productTop .prodInfo .prodInfoIcons::before, .goodsCarousel .prodInfoIcons::before{
     margin-right: 0.5rem;
 }
@@ -2057,4 +2062,122 @@ flex: 0 0 auto;
     padding: 0.625rem;
 }
 /*.subscribeInput style end*/
+
+/*.indexSlider style start*/
+.indexSlider{
+    overflow: hidden;
+}
+.indexSlider .swiperIndex{
+    border: 0.0625rem solid rgb(var(--grey3));
+    margin-bottom: 0.625rem;
+    overflow: visible;
+}
+.indexSlider .swiperIndex .swiper-pagination-bullets{
+    display: -webkit-box;display: -ms-flexbox;display: flex;
+    -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+    bottom: -10px;
+}
+.indexSlider .swiperIndex .swiper-pagination-bullet{
+    transition: all 0.2s;
+    border: 0.0625rem solid rgb(var(--grey2));
+    background-color: rgb(var(--black));
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 0;
+    opacity: 1;
+    display: -webkit-box;display: -ms-flexbox;display: flex;
+    -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+    -webkit-box-align: center;-ms-flex-align: center;align-items: center;
+}
+.indexSlider .swiperIndex .swiper-pagination-bullet:hover{
+     border: 0.0625rem solid rgb(var(--grey4));
+}
+.indexSlider .swiperIndex .swiper-pagination-bullet::after{
+    transition: all 0.2s;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(var(--black));
+}
+.indexSlider .swiperIndex .swiper-pagination-bullet.swiper-pagination-bullet-active::after{
+    background-color: rgb(var(--mainZ51Col));
+}
+/*.indexSlider style end*/
+
+/*.topBrands style start*/
+.topBrands .brand{
+    transition: all 0.1s;
+    width: 100%;
+    max-width: 18.75rem;
+    background-color: rgb(var(--grey3));
+    display: -webkit-box;display: -ms-flexbox;display: flex;
+    -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+    -webkit-box-align: center;-ms-flex-align: center;align-items: center;
+}
+.topBrands .brand:hover{
+    background-color: rgb(var(--grey2));
+}
+@media only screen and (min-width: 0px){
+    .topBrands .brand{
+        width: 47%;
+        padding: 0.9375rem 1.25rem; 
+        margin: 0 1.5% 3% 1.5%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .topBrands .brand{
+        width: 30%;
+        padding: 1.25rem 1.75rem; 
+    }
+}
+@media only screen and (min-width: 1200px){
+    .topBrands .brand{
+        width: 19%;
+        margin: 0 0.5% 1% 0.5%;
+    }
+}
+@media only screen and (min-width: 1580px){
+    .topBrands .brand{
+        padding: 1.875rem 2.5rem; 
+    }
+}
+/*.topBrands style end*/
+
+/*.indexGoods style start*/
+.indexGoods .goodWrap{
+    margin: 1rem 0.5rem 0 0.5rem;
+}
+.goodWrap[class*='bannerInIndexGoods'] .knowMore {
+    position: absolute;
+    width: calc(18.75rem - 2.25rem);
+    left: 1.125rem;
+    bottom: 1.125rem;
+    height: 1.875rem;
+    display: -webkit-box;display: -ms-flexbox;display: flex;
+    -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+    -webkit-box-align: center;-ms-flex-align: center;align-items: center;
+    line-height: 0.8125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.goodWrap.bannerInIndexGoodsBig {
+    width: 38.5rem;
+}
+@media only screen and (min-width: 0px){
+    .goodWrap.bannerInIndexGoodsBig{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1590px){
+    .goodWrap.bannerInIndexGoodsBig{
+        display: block;
+    }
+}
+/*.indexGoods style end*/
+
+
+
+
+
 

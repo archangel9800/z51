@@ -318,16 +318,16 @@ $(".btnNav").on("click", function (event) {
 //		'overlayShow'	:	false
 //	});
 
-    
+///.swiper-analog script start  
 function goodsCarouselInit(){
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swiper-container.swiperAnalog', {
       slidesPerView: 5,
       spaceBetween: 20,
 //       centeredSlides: true,
       // init: false,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiperAnalog .swiper-button-next',
+        prevEl: '.swiperAnalog .swiper-button-prev',
       },
       breakpoints: {
         1360: {
@@ -348,9 +348,7 @@ function goodsCarouselInit(){
         }
       }
     });
- };    
-    
-    
+ };
 if($(window).width() >= 600) {
     goodsCarouselInit();
 }    
@@ -358,7 +356,21 @@ $(window).resize(function(){
    if($(window).width() >= 600) {
     goodsCarouselInit();
    }
-}); 
+});     
+///.swiper-analog script end    
+    
+var swiper = new Swiper('.swiper-container.swiperIndex', {
+centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiperIndex .swiper-pagination',
+    clickable: true,
+  },
+});  
+    
     
 
     

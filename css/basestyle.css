@@ -2176,8 +2176,21 @@ flex: 0 0 auto;
 }
 /*.indexGoods style end*/
 
-
-
+/*.news style start*/
+.news *{
+    opacity: 0.9;
+    transition: all 0.1s;
+}
+.news:hover *{
+    opacity: 1;
+}
+.news img{
+    transform: scale(1)
+}
+.news:hover img{
+    transform: scale(1.01)
+}
+/*.news style end*/
 
 
 

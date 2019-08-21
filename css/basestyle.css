@@ -924,7 +924,7 @@ header{
 }
 
 #inCart.homeModals{
-    max-width: 61.25rem;;
+    max-width: 61.25rem;
 }
 
 #inCart .cartItem{
@@ -1009,8 +1009,12 @@ header{
 #inCart .cartButtons a:hover::before,#inCart .cartButtons a:hover::after{
     border-color: transparent rgb(var(--white));
 }
-
-
+#inCart .sticky-bottom{
+    border-top: 0.125rem solid rgb(var(--grey2));
+}
+#inCart>*:nth-last-child(3){
+    border-bottom: 0.0625rem solid var(--transp);
+}
 
 
 

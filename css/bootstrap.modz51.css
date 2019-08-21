@@ -1,6 +1,13 @@
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-bottom {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: -1px;
+    z-index: 1020;
+  }
+}
 
-
-/*// Малые девайсы («ландшафтные телефоны», >= 0px) xs*/
+/*// >= 0px xs*/
 @media only screen and (min-width: 0px) { 
     .position-fixed-xs{
         position: fixed;
@@ -19,7 +26,7 @@
     }  
 }
 
-/*// Малые девайсы («ландшафтные телефоны», >= 450px) wsm*/
+/*// >= 450px wsm*/
 @media only screen and (min-width: 450px) { 
     .position-fixed-wsm{
         position: fixed;
@@ -76,7 +83,7 @@
   }  
 }
 
-/*// Малые девайсы («ландшафтные телефоны», >= 576px) sm*/
+/*// >= 576px sm*/
 @media only screen and (min-width: 576px) { 
     .position-fixed-sm{
         position: fixed;
@@ -95,7 +102,7 @@
     } 
 }
 
-/*// Средние девайсы («таблетки», >= 768px) md*/
+/*// >= 768px md*/
 @media only screen and (min-width: 768px) { 
     .position-fixed-md{
         position: fixed;
@@ -114,7 +121,7 @@
     } 
 }
 
-/*// Большие девайсы (десктопы, >= 992px) lg*/
+/*// >= 992px lg*/
 @media only screen and (min-width: 992px) { 
     .position-fixed-lg{
         position: fixed;
@@ -133,7 +140,7 @@
     } 
 }
 
-/*// Экстрабольшие девайсы (большие десктопы, >= 1200px) xl*/
+/*// >= 1200px xl*/
 @media only screen and (min-width: 1200px) { 
     .position-fixed-xl{
         position: fixed;
@@ -152,7 +159,7 @@
     } 
 }
 
-/*// Экстрабольшие девайсы (большие десктопы, >= 1480px) xxl*/
+/*// >= 1480px xxl*/
 @media only screen and (min-width: 1480px) {
     .position-fixed-xxl{
         position: fixed;

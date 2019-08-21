@@ -5,7 +5,11 @@
  * 21.08.2019
  */
 
-
+* {
+     scrollbar-width: thin;
+     scrollbar-color:  rgb(var(--mainZ51Col)) rgb(var(--grey2));
+     scroll-behavior: smooth;
+}
 html{
     font-size: 16px;
 }
@@ -19,6 +23,8 @@ body{
 }
 body *{
     color: rgb(var(--grey1));
+     scrollbar-width: thin;
+     scrollbar-color:  rgb(var(--mainZ51Col)) rgb(var(--grey2));
 }
 body a{ 
     text-decoration: none !important;
@@ -32,19 +38,19 @@ body input{
 /*main style start*/
 
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
 }
 ::-webkit-scrollbar-track {
     background-color: rgb(var(--grey2));
 }
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(var(--mainZ51Col), 0.8);
+    background-color: rgb(var(--mainZ51Col));
     -webkit-border-radius: 0px;
     border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(var(--mainZ51Col));
+    background-color: rgba(var(--mainZ51Col), 0.6);
 }
 
 

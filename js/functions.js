@@ -1,3 +1,11 @@
+/**
+ * js/functions.js
+ * Copyright (c) ТОВ "Елпрофи", 2019 All rights reserved.
+ * Шаблон разработали Левковец И.В., Броновицкий А.Н., 2019. archangel, b1te
+ * 21.08.2019
+ */
+
+
 $(document).ready(function () {
 
    

@@ -1,3 +1,11 @@
+/**
+ * css/bootstrap.modz51.css
+ * Copyright (c) ТОВ "Елпрофи", 2019 All rights reserved.
+ * Шаблон разработали Левковец И.В., Броновицкий А.Н., 2019. archangel, b1te
+ * 21.08.2019
+ */
+
+
 @supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-bottom {
     position: -webkit-sticky;

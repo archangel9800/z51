@@ -141,7 +141,7 @@
 
                 <div class="headerNavCollapse collapse navbar-collapse flex-grow-1 flex-lg-grow-0 home">
                     <ul class="m-0 p-0 py-3 align-items-end d-flex d-lg-none  justify-content-center justify-content-lg-end">
-                        <li class="cab homeIcons active homeIconsDrop">
+                        <li class="cab homeIcons active">
                             <a class="d-flex flex-wrap justify-content-center align-items-end" href="#"><span class="icon-name w-100">Кабинет</span>
                             </a>
                         </li>
@@ -189,7 +189,7 @@
 
                 <div class="cd-dropdown-wrapper flex-lg-grow-0">
                     <span class="cd-dropdown-trigger py-2 pl-3 pr-4"><b class="pr-4 text-uppercase pl-1 py-2">Каталог товаров</b></span>
-                    <nav class="cd-dropdown">
+                    <div class="cd-dropdown">
                         <p class="mobName">Каталог товаров</p>
                         <a href="#" class="cd-close">Close</a>
                         <ul class="cd-dropdown-content">
@@ -346,7 +346,7 @@
                             <li><a href="#">Page 2</a></li>
                             <li><a href="#">Page 3</a></li>
                         </ul> <!-- .cd-dropdown-content -->
-                    </nav> <!-- .cd-dropdown -->
+                    </div> <!-- .cd-dropdown -->
                 </div>
 
                 <form class="topSearch p-0 mx-1 mx-lg-4 d-none d-lg-flex flex-grow-1">
@@ -382,9 +382,49 @@
 
                 <div class="home p-0 m-0 pt-2 pt-lg-0 flex-grow-1 flex-lg-grow-0 d-none d-lg-flex align-items-center justify-content-center">
                     <ul class="p-0 m-0 d-flex align-items-end justify-content-center">
-                        <li class="cab homeIcons active entered">
+                        <li class="cab homeIcons active entered homeIconsDrop absDrop">
                             <a class="d-flex flex-wrap justify-content-center align-items-end" href="#"><span class="icon-name w-100">Кабинет</span>
                             </a>
+                            <ul class="hiddenDrop">
+                                <li><a href="#">Администрирование</a></li>
+                                <li><a href="#">Мои заказы</a></li>
+                                <li><a href="#">Кредитная линия</a></li>
+                                <li><a href="#">Настройки</a></li>
+                                <li><a href="#">Журнал авторизации</a></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </li>
+                        <li class="cab homeIcons active homeIconsDrop absDrop">
+                            <a class="d-flex flex-wrap justify-content-center align-items-end" href="#"><span class="icon-name w-100">Кабинет</span>
+                            </a>
+                            <form  class="hiddenDrop logIn" action="" method="post">
+                                <div>
+                                    <div class="mb-1 mt-2 d-flex justify-content-center flex-column align-items-center">
+                                        <label for="login">Ваш логин:</label>
+                                        <input class="p-1" type="text" name="login"/>
+                                    </div>
+                                    <div class="mb-1 mt-2 d-flex justify-content-center flex-column align-items-center">
+                                        <label for="password">Ваш пароль:</label>
+                                        <input class="p-1" type="password" name="password" />
+                                    </div>
+                                    
+                                    <div class="customZ51Checkbox mt-2 d-flex flex-wrap justify-content-center">
+                                        <div class="d-flex align-items-center p-0 m-0">
+                                            <input type="checkbox" id="rem">
+                                            <label class="p-0 m-0 pl-4" for="rem">Запомнить?</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mt-2 justify-content-center">
+                                        <input class="buttonFGr py-2 px-3" type="submit" name="submit"  value="Авторизоваться" />
+                                    </div>
+                                    
+                                    <div class="d-flex pt-2 mt-2 justify-content-between align-items-center">
+                                        <a href="#" class="btnBrdr py-2 px-3 mr-2">Регистрация</a>
+                                        <a href="#" class="btnBrdr py-2 px-3">Забыли пароль?</a>
+                                    </div>
+                                </div>
+                            </form>
                         </li>
                         <li class="wish homeIcons">
                             <a class="d-flex flex-wrap justify-content-center align-items-end" href="#">

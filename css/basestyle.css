@@ -487,8 +487,8 @@ body .hoverLinkG:hover, body .hoverLinkG.active{
 .customDrop > .hiddenDrop{
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height .3s;
-    transition: max-height .3s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
 }
 .customDrop.visibleBl > .hiddenDrop{
     max-height: calc(100vh * 2);
@@ -811,8 +811,7 @@ header{
     margin-top: 0.4rem;
     line-height: 0.625rem;
 } 
-.home .homeIcons a{
-    
+.home .homeIcons > a{
     color: rgb(var(--grey1));
 } 
 .home .homeIcons span{
@@ -821,17 +820,16 @@ header{
 .home .homeIcons a span:first-child{
    color: rgb(var(--white));
 } 
-.home .homeIcons:first-child a span{
+.home .homeIcons:first-child > a span{
    color: rgb(var(--grey1));
 } 
-.home .homeIcons a:hover{
-    
+.home .homeIcons > a:hover{   
     color: rgba(var(--mainZ51Col), 0.9);
 } 
 .home .homeIcons.active .icon-name{
     color: rgba(var(--mainZ51Col), 0.9);
 } 
-.home .homeIcons a:hover .icon-name{
+.home .homeIcons > a:hover .icon-name{
     color: rgba(var(--mainZ51Col), 0.9);
 }
 .home .homeIcons [class*='counter']{
@@ -841,56 +839,56 @@ header{
     width: auto;
     min-width: 1.125rem;
 }
-.home .homeIcons a::before, .productTop .prodInfo .prodInfoIcons:before, .goodsCarousel .prodInfoIcons:before{
+.home .homeIcons > a::before, .productTop .prodInfo .prodInfoIcons:before, .goodsCarousel .prodInfoIcons:before{
     content: "";
     display: block;
     background-position: center;
     background-repeat: no-repeat;
     -webkit-transition: all 0.1s; transition: all 0.1s;
 } 
-.home .homeIcons.cab a::before{
+.home .homeIcons.cab > a::before{
     background-image: url('../img/icons/svg/cab.svg');
     height: 1.4375rem;
     width: 19px;
     background-size: 19px 1.4375rem;
 } 
-.home .homeIcons.cab a:hover::before, .home .homeIcons.active.cab a::before {
+.home .homeIcons.cab > a:hover::before, .home .homeIcons.active.cab > a::before {
     background-image: url('../img/icons/svg/cab-hover.svg');
 } 
-.home .homeIcons.wish a::before,  .productTop .prodInfo .toWish:before{
+.home .homeIcons.wish > a::before,  .productTop .prodInfo .toWish:before{
     background-image: url('../img/icons/svg/wish.svg');
     height: 22px;
     width: 22px;
     background-size: 22px 22px;
 } 
-.home .homeIcons.wish a:hover::before, .home .homeIcons.active.wish a::before, .productTop .prodInfo .toWish.active:before {
+.home .homeIcons.wish > a:hover::before, .home .homeIcons.active.wish > a::before, .productTop .prodInfo .toWish.active:before {
     background-image: url('../img/icons/svg/wish-hover.svg');
 } 
-.home .homeIcons.comparison a::before, .productTop .prodInfo .toComparison:before, .goodsCarousel .prodInfoIcons:before {
+.home .homeIcons.comparison > a::before, .productTop .prodInfo .toComparison:before, .goodsCarousel .prodInfoIcons:before {
     background-image: url('../img/icons/svg/comparison.svg');
     height: 17px;
     width: 19px;
     background-size: 17px 19px;
 } 
-.home .homeIcons.comparison a:hover::before, .home .homeIcons.active.comparison a::before, .productTop .prodInfo .toComparison.active:before{
+.home .homeIcons.comparison > a:hover::before, .home .homeIcons.active.comparison > a::before, .productTop .prodInfo .toComparison.active:before{
     background-image: url('../img/icons/svg/comparison-hover.svg');
 } 
-.home .homeIcons.cart a::before{
+.home .homeIcons.cart > a::before{
     background-image: url('../img/icons/svg/cart.svg');
     height: 17px;
     width: 1.4375rem;
     background-size: 1.4375rem 17px;
 } 
-.home .homeIcons.cart a:hover::before, .home .homeIcons.active.cart a::before {
+.home .homeIcons.cart > a:hover::before, .home .homeIcons.active.cart > a::before {
     background-image: url('../img/icons/svg/cart-hover.svg');
 }  
-.home .homeIcons.entered a::before{
+.home .homeIcons.entered > a::before{
     background-image: url('../img/icons/svg/user.svg');
     height: 1.25rem;
     width: 1.4375rem;
     background-size: 1.4375rem 1.25rem;
 } 
-.home .homeIcons.entered a:hover::before, .home .homeIcons.active.entered a::before {
+.home .homeIcons.entered > a:hover::before, .home .homeIcons.active.entered > a::before {
     background-image: url('../img/icons/svg/user-hover.svg');
 }  
 @media only screen and (min-width: 992px){
@@ -909,24 +907,89 @@ header{
 
 .homeIconsDrop > .hiddenDrop{
     max-height: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    -webkit-transition: max-height .3s;
-    transition: max-height .3s;
+    background-color: rgb(var(--grey3));
 }
-.homeIconsDrop.visibleBl > .hiddenDrop{
+.homeIconsDrop > .hiddenDrop a{
+    display: -webkit-box;display: -ms-flexbox;display: flex;
+    -webkit-box-align: center;-ms-flex-align: center;align-items: center;
+    -webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;
+    padding: 0.5rem 1rem;
+    color: rgb(var(--white));
+    white-space: nowrap;
+}
+.homeIconsDrop > .hiddenDrop a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 0.375rem 0px 0.375rem 0.375rem;
+    border-style: solid;
+    border-color: var(--transp) rgb(var(--white));
+    margin-left: 1rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.homeIconsDrop > .hiddenDrop a:hover{
+    background-color: rgb(var(--grey2));
+    color: rgb(var(--mainZ51Col));
+}
+.homeIconsDrop > .hiddenDrop a:hover::after{
+    border-color: var(--transp) rgb(var(--mainZ51Col));
+}
+.homeIconsDrop:hover .hiddenDrop{
     max-height: calc(100vh * 2);
 }
 .homeIconsDrop.absDrop{
     position: relative;
 }
-.homeIconsDrop.absDrop > .hiddenDrop{
+.homeIconsDrop.absDrop .hiddenDrop{
     position: absolute;
     top: 100%;
     left: 0;
 }
-.homeIconsDrop.absDrop .hiddenDrop li{
-    cursor: pointer;
+.homeIconsDrop .hiddenDrop li{
+    max-width: none;
 }
+.homeIconsDrop .hiddenDrop li:last-child a::after{
+    display: none;
+}
+.homeIconsDrop .hiddenDrop li:last-child a{
+    color: rgb(var(--orange));
+}
+.homeIconsDrop .hiddenDrop li:last-child a:hover{
+    color: rgb(var(--red));
+}
+.homeIconsDrop .hiddenDrop.logIn > div{
+    padding: 0.75rem;
+}
+.homeIconsDrop .customZ51Checkbox label::before{
+   outline: 0.0625rem solid rgb(var(--grey2)); 
+}
+.homeIconsDrop .customZ51Checkbox label::after{
+    background-color: rgb(var(--mainZ51Col)) !important; 
+}
+.homeIconsDrop .customZ51Checkbox label:hover{
+    color: rgb(var(--mainZ51Col)) !important; 
+}
+.homeIconsDrop .hiddenDrop.logIn > div >div:last-child{
+    border-top: 0.0625rem solid rgb(var(--grey2));
+}
+.homeIconsDrop .hiddenDrop.logIn > div >div a{
+    white-space: nowrap;
+    font-size: var(--fnt0p875rem);
+    text-transform: none;
+}
+.homeIconsDrop .hiddenDrop.logIn > div >div a::after{
+    display: none;
+}
+
+
+
 /*.customDrop style end*/
 
 
@@ -1257,6 +1320,7 @@ aside .asideTxt{
 }
 .customZ51Checkbox label{
     cursor: pointer;
+    position: relative;
 }
 .customZ51Checkbox label::before{
     top: -2px;

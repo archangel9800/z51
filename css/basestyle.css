@@ -912,6 +912,10 @@ header{
     overflow-x: hidden;
     cursor: auto !important;
 }
+.homeModals .homeModalsTitle{
+    margin-top: -1.3125rem;
+}
+
 .homeModals .fancybox-button:not(.customClose){
     display: none;
 }
@@ -1500,8 +1504,13 @@ aside .asideTxt{
     margin-top: 1.25rem;
 }
 .banerInGoods img{
-    width: 100%;
+    width: calc(100% - 1.25rem);
     display: block;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+    margin-left: 1.25rem;
+}
+.banerInGoods img:hover{
+    transform: scale(1.01)
 }
 @media only screen and (min-width: 0px){
     .banerInGoods{
@@ -1564,7 +1573,7 @@ aside .asideTxt{
 .goodWrap .goodbl .goodInfoBottom {
     width: calc(100% - 2.25rem);
     margin: 0 auto 1.125rem auto;
-    height: 110px;
+    height: 6.875rem;
     display: -webkit-box;display: -ms-flexbox;display: flex;
     -webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;
 }
@@ -1737,8 +1746,10 @@ aside .asideTxt{
     padding: 1.5625rem 0;
     border-bottom: 0.0625rem solid rgb(var(--grey2));
 }
-.goodWrap .goodRate a{ 
-    
+.goodRate .rateit{ 
+    font-size: var(--fnt3p125rem);
+}
+.goodWrap .goodRate a{  
     text-align: center;
     color: rgb(var(--grey1));
     font-size: var(--fnt0p875rem);

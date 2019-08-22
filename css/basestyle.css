@@ -900,6 +900,38 @@ header{
 }
 /*.home style end*/
 
+
+/*.customDrop style start*/
+
+
+
+
+
+.homeIconsDrop > .hiddenDrop{
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .3s;
+    transition: max-height .3s;
+}
+.homeIconsDrop.visibleBl > .hiddenDrop{
+    max-height: calc(100vh * 2);
+}
+.homeIconsDrop.absDrop{
+    position: relative;
+}
+.homeIconsDrop.absDrop > .hiddenDrop{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.homeIconsDrop.absDrop .hiddenDrop li{
+    cursor: pointer;
+}
+/*.customDrop style end*/
+
+
+
+
 /*.homeModals start*/
 .homeModals{
     display: none;
@@ -1712,13 +1744,22 @@ aside .asideTxt{
 .goodWrap .goodInfoHidden{
     width: calc(100% - 2.25rem);
     margin: 0 auto 1.25rem auto;
-    padding-top: 1.5625rem;
+    padding-top: 1.25rem;
 }
 .goodWrap .InfoHidden > div{
     border-top: 0.0625rem solid rgb(var(--grey2));
+    margin: 1.25rem auto; 
+    padding: 1.25rem 0;
+}
+.goodWrap .InfoHidden > div:first-child{
+    margin-bottom: 0; 
+    margin-top: 0; 
+    padding-bottom: 0; 
 }
 .goodWrap .InfoHidden > div:last-child{
     border-bottom: 0.0625rem solid rgb(var(--grey2));
+    padding: 1.25rem 0;
+    margin-bottom: 1.25rem; 
 }
 .goodWrap .goodInfoHidden ul{
     padding: 0;
@@ -1742,12 +1783,11 @@ aside .asideTxt{
 }
 .goodWrap .goodRate{ 
     width: calc(100% - 2.25rem);
-    margin: 1.25rem auto; 
-    padding: 1.5625rem 0;
-    border-bottom: 0.0625rem solid rgb(var(--grey2));
 }
 .goodRate .rateit{ 
     font-size: var(--fnt3p125rem);
+    height: 2.8125rem;
+    line-height: 2.375rem;
 }
 .goodWrap .goodRate a{  
     text-align: center;
@@ -1763,7 +1803,6 @@ aside .asideTxt{
 }
 
 .goodWrap .banerIngoodWrap{
-    
     transition: all 0.1s;
     width: calc(100% - 1.25rem);
     margin: 1.25rem 0 0 1.25rem;

@@ -224,6 +224,7 @@ function mainMenuSecondaryDropdownWidth(){
 //.textLimit script start
   function textLimit(){  
     $(".textLimit").text(function(i, text) { 
+        text = text.trim();
       if (text.length >= $(this).attr('data-textSize')) {
         text = text.substring(0, $(this).attr('data-textSize'));
         var lastIndex = text.substr($(this).attr('data-textSize') - 3);

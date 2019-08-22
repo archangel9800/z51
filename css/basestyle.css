@@ -1420,6 +1420,7 @@ aside .asideTxt{
     border: 0.0625rem solid rgb(var(--grey2));
     background-color: rgb(var(--black));
     box-shadow: 0px 0px 15px 8px var(--transp);
+    min-height: 100%;
     
 }
 .goodWrap .goodbl:hover {
@@ -1563,11 +1564,15 @@ aside .asideTxt{
 .goodWrap .goodbl .goodInfoBottom {
     width: calc(100% - 2.25rem);
     margin: 0 auto 1.125rem auto;
- 
+    height: 110px;
+    display: -webkit-box;display: -ms-flexbox;display: flex;
+    -webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;
 }
 .goodWrap .goodInfoBottom .priceBl .oldPrice, .goodWrap .goodInfoBottom .priceBl .newPrice *{
      font-size: var(--fnt0p875rem);
      color: rgb(var(--grey1));
+}
+.goodWrap .goodInfoBottom .priceBl {
 }
 .goodWrap .goodInfoBottom .priceBl strike{
      font-size: var(--fnt1p25rem);
@@ -1640,8 +1645,21 @@ aside .asideTxt{
     margin-right: 0.25rem;
 }
 .goodWrap .goodInfoBottom .deliveryPickup span.notAvailable::before{
-    background-color: rgb(var(--red));
+    background-color: rgb(var(--grey2));
 }
+.goodWrap .goodInfoBottom .deliveryPickup span.outOfStock::before{
+    background-color: rgb(var(--grey4));
+}
+.goodWrap .goodInfoBottom .deliveryPickup span.expectedDate::before{
+    background-color: rgb(var(--yellowGrey));
+}
+
+
+
+
+
+
+
 .goodWrap .goodInfoBottom .deliveryPickup .goodIcons::before{
     cursor: pointer;
     -webkit-transition: all 0.1s;transition: all 0.1s;
@@ -1686,9 +1704,13 @@ aside .asideTxt{
 .goodWrap .goodInfoHidden{
     width: calc(100% - 2.25rem);
     margin: 0 auto 1.25rem auto;
-    padding: 1.5625rem 0;
-    border-bottom: 0.0625rem solid rgb(var(--grey2));
+    padding-top: 1.5625rem;
+}
+.goodWrap .InfoHidden > div{
     border-top: 0.0625rem solid rgb(var(--grey2));
+}
+.goodWrap .InfoHidden > div:last-child{
+    border-bottom: 0.0625rem solid rgb(var(--grey2));
 }
 .goodWrap .goodInfoHidden ul{
     padding: 0;
@@ -1712,7 +1734,7 @@ aside .asideTxt{
 .goodWrap .goodRate{ 
     width: calc(100% - 2.25rem);
     margin: 1.25rem auto; 
-    padding-bottom: 1.5625rem;
+    padding: 1.5625rem 0;
     border-bottom: 0.0625rem solid rgb(var(--grey2));
 }
 .goodWrap .goodRate a{ 

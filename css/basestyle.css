@@ -22,6 +22,8 @@ body{
 }
 body *{
     color: rgb(var(--grey1));
+     scrollbar-width: thin;
+     scrollbar-color:  rgb(var(--mainZ51Col)) rgb(var(--grey2));
 }
 body a{ 
     text-decoration: none !important;
@@ -1723,10 +1725,11 @@ aside .asideTxt{
     margin: 0;
 }
 .goodWrap .goodInfoHidden li{
-    display: -webkit-box;display: -ms-flexbox;display: flex;
-    -webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;
     list-style-type: none;
     margin-bottom: 0.5rem;
+}
+.goodWrap .goodInfoHidden li span{
+    font-size: var(--fnt0p875rem);
 }
 .goodWrap .goodInfoHidden li:last-child{
     margin-bottom: 0;

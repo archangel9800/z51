@@ -394,37 +394,9 @@
                                 <li><a href="#">Выйти</a></li>
                             </ul>
                         </li>
-                        <li class="cab homeIcons active homeIconsDrop absDrop">
-                            <a class="d-flex flex-wrap justify-content-center align-items-end" href="#"><span class="icon-name w-100">Кабинет</span>
+                        <li class="cab homeIcons active">
+                            <a href="#inAuth" class="d-flex flex-wrap justify-content-center align-items-end modalbox" href="#"><span class="icon-name w-100">Кабинет</span>
                             </a>
-                            <form  class="hiddenDrop logIn" action="" method="post">
-                                <div>
-                                    <div class="mb-1 mt-2 d-flex justify-content-center flex-column align-items-center">
-                                        <label for="login">Ваш логин:</label>
-                                        <input class="p-1" type="text" name="login"/>
-                                    </div>
-                                    <div class="mb-1 mt-2 d-flex justify-content-center flex-column align-items-center">
-                                        <label for="password">Ваш пароль:</label>
-                                        <input class="p-1" type="password" name="password" />
-                                    </div>
-                                    
-                                    <div class="customZ51Checkbox mt-2 d-flex flex-wrap justify-content-center">
-                                        <div class="d-flex align-items-center p-0 m-0">
-                                            <input type="checkbox" id="rem">
-                                            <label class="p-0 m-0 pl-4" for="rem">Запомнить?</label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="d-flex mt-2 justify-content-center">
-                                        <input class="buttonFGr py-2 px-3" type="submit" name="submit"  value="Авторизоваться" />
-                                    </div>
-                                    
-                                    <div class="d-flex pt-2 mt-2 justify-content-between align-items-center">
-                                        <a href="#" class="btnBrdr py-2 px-3 mr-2">Регистрация</a>
-                                        <a href="#" class="btnBrdr py-2 px-3">Забыли пароль?</a>
-                                    </div>
-                                </div>
-                            </form>
                         </li>
                         <li class="wish homeIcons">
                             <a class="d-flex flex-wrap justify-content-center align-items-end" href="#">
@@ -746,6 +718,43 @@
                 <a class="hoverLinkG d-block mr-3 fnt1p125rem" href="#">Мониторы <span>(3)</span></a> <div class="xButton red"></div>
             </div>
        
+        </div>
+
+
+        <div class="homeModals p-2" id="inAuth">
+
+            <div class="customCloseFixed">
+                <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small customClose xButton green" title="Close"></button>
+            </div>
+            
+            <form  class="logIn" action="" method="post">
+                <div>
+                    <div class="mb-1 d-flex justify-content-center flex-column align-items-center">
+                        <label for="login">Ваш логин:</label>
+                        <input class="p-1" type="text" name="login"/>
+                    </div>
+                    <div class="mb-1 mt-2 d-flex justify-content-center flex-column align-items-center">
+                        <label for="password">Ваш пароль:</label>
+                        <input class="p-1" type="password" name="password" />
+                    </div>
+
+                    <div class="customZ51Checkbox mt-2 d-flex flex-wrap justify-content-center">
+                        <div class="d-flex align-items-center p-0 m-0">
+                            <input type="checkbox" id="rem">
+                            <label class="p-0 m-0 pl-4" for="rem">Запомнить?</label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mt-2 justify-content-center">
+                        <input class="buttonFGr py-2 px-3" type="submit" name="submit"  value="Авторизоваться" />
+                    </div>
+
+                    <div class="d-flex pt-2 mt-2 justify-content-between align-items-center">
+                        <a href="#" class="btnBrdr py-2 px-3 mr-2">Регистрация</a>
+                        <a href="#" class="btnBrdr py-2 px-3">Забыли пароль?</a>
+                    </div>
+                </div>
+            </form>
         </div>
 
 

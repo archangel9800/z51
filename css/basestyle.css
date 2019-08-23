@@ -922,24 +922,9 @@ header{
     color: rgb(var(--white));
     white-space: nowrap;
 }
-.homeIconsDrop > .hiddenDrop a::after{
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-width: 0.375rem 0px 0.375rem 0.375rem;
-    border-style: solid;
-    border-color: var(--transp) rgb(var(--white));
-    margin-left: 1rem;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-}
 .homeIconsDrop > .hiddenDrop a:hover{
     background-color: rgb(var(--grey2));
     color: rgb(var(--mainZ51Col));
-}
-.homeIconsDrop > .hiddenDrop a:hover::after{
-    border-color: var(--transp) rgb(var(--mainZ51Col));
 }
 .homeIconsDrop:hover .hiddenDrop{
     max-height: calc(100vh * 2);
@@ -955,39 +940,6 @@ header{
 .homeIconsDrop .hiddenDrop li{
     max-width: none;
 }
-.homeIconsDrop .hiddenDrop li:last-child a::after{
-    display: none;
-}
-.homeIconsDrop .hiddenDrop li:last-child a{
-    color: rgb(var(--orange));
-}
-.homeIconsDrop .hiddenDrop li:last-child a:hover{
-    color: rgb(var(--red));
-}
-.homeIconsDrop .hiddenDrop.logIn > div{
-    padding: 0.75rem;
-}
-.homeIconsDrop .customZ51Checkbox label::before{
-   outline: 0.0625rem solid rgb(var(--grey2)); 
-}
-.homeIconsDrop .customZ51Checkbox label::after{
-    background-color: rgb(var(--mainZ51Col)) !important; 
-}
-.homeIconsDrop .customZ51Checkbox label:hover{
-    color: rgb(var(--mainZ51Col)) !important; 
-}
-.homeIconsDrop .hiddenDrop.logIn > div >div:last-child{
-    border-top: 0.0625rem solid rgb(var(--grey2));
-}
-.homeIconsDrop .hiddenDrop.logIn > div >div a{
-    white-space: nowrap;
-    font-size: var(--fnt0p875rem);
-    text-transform: none;
-}
-.homeIconsDrop .hiddenDrop.logIn > div >div a::after{
-    display: none;
-}
-
 
 
 /*.customDrop style end*/
@@ -1139,6 +1091,36 @@ header{
     overflow: hidden;
 }
 
+#inAuth {
+    overflow: hidden;
+}
+#inAuth form{
+    margin-top: -1.875rem;
+}
+#inAuth .hiddenDrop.logIn > div{
+    padding: 0.75rem;
+}
+#inAuth .customZ51Checkbox label::before{
+   outline: 0.0625rem solid rgb(var(--grey2)); 
+}
+#inAuth .customZ51Checkbox label::after{
+    background-color: rgb(var(--mainZ51Col)) !important; 
+}
+#inAuth .customZ51Checkbox label:hover{
+    color: rgb(var(--mainZ51Col)) !important; 
+}
+#inAuth form.logIn > div >div:last-child{
+    border-top: 0.0625rem solid rgb(var(--grey2));
+}
+#inAuth form.logIn > div >div a{
+    white-space: nowrap;
+    font-size: var(--fnt0p875rem);
+    text-transform: none;
+}
+#inAuth.homeModals .customCloseFixed{
+    left: 100%;
+    top: 0;
+}
 
 
 

@@ -326,7 +326,7 @@ h6{
     flex: 1 0 auto;
 }
 
-
+/*.buttons and links style start*/
 .xButton{
     cursor: pointer;
      -webkit-transition: all 0.1s; transition: all 0.1s;
@@ -416,11 +416,19 @@ body .hoverLinkG{
 body .hoverLinkG.cont{ 
     color: rgb(var(--mainContCol));
 }
-body .hoverLinkG:hover, body .hoverLinkG.active{ 
+body .hoverLinkG:hover, body .hoverLinkG[class*='active']{ 
     color: rgb(var(--white));
 }
-
-
+.hoverLinkG[class*='activeWBrdr']::after {
+    display: block;
+    content: '';
+    border-bottom: 0.0625rem dotted var(--transp);
+    height: 0.125rem;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+}
+body .hoverLinkG[class*='activeWBrdr']::after{
+    border-color: rgb(var(--white));
+}
 
 [class*='hoverDottedBorder'] {
     cursor: pointer;
@@ -447,7 +455,7 @@ body .hoverLinkG:hover, body .hoverLinkG.active{
 .hoverDottedBorderWhite:hover::after {
     border-color: rgb(var(--white));
 }
-
+/*.buttons and links style end*/
 
 .slogan {
 	max-width: 8.125rem;
@@ -697,23 +705,8 @@ header{
 /*header .navbar-collapse end*/
 
 /*header .navigation start*/
-.navigation a{
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-    color: rgb(var(--mainZ51Col));
-}
-.navigation a:hover, .navigation .active a{
-    color: rgb(var(--white));
-}
-.navigation .langBl a::after{
-    display: block;
-    content: '';
-    border-bottom: 0.0625rem dotted var(--transp);
-    height: 0.125rem;
-    -webkit-transition: all 0.1s;transition: all 0.1s;
-}
-.navigation .langBl a:hover::after, .navigation .langBl .active a::after{
-    border-color: rgb(var(--white));
+.navigation ul{
+    list-style: none;
 }
 /*header .navigation end*/
  
@@ -959,9 +952,8 @@ header{
     cursor: auto !important;
 }
 .homeModals .homeModalsTitle{
-    margin-top: -1.3125rem;
+    margin-top: -1.75rem;
 }
-
 .homeModals .fancybox-button:not(.customClose){
     display: none;
 }
@@ -986,8 +978,8 @@ header{
 .homeModals .customCloseFixed{
     width: 1.625rem;
     height: 1.625rem;
-    left: calc(100% - 2.125rem);
-    top: 0.5rem;
+    left: calc(100% - 1.625rem);
+    top: 0rem;
 }
 .homeModals .fancybox-button:hover{
     border: 0.125rem solid rgb(var(--mainZ51Col));
@@ -996,6 +988,9 @@ header{
 #inCart.homeModals{
     max-width: 61.25rem;
     max-height: 80vh;
+}
+#inCart.homeModals .customCloseFixed{
+    left: calc(100% - 2.125rem);
 }
 #inCart .cartItem{
     border-bottom: 0.0625rem solid rgb(var(--grey1));
@@ -1117,10 +1112,7 @@ header{
     font-size: var(--fnt0p875rem);
     text-transform: none;
 }
-#inAuth.homeModals .customCloseFixed{
-    left: 100%;
-    top: 0;
-}
+
 
 
 

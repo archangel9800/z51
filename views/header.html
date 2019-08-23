@@ -1,4 +1,4 @@
-    <header class="px-1 pt-1 pt-lg-0 sticky-top overHeight">
+   <header class="px-1 pt-1 pt-lg-0 sticky-top overHeight">
 
         <nav id="firstNavLine" class="navbar-z51 navbar navbar-expand-lg px-0 py-0 flex-wrap mainWidth">
             <div class="col-12 px-0 pb-0 pb-lg-3 pt-0 pt-lg-3 d-flex flex-wrap align-items-center">
@@ -101,17 +101,17 @@
                 <div class="navigation headerNavCollapse collapse navbar-collapse flex-grow-1">
                     <div class="justify-content-center justify-content-lg-end d-flex flex-wrap w-100 align-items-center">
 
-                        <ul class="navbar-nav d-none d-md-flex d-lg-none d-xxl-flex justify-content-center flex-row flex-grow-1">
-                            <li class="nav-item active"><a class="nav-link px-2 text-uppercase" href="#">Магазины</a></li>
-                            <li class="nav-item"><a class="nav-link px-2 text-uppercase" href="#">Кредит</a></li>
-                            <li class="nav-item"><a class="nav-link px-2 text-uppercase" href="#">Оплата и доставка</a></li>
-                            <li class="nav-item"><a class="nav-link text-uppercase" href="#">Гарантия</a></li>
+                        <ul class="p-0 d-none d-md-flex d-lg-none d-xxl-flex justify-content-center flex-row flex-grow-1">
+                            <li><a class="px-2 text-uppercase hoverLinkG" href="#">Магазины</a></li>
+                            <li><a class="px-2 text-uppercase hoverLinkG" href="#">Кредит</a></li>
+                            <li><a class="px-2 text-uppercase hoverLinkG" href="#">Оплата и доставка</a></li>
+                            <li><a class="text-uppercase hoverLinkG" href="#">Гарантия</a></li>
                         </ul>
 
 
-                        <ul class="navbar-nav pr-0 flex-row flex-grow-1 flex-lg-grow-0 justify-content-center langBl">
-                            <li class="nav-item"><a class="nav-link px-2" href="#">Укр</a></li>
-                            <li class="nav-item active"><a class="nav-link px-2" href="#">Рус</a></li>
+                        <ul class="p-0 pr-0 d-flex flex-row flex-grow-1 flex-lg-grow-0 justify-content-center langBl">
+                            <li><span class="px-2 hoverLinkG activeWBrdr d-block">Укр</span></li>
+                            <li class=""><span class="px-2 hoverLinkG d-block">Рус</span></li>
                         </ul>
 
                     </div>
@@ -126,7 +126,7 @@
 
                 <div class="cd-dropdown-wrapper flex-lg-grow-0">
                     <span class="cd-dropdown-trigger py-2 pl-3 pr-4"><b class="pr-4 text-uppercase pl-1 py-2">Каталог товаров</b></span>
-                    <nav class="cd-dropdown">
+                    <div class="cd-dropdown">
                         <p class="mobName">Каталог товаров</p>
                         <a href="#" class="cd-close">Close</a>
                         <ul class="cd-dropdown-content">
@@ -283,7 +283,7 @@
                             <li><a href="#">Page 2</a></li>
                             <li><a href="#">Page 3</a></li>
                         </ul> <!-- .cd-dropdown-content -->
-                    </nav> <!-- .cd-dropdown -->
+                    </div> <!-- .cd-dropdown -->
                 </div>
 
                 <form class="topSearch p-0 mx-1 mx-lg-4 d-none d-lg-flex flex-grow-1">
@@ -319,8 +319,20 @@
 
                 <div class="home p-0 m-0 pt-2 pt-lg-0 flex-grow-1 flex-lg-grow-0 d-none d-lg-flex align-items-center justify-content-center">
                     <ul class="p-0 m-0 d-flex align-items-end justify-content-center">
-                        <li class="cab homeIcons active entered">
+                        <li class="cab homeIcons active entered homeIconsDrop absDrop">
                             <a class="d-flex flex-wrap justify-content-center align-items-end" href="#"><span class="icon-name w-100">Кабинет</span>
+                            </a>
+                            <ul class="hiddenDrop">
+                                <li><a href="#">Администрирование</a></li>
+                                <li><a href="#">Мои заказы</a></li>
+                                <li><a href="#">Кредитная линия</a></li>
+                                <li><a href="#">Настройки</a></li>
+                                <li><a href="#">Журнал авторизации</a></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </li>
+                        <li class="cab homeIcons active">
+                            <a href="#inAuth" class="d-flex flex-wrap justify-content-center align-items-end modalbox" href="#"><span class="icon-name w-100">Кабинет</span>
                             </a>
                         </li>
                         <li class="wish homeIcons">
@@ -348,8 +360,10 @@
         </nav>
 
 
+        
+        
 
-        <div class="homeModals p-0" id="inCart">
+        <div class="homeModals p-0 pt-2" id="inCart">
 
             <div class="customCloseFixed">
                 <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small customClose xButton green" title="Close"></button>
@@ -616,7 +630,7 @@
 
         </div>
 
-        <div class="homeModals p-1 pb-3" id="inComparison">
+        <div class="homeModals p-2" id="inComparison">
 
             <div class="customCloseFixed">
                 <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small customClose xButton green" title="Close"></button>
@@ -643,4 +657,46 @@
        
         </div>
 
+
+        <div class="homeModals p-2" id="inAuth">
+
+            <div class="customCloseFixed">
+                <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small customClose xButton green" title="Close"></button>
+            </div>
+            
+            <form  class="logIn" action="" method="post">
+                <div>
+                    <div class="mb-1 d-flex justify-content-center flex-column align-items-center">
+                        <label for="login">Ваш логин:</label>
+                        <input class="p-1" type="text" name="login"/>
+                    </div>
+                    <div class="mb-1 mt-2 d-flex justify-content-center flex-column align-items-center">
+                        <label for="password">Ваш пароль:</label>
+                        <input class="p-1" type="password" name="password" />
+                    </div>
+
+                    <div class="customZ51Checkbox mt-2 d-flex flex-wrap justify-content-center">
+                        <div class="d-flex align-items-center p-0 m-0">
+                            <input type="checkbox" id="rem">
+                            <label class="p-0 m-0 pl-4" for="rem">Запомнить?</label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mt-2 justify-content-center">
+                        <input class="buttonFGr py-2 px-3" type="submit" name="submit"  value="Авторизоваться" />
+                    </div>
+
+                    <div class="d-flex pt-2 mt-2 justify-content-between align-items-center">
+                        <a href="#" class="btnBrdr py-2 px-3 mr-2">Регистрация</a>
+                        <a href="#" class="btnBrdr py-2 px-3">Забыли пароль?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
     </header>
+
+   

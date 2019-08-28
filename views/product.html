@@ -1,3 +1,4 @@
+  
     <div class="px-1 breadcrumbBlock">
         <div class="d-flex flex-wrap p-0 contentWrapper mainWidth">
 
@@ -40,20 +41,21 @@
 
                 <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-4 order-1 order-md-1 p-0">
                     <div id="prodCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-                        <ol class="carousel-indicators">
-                            <li data-target="#prodCarousel" data-slide-to="0" class="active">
-                                <img src="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/100.jpg" class="d-block w-100" alt="">
-                            </li>
-                            <li data-target="#prodCarousel" data-slide-to="1">
-                                <img src="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/100_1.jpg" class="d-block w-100" alt="">
-                            </li>
-                            <li data-target="#prodCarousel" data-slide-to="2">
-                                <img src="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/100_2.jpg" class="d-block w-100" alt="">
-                            </li>
-                            <li data-target="#prodCarousel" data-slide-to="3">
-                                <img src="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/100_3.jpg" class="d-block w-100" alt="">
-                            </li>
-                        </ol>
+                       
+                       <div class="goodInfoTopL">
+                            <div class="events">
+                                <span>Подарок</span>
+                                <span class="redEvent">Лучшая цена</span>
+                                <span class="orangeEvent">Топ продаж</span>
+                                <span class="darkvioletEvent">Выбор геймера</span>
+                            </div>
+                        </div>
+                        <div class="goodInfoTopR">
+                            <div class="events">
+                                <a class="action" href="#">Акция</a>
+                            </div>
+                        </div>
+                       
                         <div class="carousel-inner">
                             <a class="carousel-item active" data-fancybox="prodGallery" href="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/600.jpg">
                                 <img src="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/600.jpg" class="d-block w-100" alt="">
@@ -76,6 +78,21 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
+                        
+                        <ol class="carousel-indicators">
+                            <li data-target="#prodCarousel" data-slide-to="0" class="active">
+                                <img src="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/100.jpg" class="d-block w-100" alt="">
+                            </li>
+                            <li data-target="#prodCarousel" data-slide-to="1">
+                                <img src="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/100_1.jpg" class="d-block w-100" alt="">
+                            </li>
+                            <li data-target="#prodCarousel" data-slide-to="2">
+                                <img src="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/100_2.jpg" class="d-block w-100" alt="">
+                            </li>
+                            <li data-target="#prodCarousel" data-slide-to="3">
+                                <img src="https://www.3ona51.com/images/products/zowie/divina-s2-pink-white/100_3.jpg" class="d-block w-100" alt="">
+                            </li>
+                        </ol>
                     </div>
                 </div>
 
@@ -84,29 +101,96 @@
                     <div class="col-12 col-xl-12 p-0 px-1 px-lg-3 order-2 order-xl-1">
                         <div class="descriptionOther px-2 px-lg-4 py-2 grey2Bg">
                             <ul class="d-flex flex-wrap justify-content-around p-0 m-0">
-                                <li class="py-2"><a class="fnt0p875rem hoverLinkW cont active" href="#">Описание товара</a></li>
-                                <li class="py-2"><a class="fnt0p875rem hoverLinkW cont" href="#">Характеристики</a></li>
-                                <li class="py-2"><a class="fnt0p875rem hoverLinkW cont" href="#">Видео</a></li>
-                                <li class="py-2"><a class="fnt0p875rem hoverLinkW cont" href="#">Отзывы и вопросы <span>(5)</span></a></li>
+                                <li class="py-2"><h2 class="hoverLinkW cont active m-0">Описание товара</h2></li>
+                                <li class="py-2"><a class="hoverLinkW cont" href="#">Характеристики</a></li>
+                                <li class="py-2"><a class="hoverLinkW cont" href="#">Видео</a></li>
+                                <li class="py-2"><a class="hoverLinkW cont" href="#">Отзывы и вопросы <span>(5)</span></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-12 col-xl-12 p-0 px-1 px-lg-3 mt-2 mt-lg-3 order-3 order-xl-2">
                         <div class="prodPrice w100 p-2 px-xxl-4 pt-xxl-4 pb-xxl-3">
-                            <div class="p-0 p-lg-1 d-flex flex-wrap align-items-center justify-content-around">
+                            <div class="p-0 p-lg-1 d-flex flex-wrap align-items-center justify-content-between">
+                               
                                 <div class="price mr-2 mb-2 mr-xxl-4">
                                     <span class="fnt0p875rem whiteFnt d-block">Цена</span>
                                     <span class="whiteFnt fnt3rem d-block font-weight-bold">22 999<span class="fnt0p875rem">грн.</span></span>
                                     <span class="fnt0p875rem d-block"><s class="fnt1p5rem">24 999</s>грн.</span>
                                 </div>
+                                
+<!--
                                 <div class="buy mr-2 mb-2 mr-xxl-4">
-                                    <span class="fnt1p25rem d-block text-uppercase buttonFGr cont lH1rem">Купить</span>
+                                    <a href="#" class="fnt1p25rem d-block text-uppercase buttonFGr cont lH1rem">Купить</a>
                                 </div>
+-->
+<!--
                                 <div class="credit mr-2 mb-2">
-                                    <span class="fnt1p25rem d-block text-uppercase btnBrdr cont lH1rem">Кредитная линия</span>
+                                    <a href="#" class="fnt1p25rem d-block text-uppercase btnBrdr cont lH1rem">Кредитная линия</a>
                                 </div>
+-->
+<!--
+                                <div class="credit mr-2 mb-2">
+                                    <span class="fnt1p25rem d-block text-uppercase  lH1rem">Не доступен</span>
+                                </div>
+-->
+<!--
+                                <div class="credit mr-2 mb-2">
+                                    <span class="fnt1p25rem d-block lH1rem">Приход <span class="whiteFnt">20.01.2569</span></span>
+                                </div>
+-->
+                                <div class="credit mr-2 mb-2">
+                                    <a href="#inNotify" class="fnt1p25rem d-block text-uppercase btnBrdr cont lH1rem modalbox">Уведомить о наличии</a>
+                                </div>
+                                
+                                <div class="credit mr-2 mb-2">
+                                    <a href="#inCredit" class="fnt1p25rem d-block text-uppercase btnBrdr cont lH1rem modalbox">Доступно в кредит</a>
+                                </div>
+                                
                             </div>
+                            <p class="text-right fnt0p875rem">Приход <span class="whiteFnt text-center">20.01.2569</span></p>
+<!--                            <p class="text-right fnt0p875rem">В наличии</p>-->
+                       
+                           <div class="productModals modals p-2" id="inNotify">
+
+                               <div class="customCloseFixed">
+                                   <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small customClose xButton green" title="Close"></button>
+                               </div>
+                                  
+                               <p class="text-center mb-3 mainZ51ColFnt fnt1p5rem homeModalsTitle">Уведомить о наличии</p>      
+                                   
+                               <div class="d-flex flex-wrap align-items-center justify-content-center">
+                                    <input class="flex-grow-1 px-2 py-1 d-flex flex-wrap align-items-center justify-content-center w-100" type="email" placeholder="Email" aria-label="Search">
+                                    <a class="d-flex mt-2 flex-wrap align-items-center justify-content-center buttonFGr py-2 px-3" href="#">Подписаться</a>
+                                </div>
+
+                           </div>
+                       
+                           <div class="productModals modals p-2" id="inCredit">
+
+                               <div class="customCloseFixed">
+                                   <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small customClose xButton green" title="Close"></button>
+                               </div>
+                                  
+                               <p class="text-center mb-3 mainZ51ColFnt fnt1p5rem homeModalsTitle">Кредитная линия</p>      
+        
+                                <div class="wrap">
+                                    <span class="lH1p1375rem">Ваш кредитный лимит: <span class="whiteFnt">0</span> грн. <br>
+                                        Цена: <span class="whiteFnt">1500</span> грн. <br>
+                                        Количество платежей: 
+                                        <select name="creditABmonths" id="creditABmonths" onchange="creditABcalculate(1);">
+                                            <option value="3">3</option>
+                                            <option value="6">6</option>
+                                            <option value="10" selected="selected">10</option>
+                                        </select></span><br>
+                                    <span class="lH1p1375rem">Первый/Ежемесячный платеж: <span class="whiteFnt">1500</span> грн. <br>*Увеличение кредитного лимита доступно в аккаунте покупателя. Минимальная сумма заказа: от <span class="whiteFnt">4500</span> грн.</span>
+                                </div>
+
+                           </div>
+
+
+                       
+                       
                         </div>
                     </div>
 
@@ -125,16 +209,21 @@
                                 <span class="fnt0p875rem d-block">Рейтинг пользователей</span>
                                 <div class="goodRate d-flex flex-column">
                                     <div class="rateit mr-2" data-rateit-value="2.5" data-rateit-mode="font" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-resetable="false"></div>
-                                    <span class="whiteFnt mt-1">37 отзывов</span>
+                                    <a href="#" class="hoverLinkW cont mt-1">37 отзывов</a>
                                 </div>
                                 <div class="mt-4">
                                     <div class="prodInfoIcons toComparison d-flex flex-wrap mt-2 py-1"><span class="fnt0p875rem hoverDottedBorderGrey">Добавить к сравнению</span></div>
                                     <div class="prodInfoIcons toWish active d-flex flex-wrap mt-2 py-1"><span class="fnt0p875rem hoverDottedBorderGrey">В списке желаний</span></div>
                                 </div>
+                                
                                 <div class="mt-4 pt-4 d-flex">
-                                    <div class="d-flex shareIcons like mr-3 align-items-center py-1 px-2"><span class="fnt0p625rem whiteFnt">Нравится</span><span class="fnt0p625rem whiteFnt">&nbsp;0</span></div>
-                                    <div class="d-flex shareIcons twit align-items-center py-1 px-2"><span class="fnt0p625rem whiteFnt">Твитнуть</span></div>
+                                    <div class="social-likes">
+                                        <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                                        <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                                    </div>
                                 </div>
+
+                                
                             </div>
                         </div>
                     </div>
@@ -1697,44 +1786,90 @@
         </div>
     </div>
     
-    <div class="px-1 videoBlock">
+    <div class="px-1 videoBlockInProduct">
         <div class="d-flex flex-wrap p-0 contentWrapper mainWidth">
             <div class="videoWrap w-100 grey3Bg d-flex flex-wrap justify-content-center">
                 <p class="text-uppercase mt-0 mt-lg-4 mb-2 mb-lg-3 mainContColFnt fnt1p5rem">Видео о товаре</p>
 
-                <div class="w-100"></div>
+                <div class="swiper-container swiperVideo w-100">
+                    <div class="swiper-wrapper">
 
-                <div class="videoBlock col-10 col-md-6 col-lg-4 p-0">
-                    <div class="videoPadding">
-                        <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/s0eCRqMZ5FE">
-                            <div class="btnLink d-flex align-items-center justify-content-center"></div>
-                            <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/s0eCRqMZ5FE/maxresdefault.jpg" />
-                        </a>
-                        <a data-fancybox href="https://www.youtube.com/embed/s0eCRqMZ5FE" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                        <div class="swiper-slide d-flex flex-wrap justify-content-center p-0">
+
+                            <div class="col-10 col-md-6 col-lg-4 p-0">
+                                <div class="videoPadding">
+                                    <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/s0eCRqMZ5FE">
+                                        <div class="btnLink d-flex align-items-center justify-content-center"></div>
+                                        <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/s0eCRqMZ5FE/maxresdefault.jpg" />
+                                    </a>
+                                    <a data-fancybox href="https://www.youtube.com/embed/s0eCRqMZ5FE" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-md-6 col-lg-4 p-0">
+                                <div class="videoPadding">
+                                    <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/A8KJwdVKTok">
+                                        <div class="btnLink d-flex align-items-center justify-content-center"></div>
+                                        <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/A8KJwdVKTok/maxresdefault.jpg" />
+                                    </a>
+                                    <a data-fancybox href="https://www.youtube.com/embed/A8KJwdVKTok" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-md-6 col-lg-4 p-0">
+                            <div class="videoPadding">
+                                <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/dfYiIbqVhkA">
+                                    <div class="btnLink d-flex align-items-center justify-content-center"></div>
+                                    <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/dfYiIbqVhkA/maxresdefault.jpg" />
+                                </a>
+                                <a data-fancybox href="https://www.youtube.com/embed/dfYiIbqVhkA" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                            </div>
+                        </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide d-flex flex-wrap justify-content-center p-0">
+
+                            <div class="col-10 col-md-6 col-lg-4 p-0">
+                                <div class="videoPadding">
+                                    <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/s0eCRqMZ5FE">
+                                        <div class="btnLink d-flex align-items-center justify-content-center"></div>
+                                        <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/s0eCRqMZ5FE/maxresdefault.jpg" />
+                                    </a>
+                                    <a data-fancybox href="https://www.youtube.com/embed/s0eCRqMZ5FE" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-md-6 col-lg-4 p-0">
+                                <div class="videoPadding">
+                                    <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/A8KJwdVKTok">
+                                        <div class="btnLink d-flex align-items-center justify-content-center"></div>
+                                        <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/A8KJwdVKTok/maxresdefault.jpg" />
+                                    </a>
+                                    <a data-fancybox href="https://www.youtube.com/embed/A8KJwdVKTok" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-md-6 col-lg-4 p-0">
+                            <div class="videoPadding">
+                                <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/dfYiIbqVhkA">
+                                    <div class="btnLink d-flex align-items-center justify-content-center"></div>
+                                    <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/dfYiIbqVhkA/maxresdefault.jpg" />
+                                </a>
+                                <a data-fancybox href="https://www.youtube.com/embed/dfYiIbqVhkA" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
+                            </div>
+                        </div>
+
+                        </div>
+
                     </div>
+                    <!-- Navigation -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+
                 </div>
 
-                <div class="videoBlock col-10 col-md-6 col-lg-4 p-0">
-                    <div class="videoPadding">
-                        <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/A8KJwdVKTok">
-                            <div class="btnLink d-flex align-items-center justify-content-center"></div>
-                            <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/A8KJwdVKTok/maxresdefault.jpg" />
-                        </a>
-                        <a data-fancybox href="https://www.youtube.com/embed/A8KJwdVKTok" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
-                    </div>
-                </div>
-
-                <div class="videoBlock col-10 col-md-6 col-lg-4 p-0">
-                    <div class="videoPadding">
-                        <a class="videoLink" data-fancybox href="https://www.youtube.com/embed/dfYiIbqVhkA">
-                            <div class="btnLink d-flex align-items-center justify-content-center"></div>
-                            <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/dfYiIbqVhkA/maxresdefault.jpg" />
-                        </a>
-                        <a data-fancybox href="https://www.youtube.com/embed/dfYiIbqVhkA" class="p-0 text-center hoverLinkW cont fnt1p125rem my-2 my-lg-3 marginLRAuto col-12 col-sm-10 col-lg-8 d-block">Обзор Hator Hypergang: игровая гарнитура с шикарным микрофоном за 50$!</a>
-                    </div>
-                </div>
-
-                <div class="w-100"></div>
 
                 <a href="#" class="subscribe mt-2 mb-2 mb-lg-4 d-flex flex-wrap align-items-center justify-content-center text-center"><span class="mt-1 hoverLinkW cont fnt1p125rem">Подпишись на наш Youtube-канал! </span><span class="youTube d-flex align-items-center align-self-stretch mt-1 mx-3"><span>YouTube</span> <span class="d-flex align-items-center">999+</span></span></a>
 

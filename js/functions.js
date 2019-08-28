@@ -427,6 +427,16 @@ $(".modalbox").fancybox();
 //    });
 //});
     
+    
+$(".modalbox").fancybox("#inSuccess");    
+//     $('#inSuccess').fancybox().trigger('click'); 
+    
+    $( ".actionResults" ).click(function() {
+//      $( ".icon-name" ).submit();
+        setTimeout("$.fancybox.close('.resultsModals')", 1000);
+        
+    });
+    
 });
  
     

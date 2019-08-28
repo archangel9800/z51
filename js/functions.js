@@ -268,10 +268,13 @@ function mainMenuSecondaryDropdownWidth(){
     });
     //aside .asideDropdown script end
     
+    //.customZ51CheckboxV2 .showMore script start
+    $('.customZ51CheckboxV2 .showMore').click(function(e) {
+        $(this).siblings('.hidden').removeClass('hidden');
+        $(this).addClass('hidden');
+    })
+    //.customZ51CheckboxV2 .showMore script end 
     
-    
-
-       
 //    var values= $( ".priceVal #buy_price" ).attr('value').split(', ')
 //        $( "input[name=price_s]" ).val(  values[ 0 ] ); // выводим  значение от при запуске
 //        $( "input[name=price_f]" ).val(  values[ 1 ] ); // выводим  значение до при запуске
@@ -327,7 +330,7 @@ $(".btnNav").on("click", function (event) {
 //		'overlayShow'	:	false
 //	});
 
-///.swiper-analog script start  
+///.swiperAnalog script start  
 function goodsCarouselInit(){
   var swiper = new Swiper('.swiper-container.swiperAnalog', {
       slidesPerView: 5,
@@ -366,8 +369,23 @@ $(window).resize(function(){
     goodsCarouselInit();
    }
 });     
-///.swiper-analog script end    
+///.swiperAnalog script end   
     
+///.swiperVideo script start  
+function videoCarouselInit(){
+  var swiper = new Swiper('.swiper-container.swiperVideo', {
+//       centeredSlides: true,
+      // init: false,
+      navigation: {
+        nextEl: '.swiperVideo .swiper-button-next',
+        prevEl: '.swiperVideo .swiper-button-prev',
+      }
+    });
+ };
+videoCarouselInit();
+///.swiperVideo script end    
+
+///.swiperIndex script start     
 var swiper = new Swiper('.swiper-container.swiperIndex', {
 centeredSlides: true,
   autoplay: {
@@ -383,17 +401,16 @@ centeredSlides: true,
     prevEl: '.swiper-button-prev',
   },
 });  
+///.swiperIndex script end     
     
-    
-
+///.modals in home activation script start 
 $(".modalbox").fancybox();
- 
-     onmouseout="this.blur();"
-    $('.modalbox').click(function(){
-        console.log('1');
-        $('.homeModals input').blur();    
-    })
-    
+///.modals in home activation script end     
+
+//    onmouseout="this.blur();"
+//    $('.modalbox').click(function(){
+//    $('.homeModals input').blur();    
+//})    
     
     
 //$(document).ready(function(){

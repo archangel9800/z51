@@ -2733,7 +2733,7 @@ flex: 0 0 auto;
 .discussion .answer textarea{
     border: 0.0625rem solid rgb(var(--grey2));
 }
-19,19,19
+
 @media only screen and (min-width: 0px){
     .discussion .comentFeatures{
         width: 100%;

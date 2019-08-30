@@ -2677,8 +2677,85 @@ flex: 0 0 auto;
 }
 /*.productComparisonBlock style end*/
 
-
+/*.block404 style start*/
 .block404 img{
-    width: 800px;
+    width: 50rem;
     max-width: 100%;
 }
+/*.block404 style end*/
+
+.specifications{
+    max-width: 62.5rem;
+    width: 100%;
+}
+.specifications tr td{
+    padding: 0.25rem;
+}
+.specifications tr td:first-child{
+    text-align: end;
+    color: rgb(var(--white));
+    width: 50%;
+}
+.specifications tr td:last-child{
+    width: 50%;
+}
+.specifications .specProdName td:first-child{
+    text-align: center;
+    font-size: var(--fnt1p625rem);
+}
+
+
+
+.discussion{
+    max-width: 1000px;
+    width: 100%;
+    border: 0.0625rem solid rgb(var(--grey2));
+}
+.discussion .likes {
+    cursor: pointer;
+    background: url('../img/icons/svg/like-grey.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    width: 1rem;
+    height: 1rem;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+}
+.discussion .likes:hover {
+    background: url('../img/icons/svg/like-green.svg');
+}
+.discussion .likes.dislike {
+    transform: rotate(180deg);
+}
+.discussion .likes.dislike:hover {
+    background: url('../img/icons/svg/like-red.svg');
+}
+.discussion .answer textarea{
+    border: 0.0625rem solid rgb(var(--grey2));
+}
+19,19,19
+@media only screen and (min-width: 0px){
+    .discussion .comentFeatures{
+        width: 100%;
+        text-align: left;
+    }
+    .discussion .answer label{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .discussion .comentFeatures{
+        width: 7.375rem;
+        text-align: right;
+    }
+    .discussion .answer label{
+        width: auto;
+    }
+}
+
+
+
+
+
+
+

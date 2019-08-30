@@ -273,6 +273,10 @@ function mainMenuSecondaryDropdownWidth(){
         $(this).siblings('.hidden').removeClass('hidden');
         $(this).addClass('hidden');
     })
+    $('.discussion .answerlink').click(function(e) {
+        $(this).siblings('.dispNone').removeClass('dispNone');
+        $(this).addClass('dispNone');
+    })
     //.customZ51CheckboxV2 .showMore script end 
     
 //    var values= $( ".priceVal #buy_price" ).attr('value').split(', ')

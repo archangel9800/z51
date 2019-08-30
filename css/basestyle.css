@@ -268,6 +268,10 @@ body input{
 .fnt3rem {
     font-size: var(--fnt3rem)
 }
+/*    50px*/
+.fnt3p125rem{
+    font-size: var(--fnt3p125rem);
+}
 
 body>div:first-child, .cbalink{
     display: none;
@@ -407,6 +411,27 @@ body .buttonFGr.cont:hover{
     color: rgb(var(--white));
     background-color:  rgba(var(--mainContCol), 0.9);
 }
+
+body .buttonFGrey{
+    line-height: 0.9;
+    background-color: rgb(var(--grey3));
+    color: rgb(var(--white));
+    border: none;
+    -webkit-transition: all 0.1s; transition: all 0.1s;
+    border-radius: 0;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+}
+body .buttonFGrey.active{
+    background-color: rgb(var(--grey2));
+}
+body .buttonFGrey:hover{
+    color: rgb(var(--white));
+    background-color: rgb(var(--grey4));
+}
+
+
+
 
 body .hoverLinkW{ 
     cursor: pointer;
@@ -1403,9 +1428,6 @@ aside .asideTxt{
     width: 0.625rem;
     height: 0.625rem;
     background-color: rgb(var(--mainContCol));
-}
-.customZ51CheckboxV2 li.hidden{
-    display: none;
 }
 /*.customZ51CheckboxV2 style end*/
 
@@ -2730,8 +2752,11 @@ flex: 0 0 auto;
 .discussion .likes.dislike:hover {
     background: url('../img/icons/svg/like-red.svg');
 }
-.discussion .answer textarea{
+.answer textarea{
     border: 0.0625rem solid rgb(var(--grey2));
+}
+.answer textarea:focus{
+    border: 0.0625rem solid rgb(var(--mainContCol));
 }
 
 @media only screen and (min-width: 0px){

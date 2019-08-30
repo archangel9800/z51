@@ -268,16 +268,39 @@ function mainMenuSecondaryDropdownWidth(){
     });
     //aside .asideDropdown script end
     
-    //.customZ51CheckboxV2 .showMore script start
-    $('.customZ51CheckboxV2 .showMore').click(function(e) {
-        $(this).siblings('.hidden').removeClass('hidden');
-        $(this).addClass('hidden');
-    })
-    $('.discussion .answerlink').click(function(e) {
-        $(this).siblings('.dispNone').removeClass('dispNone');
+//.showMore script start
+//    простой скрипт на открытие соседних элементов(исп в фильтрах)
+    $('.showMore').click(function(e) {
+     $(this).siblings('.dispNone').removeClass('dispNone');
         $(this).addClass('dispNone');
     })
-    //.customZ51CheckboxV2 .showMore script end 
+//.showMore script end    
+    
+//.hidddenContInside .showMore script start
+//    скрипт закрытия открытия контента вместе с соседними(используется в коментариях к товару)
+$('.hidddenContInside .showCont').click(function(e) {
+    var showClass = $(this).attr('data-visible');    
+    $('.hidddenContInside [data-visible="'+showClass+'"]').removeClass('dispNone');
+    $(showClass).addClass('dispNone');
+    $(this).closest('.hidddenContInside').find(showClass).removeClass('dispNone'); 
+    $(this).addClass('dispNone');
+})
+//.hidddenContInside .showMore script end    
+
+    
+    
+//.switchBlock .switch script start
+//    скрипт закрытия открытия контента по кнопке (используется для добавления коментариев и ворпросов к товару)
+$('.switchBlock .switch').click(function(e) {
+    $(this).closest('.switchBlock').find(".switch").removeClass('active'); 
+   $(this).addClass('active');
+    $(this).closest('.switchBlock').find(".switchCont").addClass('dispNone');
+    var showClass = $(this).attr('data-switch');
+    $(showClass).removeClass('dispNone');
+})
+//.switchBlock .switch script end   
+    
+
     
 //    var values= $( ".priceVal #buy_price" ).attr('value').split(', ')
 //        $( "input[name=price_s]" ).val(  values[ 0 ] ); // выводим  значение от при запуске

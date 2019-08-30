@@ -289,6 +289,10 @@ body>div:first-child, .cbalink{
     -webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;
 }
 
+.maxW1000{
+    width: 100%;
+    max-width: 62.5rem;
+}
 .mainWidth{
     width: 100%;
     max-width: 98.75rem;
@@ -315,6 +319,19 @@ body>div:first-child, .cbalink{
 }
 .mainZ51ColBorder{
     border: 2px solid rgb(var(--mainZ51Col));
+}
+.grey2Border{
+    border: 2px solid rgb(var(--grey2));
+}
+
+
+textarea{
+    border: 0.0625rem solid rgb(var(--grey2));
+    outline: none;
+}
+textarea:focus{
+    border: 0.0625rem solid rgb(var(--mainContCol));
+    outline: none;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -2728,11 +2745,7 @@ flex: 0 0 auto;
 
 
 
-.discussion{
-    max-width: 1000px;
-    width: 100%;
-    border: 0.0625rem solid rgb(var(--grey2));
-}
+
 .discussion .likes {
     cursor: pointer;
     background: url('../img/icons/svg/like-grey.svg');
@@ -2751,14 +2764,6 @@ flex: 0 0 auto;
 }
 .discussion .likes.dislike:hover {
     background: url('../img/icons/svg/like-red.svg');
-}
-.answer textarea{
-    border: 0.0625rem solid rgb(var(--grey2));
-    outline: none;
-}
-.answer textarea:focus{
-    border: 0.0625rem solid rgb(var(--mainContCol));
-    outline: none;
 }
 
 @media only screen and (min-width: 0px){

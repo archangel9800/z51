@@ -2167,7 +2167,7 @@ flex: 0 0 auto;
 }
 @media only screen and (min-width: 576px){
     .footerFirstLine .footerUpBtn{
-        padding: 1rem 3.125rem;
+        padding: 1rem 2.5rem;
     }
     footer .logoImg img{
         width: 170px;

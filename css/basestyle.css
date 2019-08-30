@@ -2754,9 +2754,11 @@ flex: 0 0 auto;
 }
 .answer textarea{
     border: 0.0625rem solid rgb(var(--grey2));
+    outline: none;
 }
 .answer textarea:focus{
     border: 0.0625rem solid rgb(var(--mainContCol));
+    outline: none;
 }
 
 @media only screen and (min-width: 0px){

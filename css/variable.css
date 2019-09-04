@@ -19,7 +19,7 @@
     --grey2: 51,51,51;
     --grey3: 19,19,19;
     --grey4: 102,102,102;
-    --faceColor: 66,103,178;
+    --faceColor: 66,84,151;
     --twitColor: 49,200,246;
     
 /*    4px*/
@@ -46,6 +46,8 @@
     --fnt1p0625rem: 1.0625rem;
 /*    18px*/
     --fnt1p125rem: 1.125rem;
+/*    19px*/
+    --fnt1p1875rem: 1.1875rem;
 /*    20px*/
     --fnt1p25rem: 1.25rem;
 /*    22px*/

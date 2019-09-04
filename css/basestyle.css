@@ -1572,6 +1572,9 @@ aside .asideTxt{
 .sortBlock .customDrop>p:hover, .sortBlock li:hover{
     background-color: rgba(var(--white), 0.1);
 }
+.sortBlock .customDrop>p:hover, .sortBlock li:hover a{
+    color: rgb(var(--mainZ51Col));
+}
 .sortBlock .customDrop>p::after{
     margin-left: 1rem;
 }

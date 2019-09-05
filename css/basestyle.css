@@ -1651,7 +1651,7 @@ aside .asideTxt{
     font-size: var(--fnt0p875rem);
     line-height: 0.75rem;
     margin-bottom: 0.3125rem;
-     -webkit-transition: all 0.1s; transition: all 0.1s;
+    -webkit-transition: all 0.1s; transition: all 0.1s;
     opacity: 0.99;
 }
 .events > .eventsUaFnt{
@@ -1689,31 +1689,6 @@ aside .asideTxt{
     .goodWrap{
         padding-right: 0rem;
         margin: 1.25rem 0 0 1.25rem;
-    }
-}
-
-.banerInGoods{
-    width: 100%;
-    margin-top: 1.25rem;
-}
-.banerInGoods img{
-    width: calc(100% - 1.25rem);
-    display: block;
-    -webkit-transition: all 0.1s;transition: all 0.1s;
-    margin-left: 1.25rem;
-}
-.banerInGoods img:hover{
-    transform: scale(1.01)
-}
-@media only screen and (min-width: 0px){
-    .banerInGoods{
-        display: none;
-    }
-
-}
-@media only screen and (min-width: 1580px){
-    .banerInGoods{
-        display: block;
     }
 }
 
@@ -2623,11 +2598,11 @@ flex: 0 0 auto;
 }
 /*.topBrands style end*/
 
-/*.indexGoods style start*/
-.indexGoods .goodWrap{
+/*.bannerInGoodsGoods style start*/
+.indexGoods .goodWrap {
     margin: 1rem 0.5rem 0 0.5rem;
 }
-.goodWrap[class*='bannerInIndexGoods'] .knowMore {
+.goodWrap[class*='bannerInGoods'] .knowMore {
     position: absolute;
     width: calc(18.75rem - 2.25rem);
     left: 1.125rem;
@@ -2640,20 +2615,32 @@ flex: 0 0 auto;
     font-weight: bold;
     text-transform: uppercase;
 }
-.goodWrap.bannerInIndexGoodsBig {
+.goodWrap.bannerInGoods2x {
     width: 38.5rem;
 }
-@media only screen and (min-width: 0px){
-    .goodWrap.bannerInIndexGoodsBig{
+.goodWrap.bannerInGoods4xWide {
+    width: 100%;
+    height: auto;
+}
+.bannerInGoods4xWide img{
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+}
+.bannerInGoods4xWide img:hover{
+    transform: scale(1.01)
+}
+@media only screen and (min-width: 0px) {
+    .goodWrap.bannerInGoods2x, .bannerInGoods4xWide {
         display: none;
     }
 }
 @media only screen and (min-width: 1590px){
-    .goodWrap.bannerInIndexGoodsBig{
+    .goodWrap.bannerInGoods2x, .bannerInGoods4xWide {
         display: block;
     }
 }
-/*.indexGoods style end*/
+/*.bannerInGoodsGoods style end*/
 
 /*.news style start*/
 .news *{

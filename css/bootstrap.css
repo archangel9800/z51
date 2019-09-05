@@ -11113,6 +11113,18 @@ button.bg-dark:focus {
   text-align: center !important;
 }
 
+@media (min-width: 450px) {
+  .text-wsm-left {
+    text-align: left !important;
+  }
+  .text-wsm-right {
+    text-align: right !important;
+  }
+  .text-wsm-center {
+    text-align: center !important;
+  }
+}
+
 @media (min-width: 576px) {
   .text-sm-left {
     text-align: left !important;

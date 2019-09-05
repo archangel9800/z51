@@ -991,6 +991,7 @@ header{
 .modals{
     display: none;
     max-width: 100vw;
+    min-width: 18.75rem;
     background-color: rgb(var(--grey3));
     border: 0.125rem solid rgb(var(--grey2));
     position: relative;
@@ -1357,7 +1358,7 @@ aside .asideTxt{
 
 
 /*.customZ51Checkbox style start*/
-.customZ51Checkbox input[type=checkbox], input[type=radio] {
+.customZ51Checkbox input[type=checkbox], .customZ51Checkbox  input[type=radio] {
     display: none;
 }
 .customZ51Checkbox label::after,.customZ51Checkbox label::before{
@@ -1620,7 +1621,7 @@ aside .asideTxt{
     top: 1.125rem;
     left: 1.125rem;
     width: auto;
-    max-width: 8rem;
+    max-width: 5.375rem;
 }
 .goodInfoTopR{
     right: 1.125rem;
@@ -1643,7 +1644,7 @@ aside .asideTxt{
 .events > *:not(.xButnWrap){
     display: block;
     text-align: center;
-    padding: 0.3125rem 0.5rem;
+    padding: 0.3125rem 0.4375rem;
     color: rgb(var(--mainContCol));
     border: 0.125rem solid rgb(var(--mainContCol));
     text-transform: uppercase;
@@ -1652,6 +1653,10 @@ aside .asideTxt{
     margin-bottom: 0.3125rem;
      -webkit-transition: all 0.1s; transition: all 0.1s;
     opacity: 0.99;
+}
+.events > .eventsUaFnt{
+    font-size: var(--fnt0p6875rem);
+    letter-spacing: -0.03125rem;
 }
 .events > a:hover:not(.xButnWrap){
     color: rgb(var(--white));
@@ -2831,7 +2836,10 @@ flex: 0 0 auto;
 }
 /*.discussion style end*/
 
-
+.registerBlock label:not([for="subscribe"]){
+    width: 100%;
+    max-width: 165px;
+}
 
 
 

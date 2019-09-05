@@ -1,0 +1,86 @@
+
+    <div class="px-1 registerBlock">
+        <div class="d-flex flex-wrap justify-content-center mb-3 mainWidth">
+            <div class="maxW1000 grey2Border p-4">
+                <div class="w-100 order-1">
+                    <span><span class="redFnt">*</span>Поля обязательны для заполнения</span>
+                </div>
+
+                <form class="d-flex flex-wrap">
+
+                    <div class="col-12 col-md-6 mt-3 px-2">
+                        <h3 class="fnt1p125rem mainZ51ColFnt text-uppercase m-0 mb-2 text-center">Параметры авторизации</h3>
+
+                        <div class="d-flex flex-wrap flex-wsm-nowrap align-items-center" method="post">
+                            <label class="mt-2 mb-1 text-left text-wsm-right" for="login"><span class="redFnt">*</span>Логин</label>
+                            <input type="text" class="px-1 py-1 my-1 ml-2" name="login" placeholder="Логин">
+                        </div>
+
+                        <div class="d-flex flex-wrap flex-wsm-nowrap align-items-center" method="post">
+                            <label class="mt-2 mb-1 text-left text-wsm-right" for="pass1"><span class="redFnt">*</span>Пароль</label>
+                            <input type="password" class="px-1 py-1 my-1 ml-2" name="pass1" placeholder="Пароль">
+                        </div>
+
+                        <div class="d-flex flex-wrap flex-wsm-nowrap align-items-center" method="post">
+                            <label class="mt-2 mb-1 text-left text-wsm-right" for="pass2"><span class="redFnt">*</span>Подтвердите пароль</label>
+                            <input type="password" class="px-1 py-1 my-1 ml-2" name="pass2" placeholder="Подтвердите пароль">
+                        </div>
+
+                        <div class="d-flex flex-wrap flex-wsm-nowrap align-items-center" method="post">
+                            <label class="mt-2 mb-1 text-left text-wsm-right" for="email"><span class="redFnt">*</span>E-mail:</label>
+                            <input type="email" class="px-1 py-1 my-1 ml-2" name="email" placeholder="example@gmail.com">
+                        </div>
+                        <p class="mt-2 mb-1">Примечание: <em>При регистрации аккаунта на email-адрес почтового сервера в зоне .ru возможны проблемы с получением писем! Рекомендуем использовать email-адреса других почтовых серверов.</em></p>
+                        <div class="mt-2 mb-1 d-flex flex-wrap flex-wsm-nowrap">
+                            <a class="mr-2" onclick="$('#antitn').attr('src','https://www.3ona51.com/antitna.php');return false;"><img src="https://www.3ona51.com/antitna.php" alt="Нажмите для генерации нового кода" id="antitn"></a>
+                            <div class="d-flex flex-column" method="post">
+                                <label class="mt-2 mb-1" for="antitna"><span class="redFnt">*</span>Введите код:</label>
+                                <input type="email"class="px-1 py-1 my-1 ml-2" name="antitna" required="required">
+                            </div>
+                        </div>
+                        <p>Нажмите на изображение с кодом для генерации нового кода если вы не можете прочитать символы, нарисованные на изображении, либо обновите страничку для генерации нового.</p>
+                        
+                    </div>
+
+                    <div class="col-12 col-md-6 mt-3 px-2">
+                        <h3 class="fnt1p125rem mainZ51ColFnt text-uppercase m-0 mb-2 text-center">Общая информация</h3>
+
+                        <div class="d-flex flex-wrap flex-wsm-nowrap align-items-center" method="post">
+                            <label class="mt-2 mb-1 text-left text-wsm-right" for="F">Фамилия</label>
+                            <input type="text" class="px-1 py-1 my-1 ml-2" name="F" placeholder="Фамилия">
+                        </div>
+
+                        <div class="d-flex flex-wrap flex-wsm-nowrap align-items-center" method="post">
+                            <label class="mt-2 mb-1 text-left text-wsm-right" for="I">Имя</label>
+                            <input type="text" class="px-1 py-1 my-1 ml-2" name="I" placeholder="Имя">
+                        </div>
+
+                        <div class="d-flex flex-wrap flex-wsm-nowrap align-items-center" method="post">
+                            <label class="mt-2 mb-1 text-left text-wsm-right" for="O">Отчество</label>
+                            <input type="text" class="px-1 py-1 my-1 ml-2" name="O" placeholder="Отчество">
+                        </div>
+                        
+                        <div class="d-flex flex-wrap flex-wsm-nowrap align-items-center" method="post">
+                            <label class="mt-2 mb-1 text-left text-wsm-right" for="O">моб. Телефон (0XXXXXXXXX)</label>
+                            <input type="tel" class="px-1 py-1 my-1 ml-2" name="O" placeholder="0XXXXXXXXX">
+                        </div>
+
+                    </div>
+
+
+                    <div class="customZ51Checkbox mt-2 mb-1 w-100">
+                        <input type="checkbox" id="subscribe">
+                        <label class="p-0 m-0 pl-4 hoverLinkW" for="subscribe">Подписаться на новости</label>
+                    </div>
+                    <div class="d-flex mt-3 align-items-center w-100">
+                        <a href="#" class="btnBrdr py-2 px-3 mr-2">Ок</a>
+                        <a href="#" class="btnBrdr py-2 px-3">Очистить</a>
+                    </div>
+
+                </form>
+
+            </div>    
+        </div>
+    </div>
+    
+    

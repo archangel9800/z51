@@ -1126,9 +1126,15 @@ header{
 #inCart .sticky-bottom{
     border-top: 0.125rem solid rgb(var(--grey2));
 }
-#inCart>*:nth-last-child(3){
+#inCart:not(.staticPage)>*:nth-last-child(3){
     border-bottom: 0.0625rem solid var(--transp);
 }
+
+.homeModals.staticPage{
+    max-width: none !important;
+    max-height: none !important;
+}
+
 
 #inComparison.homeModals{
     min-width: 18.75rem;
@@ -1838,7 +1844,7 @@ aside .asideTxt{
 }
 
 
-
+flex-column flex-wsm-row
 
 
 

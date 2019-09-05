@@ -1808,7 +1808,10 @@ aside .asideTxt{
     color: rgb(var(--white));
 }
 .goodWrap .goodInfoBottom .deliveryPickup{
-    color: rgb(var(--grey1));
+    display: -webkit-box;display: -ms-flexbox;display: flex;
+    -webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;
+    -webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;
+    margin-left: 1rem;
 }
 .goodWrap .goodInfoBottom .deliveryPickup span{
     color: rgb(var(--grey1));
@@ -1822,6 +1825,7 @@ aside .asideTxt{
     background-color: rgb(var(--mainContCol));
     margin-top: 0.1875rem;
     margin-right: 0.25rem;
+    flex-shrink: 0;
 }
 .goodWrap .goodInfoBottom .deliveryPickup span.notAvailable::before{
     background-color: rgb(var(--grey2));

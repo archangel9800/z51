@@ -1575,6 +1575,7 @@ aside .asideTxt{
 .sortBlock .customDrop>p{
     border: 0.0625rem solid rgb(var(--grey1));
 	border-bottom: var(--transp);
+    min-width: 8rem;
 }
 .sortBlock .customDrop>p:hover, .sortBlock li:hover{
     background-color: rgba(var(--white), 0.1);
@@ -1663,6 +1664,12 @@ aside .asideTxt{
 .events > .eventsUaFnt{
     font-size: var(--fnt0p6875rem);
     letter-spacing: -0.03125rem;
+    padding: 0.3125rem 0.25rem;
+}
+.events > .eventsEnFnt{
+    font-size: var(--fnt0p6875rem);
+    letter-spacing: -0.03125rem;
+    padding: 0.3125rem 0.25rem;
 }
 .events > a:hover:not(.xButnWrap){
     color: rgb(var(--white));
@@ -1844,7 +1851,7 @@ aside .asideTxt{
 }
 
 
-flex-column flex-wsm-row
+
 
 
 

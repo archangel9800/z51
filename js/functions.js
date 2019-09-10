@@ -256,7 +256,7 @@ function mainMenuSecondaryDropdownWidth(){
 //    })
 //    
     //aside .asideDropdown script start
-    $('.customDrop > p').click(function(e) {
+    $('.customDrop > p, .customDrop .dropItem').click(function(e) {
         $(this).parent().toggleClass('visibleBl');
     });
     $(document).mouseup(function (e){ 

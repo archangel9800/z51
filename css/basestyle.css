@@ -2845,10 +2845,10 @@ flex: 0 0 auto;
 }
 /*.discussion style end*/
 
-.registerBlock label:not([for="subscribe"]), .myaccountEditBlock label:not([for="subscribe"]){
-    width: 100%;
-    max-width: 10.3125rem;
-}
+.registerBlock label:not([for="subscribed4news"]), .myaccountEditBlock label:not([for="subscribed4news"]){ 
+    width: 100%; 
+    max-width: 10.3125rem; 
+} 
 
 .myaccountBlock td{
     word-break: break-all;

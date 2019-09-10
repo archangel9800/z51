@@ -577,10 +577,15 @@
   .cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown {
       min-width: 260px;
       width: -webkit-max-content;width: -moz-max-content;width: max-content;
-      max-height: -webkit-fill-available;height: -moz-available;height: fill-available;
+      height: auto;
+/*
+      max-height: -moz-available;
+      max-height: -webkit-fill-available;
+      max-height: fill-available;
+*/
       overflow: auto;
-      display: -webkit-box;
       display: -ms-flexbox;
+      display: -webkit-box;
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;

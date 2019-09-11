@@ -45,7 +45,6 @@ body input{
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgb(var(--mainZ51Col));
-    -webkit-border-radius: 0px;
     border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb:hover{
@@ -103,6 +102,9 @@ body input{
 }
 .orangeFnt{
     color: rgb(var(--orange));
+}
+.yellowGreyFnt{
+    color: rgb(var(--yellowGrey));
 }
 .darkvioletFnt{
     color: rgb(var(--darkviolet));
@@ -356,7 +358,9 @@ h6{
     font-size: var(--fnt1p25rem);
 }
 .separator{
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
 }
 
 /*.buttons and links style start*/
@@ -1054,12 +1058,14 @@ header{
     width: 6.25rem;
     height: 6.25rem;
     opacity: 0.8;
-    transform: scale(0.96);
+    -webkit-transform: scale(0.96);
+            transform: scale(0.96);
      -webkit-transition: all 0.1s; transition: all 0.1s;
 }
 #inCart .cartItemImg:hover img{
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
 }
 #inCart .stepper--style-2{
     max-width: 120px;
@@ -1070,7 +1076,8 @@ header{
     border: none;
 }
 #inCart .stepper--style-2 .stepper__input:focus{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 #inCart .stepper--style-2 button{
    width: 2rem;
@@ -1620,12 +1627,14 @@ aside .asideTxt{
     z-index: 1;
     border: 0.0625rem solid rgb(var(--grey2));
     background-color: rgb(var(--black));
-    box-shadow: 0px 0px 15px 8px var(--transp);
+    -webkit-box-shadow: 0px 0px 15px 8px var(--transp);
+            box-shadow: 0px 0px 15px 8px var(--transp);
     min-height: 100%;
     
 }
 .goodWrap .goodbl:hover {
-    box-shadow: 0px 0px 15px 8px rgb(var(--mainContCol));
+    -webkit-box-shadow: 0px 0px 15px 8px rgb(var(--mainContCol));
+            box-shadow: 0px 0px 15px 8px rgb(var(--mainContCol));
     z-index: 2;
 }
 .goodInfoTopL, .goodInfoTopR{
@@ -1739,8 +1748,7 @@ aside .asideTxt{
     height: 0.125rem;
     position: absolute;
     bottom: -5px;
-    left: 50%;
-    background: -webkit-gradient(linear, left top, right top, from(var(--transp)), color-stop(rgb(var(--mainContCol))), color-stop(rgb(var(--mainContCol))), to(var(--transp)));background: linear-gradient(to right, var(--transp), rgb(var(--mainContCol)), rgb(var(--mainContCol)), var(--transp));
+    left: 50%;background: -webkit-gradient(linear, left top, right top, from(var(--transp)), color-stop(rgb(var(--mainContCol))), color-stop(rgb(var(--mainContCol))), to(var(--transp)));background: linear-gradient(to right, var(--transp), rgb(var(--mainContCol)), rgb(var(--mainContCol)), var(--transp));
     -webkit-transition: all 0.2s; transition: all 0.2s;
 }
 .goodWrap .goodbl .goodName:hover p span:before {
@@ -1843,7 +1851,8 @@ aside .asideTxt{
     background-color: rgb(var(--mainContCol));
     margin-top: 0.1875rem;
     margin-right: 0.25rem;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 .goodWrap .goodInfoBottom .deliveryPickup span.notAvailable::before{
     background-color: rgb(var(--grey2));
@@ -1969,6 +1978,7 @@ aside .asideTxt{
 }
 
 .goodWrap .banerIngoodWrap{
+    -webkit-transition: all 0.1s;
     transition: all 0.1s;
     width: calc(100% - 1.25rem);
     margin: 1.25rem 0 0 1.25rem;
@@ -2024,6 +2034,8 @@ aside .asideTxt{
     color: rgb(var(--white));
     border-right: 0.0625rem solid rgb(var(--grey1));
      -webkit-transition: all 0.1s; transition: all 0.1s;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
     -webkit-box-align: center;-ms-flex-align: center;align-items: center;
@@ -2062,7 +2074,9 @@ aside .asideTxt{
 
 /*footer style start*/
 footer{
-flex: 0 0 auto;
+-webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
 }
 .footerBg{
     background-color: rgb(var(--grey3));
@@ -2278,7 +2292,8 @@ flex: 0 0 auto;
     background-position: bottom 50% right 55%;
 }
 .productTop #prodCarousel .carousel-control-next-icon{
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 #prodCarousel .goodInfoTopL, #prodCarousel .goodInfoTopR{
     z-index: 1;
@@ -2388,7 +2403,8 @@ flex: 0 0 auto;
     max-width: 18.75rem;
 }
 .goodsCarousel .goodWrap .goodbl{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 .goodsCarousel .goodWrap .goodbl:hover{
     border-color: rgb(var(--mainContCol));
@@ -2650,7 +2666,8 @@ flex: 0 0 auto;
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
 .bannerInGoods4xWide img:hover{
-    transform: scale(1.01)
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01)
 }
 @media only screen and (min-width: 0px) {
     .goodWrap.bannerInGoods2x, .bannerInGoods4xWide {
@@ -2673,10 +2690,12 @@ flex: 0 0 auto;
     opacity: 1;
 }
 .news img{
-    transform: scale(1)
+    -webkit-transform: scale(1);
+            transform: scale(1)
 }
 .news:hover img{
-    transform: scale(1.01)
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01)
 }
 /*.news style end*/
 
@@ -2820,7 +2839,8 @@ flex: 0 0 auto;
     background: url('../img/icons/svg/like-green.svg');
 }
 .discussion .likes.dislike {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 .discussion .likes.dislike:hover {
     background: url('../img/icons/svg/like-red.svg');
@@ -2858,11 +2878,11 @@ flex: 0 0 auto;
 }
 
 .ordersJournalBlock .homeModals{
-   border: 0.0625rem solid rgb(var(--mainZ51Col));
+   border: 0.0625rem solid rgb(var(--grey2));
     -webkit-transition: all 0.1s;transition: all 0.1s;
 }
 .ordersJournalBlock .homeModals:hover{
-   border: 0.0625rem solid rgb(var(--white)); 
+   border: 0.0625rem solid rgb(var(--mainContCol));
 }
 .ordersJournalBlock .dropItem .goodImages img{
     width: 3.125rem;

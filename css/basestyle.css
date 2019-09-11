@@ -2904,13 +2904,12 @@ footer{
     max-width: 18.75rem;
 }
 
-.orderStory, .orderStory th, .orderStory td {
-  border: 0.1875rem solid rgb(var(--black));
+.orderStory{
+    max-width: 100%;
 }
-
 .orderStory tr td{
-     padding: 0.5rem;
     text-align: center;
+    word-break: break-all;
  }
 .orderStory tbody tr:first-child td{
      color: rgb(var(--white));
@@ -2921,3 +2920,23 @@ footer{
 .orderStory tr:nth-of-type(2n){
      background-color: rgb(var(--grey2));
  }
+@media only screen and (min-width: 0px){
+    .orderStory tr td{
+        padding: 0;
+     }
+    .orderStory th, .orderStory td {
+      border: 0.0625rem solid rgb(var(--black));
+    }
+}
+@media only screen and (min-width: 576px){
+    .orderStory tr td{
+        padding: 0.5rem;
+     }
+.orderStory th, .orderStory td {
+      border: 0.1875rem solid rgb(var(--black));
+    }
+}
+
+
+
+

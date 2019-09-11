@@ -578,11 +578,7 @@
       min-width: 260px;
       width: -webkit-max-content;width: -moz-max-content;width: max-content;
       height: auto;
-/*
-      max-height: -moz-available;
-      max-height: -webkit-fill-available;
-      max-height: fill-available;
-*/
+      max-height: calc(100vh - 145px);
       overflow: auto;
       display: -ms-flexbox;
       display: -webkit-box;
@@ -590,7 +586,7 @@
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   }
-    .cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown::after{
+  .cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown::after{
         content: '';
         position: -webkit-sticky;position: sticky;
         display: block;

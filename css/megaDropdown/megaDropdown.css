@@ -604,7 +604,7 @@
     font-size: var(--fnt1rem);
     line-height: 30px;
     height: 30px;
-    pointer-events: none;
+/*    pointer-events: none;*/
   }
   .cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown > li > a::after, .cd-dropdown-wrapper .cd-dropdown-content .cd-secondary-dropdown > li > a::before {
     /* hide the arrow */

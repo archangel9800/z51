@@ -376,7 +376,7 @@
     color: rgb(var(--black));
     font-size: 1.5rem;
     border: none;
-    letter-spacing: 1px; 
+    letter-spacing: 0.4px; 
     font-size: var(--fnt1rem);  
     font-weight: bold;
       text-decoration: none;

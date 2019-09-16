@@ -11,13 +11,42 @@ jQuery(document).ready(function($){
 		toggleNav();
 	});
 
-	//on mobile - open submenu
-	$('.has-children').children('a').on('click', function(event){
-		//prevent default clicking on direct children of .has-children 
-		event.preventDefault();
-		var selected = $(this);
-		selected.next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('move-out');
-	});
+//	//on mobile - open submenu
+//	$('.has-children').children('a').on('click', function(event){
+//		//prevent default clicking on direct children of .has-children 
+//		event.preventDefault();
+//		var selected = $(this);
+//		selected.next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('move-out');
+//	});  
+    
+//open submenu
+$('.has-children .has-children .has-children').children('a').on('click', function(event){
+    var selected = $(this);
+    selected.next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('move-out');
+    return false;
+});
+
+//on mobile - open submenu
+function openSubmenuMobile () {
+    $('.has-children').children('a').on('click', function(event){
+        var selected = $(this);
+        selected.next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('move-out');
+        if($(window).width() < 992) {
+            return false; 
+        };
+        
+    }); 
+};
+if($(window).width() < 992) {
+        openSubmenuMobile(); 
+    };
+$(window).resize(function(){  
+    if($(window).width() < 992) {
+        openSubmenuMobile(); 
+    };
+});
+
+    
 
 	//on desktop - differentiate between a user trying to hover over a dropdown item vs trying to navigate into a submenu's contents
 	var submenuDirection = ( !$('.cd-dropdown-wrapper').hasClass('open-to-left') ) ? 'right' : 'left';

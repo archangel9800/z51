@@ -72,6 +72,9 @@
       border-style: solid;
       border-color: rgb(var(--black)) transparent; 
     }
+    .cd-dropdown-wrapper .cd-dropdown-content .see-all{
+        display: block;
+    }
 }
 @media only screen and (min-width: 992px){
     .cd-dropdown-wrapper .cd-dropdown-trigger {
@@ -86,6 +89,9 @@
     .cd-dropdown-wrapper .cd-dropdown-trigger:hover::after{
         -webkit-filter: invert(100%);
         filter: invert(100%);
+    }
+    .cd-dropdown-wrapper .cd-dropdown-content .see-all{
+        display: none;
     }
 }
 .cd-dropdown-wrapper .cd-dropdown .mobName, .cd-dropdown-wrapper .cd-dropdown-content a, .cd-dropdown-wrapper .cd-dropdown-content ul a {

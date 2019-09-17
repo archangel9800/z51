@@ -2893,10 +2893,6 @@ footer{
     width: 3.125rem;
     display: block;
 }
-.ordersJournalBlock .dropItem .goodImages img{
-    width: 3.125rem;
-    display: block;
-}
 .ordersJournalBlock .dropItem > div span{
     width: 11.375rem;
 }

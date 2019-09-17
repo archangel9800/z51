@@ -2865,18 +2865,23 @@ footer{
 }
 /*.discussion style end*/
 
+/*.discussion style start*/
 .registerBlock label:not([for="subscribed4news"]), .myaccountEditBlock label:not([for="subscribed4news"]){ 
     width: 100%; 
     max-width: 10.3125rem; 
 } 
+/*.discussion style end*/
 
+/*.myaccountBlock style start*/
 .myaccountBlock td{
     word-break: break-all;
 }
 .myaccountBlock .customZ51Checkbox label:hover {
     color: rgb(var(--grey1));
 }
+/*.myaccountBlock style end*/
 
+/*.ordersJournalBlock style start*/
 .ordersJournalBlock .homeModals{
    border: 0.0625rem solid rgb(var(--grey2));
     -webkit-transition: all 0.1s;transition: all 0.1s;
@@ -2915,12 +2920,15 @@ footer{
 .ordersJournalBlock .customDrop.visibleBl > .dropItem .arrBl::before{
     -webkit-transform: rotate(180deg);transform: rotate(180deg);
 }
+/*.ordersJournalBlock style end*/
 
+/*.orderBlock style start*/
 .orderBlock .orderInfo {
     max-width: 18.75rem;
 }
+/*.orderBlock style end*/
 
-
+/*.orderBlock and allTable style start*/
 .allTable th, .allTable td {
   border: 0.1875rem solid rgb(var(--black));
 }
@@ -2962,7 +2970,7 @@ footer{
         padding: 0.5rem;
      }
 }
-
+/*.orderBlock and allTable style end*/
 
 
 

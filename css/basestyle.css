@@ -1864,11 +1864,6 @@ aside .asideTxt{
     background-color: rgb(var(--yellowGrey));
 }
 
-
-
-
-
-
 .goodWrap .goodInfoBottom .deliveryPickup .goodIcons{
     margin-right: 0.5rem;
 }
@@ -2099,7 +2094,6 @@ footer{
     color: rgb(var(--mainZ51Col));
 }
 .footerFirstLine nav a{
-    
     font-size: var(--fnt0p875rem);
     color: rgb(var(--white));
     -webkit-transition: all 0.1s;transition: all 0.1s;
@@ -2299,8 +2293,6 @@ footer{
     z-index: 1;
 }
 
-
-
 .productTop .descriptionOther li{
     list-style-type: none;
     margin-right: 0.625rem;
@@ -2350,8 +2342,6 @@ footer{
 .productTop .prodInfo .prodInfoIcons::before, .goodsCarousel .prodInfoIcons::before{
     margin-right: 0.5rem;
 }
-
-
 /*.productTop style end*/
 
 /*.social-likes style start*/

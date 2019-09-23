@@ -101,7 +101,7 @@ $(".topSearch").on('mouseenter', function (e){;
     
  ///#callUsDropdown script start
     $("#callUsDropdown").on("click", function (event) {
-        event.preventDefault();
+//        event.preventDefault();
         function DropDown(el) {
             this.dd = el;
             this.placeholder = this.dd.find('p > span');

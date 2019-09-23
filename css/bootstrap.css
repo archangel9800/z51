@@ -7268,6 +7268,38 @@ button.bg-dark:focus {
   } 
 }
 
+@media (min-width: 1590px) {
+  .d-wl-none {
+    display: none !important;
+  }
+  .d-wl-inline {
+    display: inline !important;
+  }
+  .d-wl-inline-block {
+    display: inline-block !important;
+  }
+  .d-wl-block {
+    display: block !important;
+  }
+  .d-wl-table {
+    display: table !important;
+  }
+  .d-wl-table-row {
+    display: table-row !important;
+  }
+  .d-wl-table-cell {
+    display: table-cell !important;
+  }
+  .d-wl-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .d-wl-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  } 
+}
+
 @media print {
   .d-print-none {
     display: none !important;

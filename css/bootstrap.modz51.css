@@ -184,6 +184,23 @@
         position: sticky;
       }
     } 
+}
 
-    
+/*// >= 1480px xxl*/
+@media only screen and (min-width: 1590px) {
+    .position-fixed-wl{
+        position: fixed;
+    }
+    .position-static-wl{
+        position: static;
+    }
+    .position-absolute-wl{
+        position: absolute;
+    }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+      .position-sticky-wl {
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    } 
 }

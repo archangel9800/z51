@@ -1408,12 +1408,18 @@ aside .asideTxt{
     height: 0.625rem;
     background-color: rgb(var(--mainContCol));
 }
-.customZ51Cat li:not(.showMore) a.active{
+.customZ51Cat li:not(.showMore) a.active, .customZ51Cat li:not(.showMore) span.active{
     color: rgb(var(--white));
 }
 .customZ51Cat li:not(.showMore) a.active + span{
     color: rgb(var(--white));
 }
+.customZ51CheckboxV2.customZ51Cat .noCheck::before, .customZ51CheckboxV2.customZ51Cat .noCheck::after{
+    display: none;
+}
+
+
+
 /*.customZ51CheckboxV2 style end*/
 
 

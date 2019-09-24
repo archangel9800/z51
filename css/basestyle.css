@@ -1501,12 +1501,12 @@ aside .asideTxt{
     font-size: var(--fnt0p875rem);
     line-height: 1rem;
 }
-.filterRes>div:last-child span:last-child{
+.filterRes>div:last-child a:last-child{
     color: rgb(var(--white));
     border-bottom: 0.0625rem dotted rgb(var(--white));
     cursor: pointer;
 }
-.filterRes>div:last-child span:last-child:hover{
+.filterRes>div:last-child a:last-child:hover{
     color: rgb(var(--mainContCol));
     border-color: rgb(var(--mainContCol));
 }

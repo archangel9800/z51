@@ -83,7 +83,7 @@ $(".topSearch").on('mouseenter', function (e){;
         }); 
     } else if($(window).width() >= 992) {
         $('.sticky-top').css({
-            top: '-'+$('.sticky-top #firstNavLine').height()+'px'
+            top: '-'+$('.sticky-top #firstNavLine').innerHeight()+'px'
         });
     };
     $(window).resize(function(){  
@@ -93,7 +93,7 @@ $(".topSearch").on('mouseenter', function (e){;
             }); 
         } else if($(window).width() >= 992) {
             $('.sticky-top').css({
-                top: '-'+$('.sticky-top #firstNavLine').height()+'px'
+                top: '-'+$('.sticky-top #firstNavLine').innerHeight()+'px'
             });
         }; 
    });    

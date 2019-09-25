@@ -228,7 +228,6 @@ $(".topSearch").on('mouseenter', function (e){;
         if (!block.is(e.target) && block.has(e.target).length === 0) { 
             block.removeClass('visibleBl');
         }
-        
     });
     //aside .asideDropdown script end
     
@@ -238,7 +237,15 @@ $(".topSearch").on('mouseenter', function (e){;
      $(this).siblings('.dispNone').removeClass('dispNone');
         $(this).addClass('dispNone');
     })
-//.showMore script end    
+//.showMore script end
+    
+//.showAll script start
+//    простой скрипт на открытие всех фильтров
+    $('.openAllFilters').click(function(e) {
+     $(this).siblings('.filterBlock').addClass('visibleBl');
+        $(this).addClass('dispNone');
+    })
+//.showAll script end    
     
 //.hidddenContInside .showMore script start
 //    скрипт закрытия открытия контента вместе с соседними(используется в коментариях к товару)

@@ -2952,6 +2952,7 @@ footer{
     list-style-type: none;
 }
 .vendorsBlock .brNameCh li a{
+    font-size: var(--fnt1p25rem);
     margin: 0 0.625rem 0.3125rem 0;
     cursor: pointer;
     color: rgb(var(--mainZ51Col));
@@ -2965,7 +2966,12 @@ footer{
     margin-bottom: 1rem;
 }
 .vendorsBlock .brName>li>span{ 
+    color: rgb(var(--mainZ51Col));
     font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: var(--fnt1p25rem);
 }
 .vendorsBlock .brName ul li{ 
     margin-bottom: 0.25rem;

@@ -411,6 +411,29 @@ body .btnBrdr.cont:hover{
     background-color: rgb(var(--mainContCol));
 }
 
+body .btnBrdrV2{
+    line-height: 0.9;
+    color: rgb(var(--white));
+    border: 0.125rem solid rgb(var(--grey4));
+    text-transform: uppercase;
+    font-size: rgb(var(--mainZ51Col));
+    line-height: 0.75rem;
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+    cursor: pointer;
+}
+body .btnBrdrV2.cont{
+    color: rgb(var(--mainContCol));
+    border: 0.125rem solid rgb(var(--mainContCol));
+}
+body .btnBrdrV2:hover{
+    color: rgb(var(--white));
+    background-color: rgb(var(--mainZ51Col));
+}
+body .btnBrdrV2.cont:hover{
+    color: rgb(var(--white));
+    background-color: rgb(var(--mainContCol));
+}
+
 body .buttonFGr{
     line-height: 0.9;
     background-color: rgb(var(--mainZ51Col));
@@ -2923,6 +2946,82 @@ footer{
      }
 }
 /*.orderBlock and allTable style end*/
+
+/*.vendorsBlock style start*/
+.vendorsBlock ul{
+    list-style-type: none;
+}
+.vendorsBlock .brNameCh li a{
+    margin: 0 0.625rem 0.3125rem 0;
+    cursor: pointer;
+    color: rgb(var(--mainZ51Col));
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+    font-weight: bold;
+}
+.vendorsBlock .brNameCh li a:hover{ 
+    color: rgb(var(--white));
+}
+.vendorsBlock .brName>li{ 
+    margin-bottom: 1rem;
+}
+.vendorsBlock .brName>li>span{ 
+    font-weight: bold;
+}
+.vendorsBlock .brName ul li{ 
+    margin-bottom: 0.25rem;
+}
+.vendorsBlock .brName ul li a:not(.noItems){ 
+    cursor: pointer;
+    color: rgb(var(--white));
+    -webkit-transition: all 0.1s;transition: all 0.1s;
+}
+.vendorsBlock .brName ul li a:hover{ 
+    color: rgb(var(--mainZ51Col));
+}
+.vendorsBlock .brName ul li span{ 
+    font-weight: bold;
+}
+@media only screen and (min-width: 0px){
+    .vendorsBlock .brName ul{ 
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+@media only screen and (min-width: 450px){
+    .vendorsBlock .brName ul{ 
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+@media only screen and (min-width: 768px){
+    .vendorsBlock .brName ul{ 
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+@media only screen and (min-width: 992px){
+    .vendorsBlock .brName ul{ 
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .vendorsBlock .brName ul{ 
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+    }
+}
+/*.vendorsBlock style end*/
+
+
+
+
+
 
 
 

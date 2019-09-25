@@ -428,10 +428,12 @@ body .btnBrdrV2.cont{
 body .btnBrdrV2:hover{
     color: rgb(var(--white));
     background-color: rgb(var(--mainZ51Col));
+    border: 0.125rem solid rgb(var(--mainZ51Col));
 }
 body .btnBrdrV2.cont:hover{
     color: rgb(var(--white));
     background-color: rgb(var(--mainContCol));
+    border: 0.125rem solid rgb(var(--mainContCol));
 }
 
 body .buttonFGr{
@@ -543,7 +545,7 @@ body .hoverLinkG[class*='activeWBrdr']::after{
 .slogan {
 	width: 7.5625rem;
     font-size: var(--fnt0p8125rem);
-    letter-spacing: 1.5px;
+    letter-spacing: 0.9px;
 }
 
 .sepLine{
@@ -2953,11 +2955,10 @@ footer{
 }
 .vendorsBlock .brNameCh li a{
     font-size: var(--fnt1p25rem);
-    margin: 0 0.625rem 0.3125rem 0;
+    margin: 0 1rem 0.3125rem 0;
     cursor: pointer;
     color: rgb(var(--mainZ51Col));
     -webkit-transition: all 0.1s;transition: all 0.1s;
-    font-weight: bold;
 }
 .vendorsBlock .brNameCh li a:hover{ 
     color: rgb(var(--white));
@@ -2966,12 +2967,8 @@ footer{
     margin-bottom: 1rem;
 }
 .vendorsBlock .brName>li>span{ 
-    color: rgb(var(--mainZ51Col));
-    font-weight: bold;
-    display: block;
-    width: 100%;
-    text-align: center;
     font-size: var(--fnt1p25rem);
+    color: rgb(var(--mainZ51Col));
 }
 .vendorsBlock .brName ul li{ 
     margin-bottom: 0.25rem;

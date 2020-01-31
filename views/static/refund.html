@@ -1,0 +1,98 @@
+
+       
+     <div class="px-1 refundBlock">
+        <div class="d-flex flex-wrap justify-content-center mb-3 mainWidth">
+
+            <div class="maxW1000 d-flex flex-wrap justify-content-center grey2Border p-4">
+
+               
+            <div class="w-100">
+                <p>Наш магазин соблюдает права потребителей. Если по каким-либо причинам вам не подошел товар, приобретенный в нашем магазине, у вас есть полное право на его возврат в течение 14-ти календарных дней.</p>
+                <p>Условия для возврата товара:</p>
+                <ul>
+                    <li>товар не имеет следов эксплуатации;</li>
+                    <li>сохранен товарный вид изделия и его комплектность: отсутствуют механические повреждения, царапины, потертости, а для товаров в одноразовой (блистерной) упаковке – не вскрыта упаковка;</li>
+                    <li>сохранены заводские пломбы, защитные пленки на товаре;</li>
+                    <li>есть в наличии документ о приобретении (оплате) товара.</li>
+                </ul>
+                <p>Согласно условиям обмена и возврата товара в торговой точке, в соответствии с действующим законодательством Украины, для возврата/обмена товара при себе необходимо иметь:</p>
+                <ul>
+                    <li>1. Документ, подтверждающий покупку (чек);</li>
+                    <li>2. Гарантийный талон (в случае, если это товар, подлежащий гарантии);</li>
+                    <li>3. Пластиковая карта, посредством которой осуществлялся расчет (если оплата за товар осуществлялась с помощью кредитной картой);</li>
+                    <li>4. Документ государственного образца, который удостоверяет личность (паспорт, загран.паспорт, водительские права).</li>
+                </ul>
+                <p>Для возврата товара, приобретенного посредством отправки Новой почты заполните, пожалуйста, следующую форму:</p>
+            </div>
+
+               
+               
+                <form class="w-100">
+                   
+                    <div class="w-100" method="post">
+                        <label class="mb-1 w-100" for="fio_text"><span class="redFnt">*</span>Ф.И.О.:</label>
+                        <input type="text"class="px-1 py-1" name="fio_text" placeholder="Петров Петр Петрович">
+                    </div>
+                   
+                    <div class="w-100" method="post">
+                        <label class="mt-3 mb-1 w-100" for="email"><span class="redFnt">*</span>E-mail:</label>
+                        <input type="email"class="px-1 py-1" name="email" placeholder="example@gmail.com">
+                    </div>
+                   <p class="redFnt fnt0p8125rem m-0">{$error_msg}</p>
+                    <div class="w-100" method="post">
+                        <label class="mt-3 mb-1 w-100" for="tel"><span class="redFnt">*</span>Телефон:</label>
+                        <input type="tel"class="px-1 py-1" name="tel" placeholder="0XXXXXXXXX">
+                    </div>
+                   
+                    <div class="w-100" method="post">
+                        <label class="mt-3 mb-1 w-100" for="order_number">№ Заказа:</label>
+                        <input type="text"class="px-1 py-1" name="order_number">
+                    </div>
+                    <p class="mt-3 mb-0 mainZ51ColFnt">Информация о товаре и причины возврата</p>
+                    <div class="w-100" method="post">
+                        <label class="mt-2 mb-1" for="product_name"><span class="redFnt">*</span>Наименование товара:</label>
+                        <textarea class="w-100 p-2 grey2Bg whiteFnt" name="product_name" rows="6" required="required"></textarea>
+                    </div>
+                   
+                    <div class="w-100" method="post">
+                        <label class="mt-3 mb-1 w-100" for="tel"><span class="redFnt">*</span>Количество:</label>
+                        <input type="number"class="px-1 py-1" name="tel">
+                    </div>
+                   
+                    <div class="w-100" method="post">
+                        <label class="mt-3 mb-1 w-100" for="product_unpacked"><span class="redFnt">*</span>Товар распакован:</label>
+                        <select name="product_unpacked" required="required">
+                            <option value="1">Да</option>
+                            <option value="0" selected="selected">Нет</option>
+                        </select>
+                    </div>
+                   
+                    <div class="w-100" method="post">
+                        <label class="mt-3 mb-1 w-100" for="refund_reason"><span class="redFnt">*</span>Причина возврата:</label>
+                        <select name="refund_reason" required="required">
+                            <option value="1">Получен/доставлен неисправным</option>
+                            <option value="2">Получен не тот (ошибочный) товар</option>
+                            <option value="3">Несоответствие заявленным на сайте параметрам</option>
+                            <option value="4">Другое</option>
+                        </select>
+                    </div>
+                    <div class="w-100" method="post">
+                        <label class="mt-2 mb-1" for="textToSend">Комментарии/описание дефектов:</label>
+                        <textarea class="w-100 p-2 grey2Bg whiteFnt" name="textToSend" rows="6" required="required"></textarea>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center mt-2">
+                        <input class="buttonFGr cont py-2 px-3" type="submit" name="save" value="Отправить">
+                    </div>
+                    
+                </form>
+                    
+                <div class="mt-2">
+                    <p>Если у вас остались вопросы по процедуре возврата товара, вы можете задать их в письме на электронную почту <a class="hoverLinkG" href="mailto:refund@3ona51.com">refund@3ona51.com</a>, либо же связавшись с нами любым другим удобным для вас способом.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+    

@@ -1,0 +1,73 @@
+/**
+ * css/variable.css
+ * Copyright (c) ТОВ "Елпрофи", 2019 All rights reserved.
+ * Шаблон разработали Левковец И.В., Броновицкий А.Н., 2019. archangel, b1te
+ * 13.11.2019
+ */
+
+:root{
+    --mainZ51Col: 165,211,0;
+    --mainContCol: 165,211,0;
+    --white: 255,255,255;
+    --red: 244,67,54;
+    --orange: 255,140,0;
+    --yellowGrey: 205,190,0;
+    --darkviolet: 148,0,211;
+    --black: 0,0,0;
+    --transp: transparent;
+    --grey1: 142,142,142;
+    --grey2: 51,51,51;
+    --grey3: 19,19,19;
+    --grey4: 102,102,102;
+    --faceColor: 66,84,151;
+    --twitColor: 49,200,246;
+    
+/*    4px*/
+    --fnt0p25rem: 0.25rem;  
+/*    5px*/
+    --fnt0p3125rem: 0.3125rem; 
+/*    6px*/
+    --fnt0p375rem: 0.375rem;    
+/*    8px*/
+    --fnt0p5rem: 0.5rem;
+/*    10px*/
+    --fnt0p625rem: 0.625rem;
+/*    11px*/
+    --fnt0p6875rem: 0.6875rem;
+/*    12px*/
+    --fnt0p75rem: 0.75rem;
+/*    13px*/
+    --fnt0p8125rem: 0.8125rem;
+/*    14px*/
+    --fnt0p875rem: 0.875rem;
+/*    15px*/
+    --fnt0p9375rem: 0.9375rem;
+/*    16px*/
+    --fnt1rem: 1rem;
+/*    17px*/
+    --fnt1p0625rem: 1.0625rem;
+/*    18px*/
+    --fnt1p125rem: 1.125rem;
+/*    19px*/
+    --fnt1p1875rem: 1.1875rem;
+/*    20px*/
+    --fnt1p25rem: 1.25rem;
+/*    22px*/
+    --fnt1p1375rem: 1.375rem;
+/*    24px*/
+    --fnt1p5rem: 1.5rem;
+/*    26px*/
+    --fnt1p625rem: 1.625rem;
+/*    30px*/
+    --fnt1p875rem: 1.875rem;
+/*    36px*/
+    --fnt2p25rem: 2.255rem;
+/*    40px*/
+    --fnt2p5rem: 2.5rem;
+/*    42px*/
+    --fnt2p625rem: 2.625rem;
+/*    48px*/
+    --fnt3rem: 3rem;
+/*    50px*/
+    --fnt3p125rem: 3.125rem;
+} 

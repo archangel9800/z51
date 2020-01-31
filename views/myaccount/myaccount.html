@@ -1,0 +1,91 @@
+ 
+    <div class="px-1 myaccountBlock">
+        <div class="d-flex flex-wrap justify-content-center mb-3 mainWidth">
+            <div class="d-flex flex-wrap maxW1000 grey2Border p-4">
+    
+               <div class="col-12 col-md-6 p-0 pr-md-2">
+                    <h3 class="fnt1p125rem mainZ51ColFnt text-uppercase m-0 mb-1">История заказов</h3>
+                    <a class="hoverLinkW d-block" href="https://www.3ona51.com/ru/myaccount/orders_journal/">Просмотр заказов</a>
+                    <h3 class="fnt1p125rem mainZ51ColFnt text-uppercase m-0 mb-1 mt-3">Ваши менеджеры</h3>
+                    <a class="hoverLinkW mb-1 d-block" href="mailto:order@3ona51.com">ЗОНА51</a>
+                    <a class="hoverLinkW mb-1" href="tel:0445381511">(044) 538-15-11</a>
+                    <h3 class="fnt1p125rem mainZ51ColFnt text-uppercase m-0 mb-2 mt-3">Учетная запись покупателя</h3>
+                    <table class="grey2Border">
+                        <tbody>
+                            <tr>
+                                <td class="text-right mainZ51ColFnt p-1">Логин:</td>
+                                <td class="whiteFnt p-1">archangel9800</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right mainZ51ColFnt p-1">Email:</td>
+                                <td class="whiteFnt p-1">doctrmanhattan@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right mainZ51ColFnt p-1">Фамилия:</td>
+                                <td class="whiteFnt p-1">Левковец</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right mainZ51ColFnt p-1">Имя:</td>
+                                <td class="whiteFnt p-1">Иван</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right mainZ51ColFnt p-1">Отчество:</td>
+                                <td class="whiteFnt p-1">Васильевич</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right mainZ51ColFnt p-1">моб. Телефон:</td>
+                                <td class="whiteFnt p-1">0636718300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="hoverLinkW mb-1 mt-2 d-block" href="https://www.3ona51.com/ru/myaccount/edit.html">Изменить учетную запись</a>
+                    <h3 class="fnt1p125rem mainZ51ColFnt text-uppercase m-0 mb-1 mt-3">Журнал посещений</h3>
+                    <a class="hoverLinkW d-block" href="https://www.3ona51.com/ru/myaccount/visit_journal/">Просмотр журнала посещений</a>
+                </div>  
+                <div class="col-12 col-md-6 p-0 mt-3 mt-md-0">
+                    <h3 class="fnt1p125rem mainZ51ColFnt text-uppercase m-0 mb-1">Текущий баланс бонусов: 0 баллов</h3>
+                    <span>Из них доступно к использованию: 0 баллов</span> <br>
+                    <span><span class="redFnt">*</span> Бонусы доступны к использованию только спустя 14 дней с момента их начисления.</span>
+                    <a class="hoverLinkW d-block mt-2" href="https://www.3ona51.com/ru/myaccount/bonuses/">История бонусов</a>
+                    <h3 class="fnt1p125rem mainZ51ColFnt text-uppercase m-0 mb-1 mt-3">Кредитная линия: 0.00 грн.</h3>
+                    <span>В рамках возобновляемого лимита кредитной линии вы можете покупать любые товары, которые есть в нашем магазине. Для этого надо при оформлении заказа выбрать способ оплаты "Кредитная линия ЗОНА51". <br>
+                    После чего, в течении дня, мы свяжемся с вами, чтобы договориться о доставке товара. <br>
+                    Вы оплачиваете первый платеж при оформлении заказа, остальные платежи оплачиваете ежемесячно в соответствии с выбранным вами сроком кредитования через систему Приват24, платежные терминалы Приват Банка или через любые другие удобные для вас банки.</span>
+                    <a class="hoverLinkW d-block mt-2" href="https://www.3ona51.com/ru/credit.html">Условия кредитования</a>
+                    
+                    <div class="customDrop hideClickNotThisDrop mt-2">
+                        <p class="hoverLinkW m-0 d-flex justify-content-between align-items-center noArrow">Активировать кредитную линию</p>
+                        <form class="hiddenDrop pt-2">
+                            <div class="mb-2">
+                                <label class="m-0 w-100" for="credit_summ">Желаемый кредитный лимит, грн:</label>
+                                <input class="px-1 py-1 mt-1" type="number" name="credit_summ" value="4500" maxlength="10" min="4500" max="100000" step="100">
+                            </div>
+                            <div class="mb-2">
+                                <label class="m-0 w-100" for="FIO"><span class="redFnt">*</span>ФИО:</label>
+                                <input class="px-1 py-1 mt-1" type="text" name="FIO" placeholder="ФИО получателя">
+                            </div>
+                            <div class="mb-2">
+                                <label class="m-0 w-100" for="INN"><span class="redFnt">*</span>ИН:</label>
+                                <input class="px-1 py-1 mt-1" type="text" name="INN" pattern="\d{0,10}" placeholder="0000000000" required="required">
+                            </div>
+                            <div class="mb-2">
+                                <label class="m-0 w-100" for="phone"><span class="redFnt">*</span>моб. Телефон (0XXXXXXXXX):</label> 
+                                <input class="px-1 py-1 mt-1" type="tel" name="phone" pattern="0\d{4,12}" placeholder="0XXXXXXXXX" required="required">
+                            </div>
+                            <div class="mb-2">
+                                <label class="m-0 w-100" for="email"><span class="redFnt">*</span>Email:</label>
+                                <input class="px-1 py-1 mt-1" type="email" name="email" placeholder="Email" required="required">
+                            </div>
+                            <div class="d-flex align-items-center customZ51Checkbox my-2 pl-1">
+                                <input type="checkbox" id="credit_confirmation">
+                                <label class="p-0 m-0 pl-4 hoverLinkG" for="credit_confirmation"><span class="redFnt">*</span>Я ознакомился с <a class="hoverLinkW" href="https://www.3ona51.com/images/news/20181114/credit_passport_creditservice.pdf" target="_blank">паспортом кредита</a> и согласен с <a class="hoverLinkW" href="https://www.3ona51.com/images/news/20180710/credit_rules_creditservice.pdf" target="_blank">офертой</a>.</label>
+                            </div>
+                            <input class="buttonFGr px-3 py-2" type="submit" name="activate_credit" value="Отправить">
+                        </form>
+                    </div>
+
+                </div>     
+                  
+            </div>    
+        </div>
+    </div>

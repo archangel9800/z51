@@ -1,0 +1,209 @@
+
+<div class="px-1 orderConfirmBlock">
+    <div class="d-flex flex-wrap justify-content-center mb-3 mainWidth">
+        <div class="d-flex flex-wrap grey2Border p-2 p-lg-4 justify-content-between w-100">
+
+            <form class="col-12 col-xl-5 p-0">
+                <p class="mainZ51ColFnt m-0">Для правильной работы формы заказа необходимы JavaScript. <br>В
+                    случае некорректной работы (например, таких полей, как: Город, Доставка, Оплата)<br>
+                    убедитесь, что в вашем браузере включено использование JavaScript.</p>
+
+                <div class="w-100 grey2Border borderWidth1 p-2 mt-2">
+                    <label class="mt-2 mb-1 w-100" for="refund_reason"><span
+                            class="redFnt">*</span>Область:</label>
+                    <select class="custom-select custom-select-sm" name="refund_reason" required="required">
+                        <option value="1">Винницкая область</option>
+                        <option value="2">Волынская область</option>
+                    </select>
+                    <label class="mt-2 mb-1 w-100" for="refund_reason"><span
+                            class="redFnt">*</span>Город:</label>
+                    <select class="custom-select custom-select-sm" name="refund_reason" required="required">
+                        <option value="1">Киев</option>
+                        <option value="2">Николаев</option>
+                    </select>
+                </div>
+                
+                <div class="w-100 grey2Border borderWidth1 p-2 mt-2">
+                    <label class="mt-2 mb-1 w-100" for="refund_reason"><span
+                            class="redFnt">*</span>Доставка:</label>
+                    <select class="custom-select custom-select-sm" name="refund_reason" required="required">
+                        <option value="1" selected="selected" disabled="">Самовывоз</option>
+                        <option value="2" disabled="">Курьер</option>
+                        <option value="8">Новая Почта</option>
+                        <option value="6" disabled="">АвтоЛюкс</option>
+                        <option value="4">УкрПочта</option>
+                    </select>
+                    <p class="mainZ51ColFnt mt-2 m-0 ">Стоимость доставки фиксированная и составляет 50 грн.
+                        <br> Стоимость услуги наложенного платежа уже включена в стоимость доставки. <br>
+                        <span>Доставка по Украине в течение 2-х рабочих дней</span></p>
+                </div>
+                <div class="w-100 grey2Border borderWidth1 p-2 mt-2">
+                <div class="customZ51Checkbox mt-2 d-flex flex-wrap">
+                    <div class="d-flex align-items-center p-0 m-0 pr-4">
+                        <input type="checkbox" id="punkt">
+                        <label class="p-0 m-0 pl-4" for="punkt">Доставка в пункт выдачи</label>
+                    </div>
+                    <div class="d-flex align-items-center p-0 m-0">
+                        <input type="checkbox" id="toHome">
+                        <label class="p-0 m-0 pl-4" for="toHome">Доставка курьером до подъезда</label>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <label class="mt-2 mb-1 w-100" for="refund_reason"><span class="redFnt">*</span>Пункт
+                        выдачи:</label>
+                    <select class="custom-select custom-select-sm" name="refund_reason" required="required">
+                        <option value="10335" selected="selected">Отделение №1: ул. Мазепы, 26</option>
+                    </select>
+                </div>
+                <br>
+                --------
+                <div class="w-100">
+                    <label class="mt-2 mb-1 w-100" for="FIO"><span class="redFnt">*</span>Улица:</label>
+                    <input class="px-1 py-1" type="text" name="FIO" value="Улица" placeholder="Улица"
+                        maxlength="80" required="required">
+                </div>
+                <div class="w-100">
+                    <label class="mt-2 mb-1 w-100" for="FIO"><span class="redFnt">*</span>Дом</label>
+                    <input class="px-1 py-1" type="text" name="FIO" value="Дом" placeholder="Дом" maxlength="80"
+                        required="required">
+                </div>
+                <div class="w-100">
+                    <label class="mt-2 mb-1 w-100" for="FIO"><span class="redFnt">*</span>Квартира</label>
+                    <input class="px-1 py-1" type="text" name="FIO" value="Квартира" placeholder="Дом"
+                        maxlength="80" required="required">
+                </div>
+            </div>                       
+                <div class="w-100 grey2Border borderWidth1 p-2 mt-2">
+                    <label class="mt-2 mb-1 w-100" for="refund_reason"><span
+                            class="redFnt">*</span>Оплата:</label>
+                    <select class="custom-select custom-select-sm" name="refund_reason" required="required">
+                        <option value="10" selected="selected">Наличными</option>
+                        <option value="1">Через банковское отделение</option>
+                        <option value="7">Приват24/Платежный терминал/Visa/Mastercard (LiqPAY.com)</option>
+                    </select>
+                    <p class="m-0 mt-2">(Отправка товаров осуществляется после поступления денег на наш
+                        расчетный счет)
+                        Для оплаты заказа нами предоставляется счет-фактура, которую можно оплатить в любом
+                        банковском отделении, либо с расчетного счета предприятия для юр. лиц и ФЛП (просьба
+                        отправлять реквизиты, а также скан-копии документов на email: buh@3ona51.com)</p>
+                </div>
+
+                <div class="w-100 grey2Border borderWidth1 p-2 mt-2">
+                    <label class="mt-2 mb-1 w-100" for="FIO">Фамилия получателя:</label>
+                    <input class="px-1 py-1" type="text" name="FIO" value="Фамилия получателя"
+                        placeholder="Фамилия получателя" maxlength="80" required="required">
+                
+                    <label class="mt-2 mb-1 w-100" for="FIO"><span class="redFnt">*</span>Имя
+                        получателя:</label>
+                    <input class="px-1 py-1" type="text" name="FIO" value="Имя получателя"
+                        placeholder="Имя получателя" maxlength="80" required="required">
+                
+                    <label class="mt-2 mb-1 w-100" for="FIO">Отчество получателя:</label>
+                    <input class="px-1 py-1" type="text" name="FIO" value="Отчество получателя"
+                        placeholder="Отчество получателя" maxlength="80" required="required">
+                
+                    <label class="mt-2 mb-1 w-100" for="email"><span class="redFnt">*</span>E-mail:</label>
+                    <input class="px-1 py-1" type="email" name="email" value="archangel9800@gmail.com"
+                        placeholder="Email" maxlength="60" required="required">
+                
+                    <label class="mt-2 mb-1 w-100" for="phone"><span class="redFnt">*</span>Телефон:</label>
+                    <input class="px-1 py-1" type="tel" name="phone" value="0972922711" pattern="0\d{4,12}"
+                        placeholder="0XXXXXXXXX" maxlength="25" required="required">
+                        <p class="mt-1 m-0 ">После оформления заказа, с Вами свяжутся по указанному выше телефону для уточнения вопросов по доставке и оплате</p>
+                    </div>
+                    <div class="w-100 grey2Border borderWidth1 p-2 mt-2">
+                    <label class="mt-2 mb-1" for="product_name"><span class="redFnt">*</span>Комментарий к
+                        заказу (заполняется по желанию):</label>
+                    <textarea class="w-100 p-2 grey2Bg whiteFnt" name="product_name" rows="6"
+                        required="required"></textarea>
+                </div>
+            </form>
+
+            <div class="col-12 col-xl-7 p-0 pt-2 pt-lg-0 pl-xl-3">
+                <h3 class="fnt1p125rem mainZ51ColFnt text-uppercase m-0 mb-1">Товары в заказе</h3>
+
+                <div class="cartItem d-flex flex-wrap flex-md-nowrap align-items-center">
+                    <div class="d-flex align-items-center justify-content-center mb-0 mb-md-2 mt-2">
+                        <a class="cartItemImg" href="#">
+                            <img src="img/img/100.jpg" alt="" title="">
+                        </a>
+                        <div class="flex-grow-1 pl-1 pr-0 px-lg-2 d-flex flex-column">
+                            <a href="#" class="hoverLinkG mb-2 textLimit" data-textsize="97">Funko POP!
+                                Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader &amp; Obi Wan Kenobi
+                                (Exc) (23232WM)</a>
+                            <span class="fnt0p875rem">Код товара: <span
+                                    class="whiteFnt">44924648</span></span>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex flex-row justify-content-center justify-content-md-end align-items-center flex-grow-1 flex-grow-md-0 mt-0 mb-2 my-md-2">
+                        <div class="d-flex flex-column align-items-center mx-2 mx-sm-4">
+                            <span class="fnt1p125rem">Цена</span>
+                            <b class="whiteFnt mt-1 mt-md-3">688</b>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mx-2 mx-sm-4">
+                            <span class="fnt1p125rem">Количество</span>
+                            <b class="whiteFnt mt-1 mt-md-3">1</b>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mx-2 mx-sm-4">
+                            <span class="fnt1p125rem">Сумма</span>
+                            <b class="mainZ51ColFnt mt-1 mt-md-3">688</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartItem d-flex flex-wrap flex-md-nowrap align-items-center">
+                    <div class="d-flex align-items-center justify-content-center mb-0 mb-md-2 mt-2">
+                        <a class="cartItemImg" href="#">
+                            <img src="img/img/100.jpg" alt="" title="">
+                        </a>
+                        <div class="flex-grow-1 pl-1 pr-0 px-lg-2 d-flex flex-column">
+                            <a href="#" class="hoverLinkG mb-2 textLimit" data-textsize="97">Funko POP!
+                                Bobble 2-Pack: Star Wars: Movie Moments: Darth Vader &amp; Obi Wan Kenobi
+                                (Exc) (23232WM)</a>
+                            <span class="fnt0p875rem">Код товара: <span
+                                    class="whiteFnt">44924648</span></span>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex flex-row justify-content-center justify-content-md-end align-items-center flex-grow-1 flex-grow-md-0 mt-0 mb-2 my-md-2">
+                        <div class="d-flex flex-column align-items-center mx-2 mx-sm-4">
+                            <span class="fnt1p125rem">Цена</span>
+                            <b class="whiteFnt mt-1 mt-md-3">688</b>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mx-2 mx-sm-4">
+                            <span class="fnt1p125rem">Количество</span>
+                            <b class="whiteFnt mt-1 mt-md-3">1</b>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mx-2 mx-sm-4">
+                            <span class="fnt1p125rem">Сумма</span>
+                            <b class="mainZ51ColFnt mt-1 mt-md-3">688</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 d-flex flex-wrap justify-content-center">
+                    <div class="d-flex flex-wrap flex-sm-nowrap pt-1 justify-content-between w-100">
+                        <div>
+                            <span class="m-1 d-block">Бонусы: <span class="whiteFnt">+123
+                                    баллов</span></span>
+                        </div>
+                        <div>
+                            <span class="m-1 d-block">Подитог: <span class="whiteFnt">1998.00
+                                    грн.</span></span>
+                            <span class="m-1 d-block">Итого к оплате: <span
+                                    class="mainZ51ColFnt fnt1p1375rem">1998.00 грн.</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-2 justify-content-center">
+                    <input class="buttonFGr py-2 px-4 font-weight-bold" type="submit" name="submit" value="Оформить">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

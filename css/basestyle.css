@@ -1060,7 +1060,7 @@ header{
     height: 0px;
     width: 0px;
     border-style: solid;
-    border-color: transparent rgb(var(--black));
+    border-color: var(--transp) rgb(var(--black));
     border-width: 6px 0px 6px 6px;
     margin:0 0 0 6px;
     -webkit-transition: all 0.1s;transition: all 0.1s;
@@ -1078,7 +1078,7 @@ header{
     } 
 }
 #inCart .cartButtons a:hover::before,#inCart .cartButtons a:hover::after{
-    border-color: transparent rgb(var(--white));
+    border-color: var(--transp) rgb(var(--white));
 }
 #inCart .sticky-bottom{
     border-top: 0.125rem solid rgb(var(--grey2));
@@ -2299,7 +2299,7 @@ footer{
     opacity: 0.6;
     margin-right: 4%;
     margin-left: 0;
-    background-color: transparent;
+    background-color: var(--transp);
 }
 .productTop #prodCarousel .carousel-indicators li.active{
     opacity: 0.9;
@@ -2454,6 +2454,7 @@ footer{
     width: 100%;
     min-width: 15.625rem;
     max-width: 18.75rem;
+    overflow: visible;
 }
 .goodsCarousel .goodWrap .goodbl{
     -webkit-box-shadow: none;
@@ -2518,8 +2519,8 @@ footer{
     height: 0;
     margin: -12px 0 0 -7px;
     border-left: 24px solid rgb(var(--mainContCol));
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
+    border-top: 14px solid var(--transp);
+    border-bottom: 14px solid var(--transp);
 }
 .videoWrap .videoLink .btnLink::after{
     content: '';
@@ -2582,6 +2583,7 @@ footer{
 /*.indexSlider style start*/
 .indexSlider{
     overflow: hidden;
+    margin-top: 1.25rem;
 }
 .gasket{
     border-top: 0.0625rem solid rgb(var(--grey3));
@@ -3206,8 +3208,16 @@ select.custom-select{
 /*.shippingPay style end*/
 
 
-
-
+.aboutUs .mainWidth img{
+    border-top: 5px solid;
+    -o-border-image: linear-gradient(to right, var(--transp), rgb(var(--mainZ51Col)), var(--transp));
+    -o-border-image: linear-gradient(to right, var(--transp), rgb(var(--mainZ51Col)), var(--transp));border-image: -webkit-gradient(linear, left top, right top, from(var(--transp)), color-stop(rgb(var(--mainZ51Col))), to(var(--transp)));border-image: linear-gradient(to right, var(--transp), rgb(var(--mainZ51Col)), var(--transp));  
+    border-image-slice: 5;
+}
+.aboutUs .mainWidth img:first-child{
+    border-top: none;
+    border-image-slice:  unset;
+}
 
 
 

@@ -2,7 +2,7 @@
  * js/functions.js
  * Copyright (c) ТОВ "Елпрофи", 2019 All rights reserved.
  * Шаблон разработали Левковец И.В., Броновицкий А.Н., 2019. archangel, b1te
- * 04.02.2020
+ * 13.03.2020
  */
 
 
@@ -110,7 +110,7 @@ $('.hidddenContInside .showCont').click(function(e) {
     $(showClass).addClass('dispNone');
     $(this).closest('.hidddenContInside').find(showClass).removeClass('dispNone'); 
     $(this).addClass('dispNone');
-})
+});
 //.hidddenContInside .showMore script end    
  
 //.switchBlock .switch script start
@@ -121,7 +121,7 @@ $('.switchBlock .switch').click(function(e) {
     $(this).closest('.switchBlock').find(".switchCont").addClass('dispNone');
     var showClass = $(this).attr('data-switch');
     $(showClass).removeClass('dispNone');
-})
+});
 //.switchBlock .switch script end   
   
 //aside .filter-int.filter-slider script start
@@ -257,6 +257,93 @@ $(".modalbox").fancybox("#inSuccess");
     
 });
 
+// gtm start
+function gtm_product_click(src)
+{
+    if(!window['google_tag_manager'])
+        return true;
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        'ecommerce': {
+            'currencyCode': 'UAH',
+            'click': {
+                'actionField': {
+                    'list': src['list']
+                },
+                'products': [{
+                    'id': src['id'],
+                    'name': src['name'],
+                    'price': src['price'],
+                    'category': src['category']
+                    //'position': 1
+                }]
+            }
+        },
+        'eventCallback': function() {
+            document.location = src['href']
+        },
+        'eventTimeout' : 2000,
+        'event': 'gtm-ee-event',
+        'gtm-ee-event-category': 'Enhanced Ecommerce',
+        'gtm-ee-event-action': 'Product Clicks',
+        'gtm-ee-event-non-interaction': 'False',
+    });
+    return false;
+}
+function gtm_cart_add(src)
+{
+    if(!window['google_tag_manager'])
+        return true;
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        'ecommerce': {
+            'currencyCode': 'UAH',
+            'add': {
+                'products': [{
+                    'id': src['id'],
+                    'name': src['name'],
+                    'price': src['price'],
+                    'brand': src['brand'],
+                    'category': src['category'],
+                    'quantity': src['quantity']
+                }]
+            }
+        },
+        'event': 'gtm-ee-event',
+        'gtm-ee-event-category': 'Enhanced Ecommerce',
+        'gtm-ee-event-action': 'Add to Cart',
+        'gtm-ee-event-non-interaction': 'False',
+    });
+    return false;
+}
+function gtm_cart_remove(src)
+{
+    if(!window['google_tag_manager'])
+        return true;
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        'ecommerce': {
+            'currencyCode': 'UAH',
+            'remove': {
+                'products': [{
+                    'id': src['id'],
+                    'name': src['name'],
+                    'price': src['price'],
+                    'brand': src['brand'],
+                    'category': src['category'],
+                    'quantity': src['quantity']
+                }]
+            }
+        },
+        'event': 'gtm-ee-event',
+        'gtm-ee-event-category': 'Enhanced Ecommerce',
+        'gtm-ee-event-action': 'Remove from Cart',
+        'gtm-ee-event-non-interaction': 'False',
+    });
+    return false;
+}
+// gtm end
+
 ///.cookieAccept script start   
 $('#cookiesAcceptButton').on("click", function () {
     $.cookie('cookies_accepted', 1, { path : '/' });
@@ -280,6 +367,9 @@ function discussionLike(id,action)
     return false;
 }
 if($('#discussionForm').length) {
+    $('#discussionForm.switchBlock .switch').click(function(e) {
+        $('#discussionForm input[name="is_review"]').val($(this).attr('data-switch')=='.addRev' ? 1 : 0);
+    });
     $('#discussionForm .rateit').bind('rated reset', function (e) {
         var ri = $(this);
         $('#discussionForm input[name="rating"]').val(ri.rateit('value'));
@@ -895,3 +985,16 @@ if(ON_LOAD_FOCUS_ELEMENT!=''){
     });
 }
 ///characteristics discussion scroll script end
+
+// <!-- Facebook Pixel Code -->
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '177260446180873');
+fbq('track', 'PageView');
+// <!-- End Facebook Pixel Code -->

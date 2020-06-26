@@ -284,10 +284,6 @@ body textarea{
     font-size: var(--fnt3p125rem);
 }
 
-body>div:first-child, .cbalink{
-    display: none;
-}
-
 .dispNone{
     display: none !important;
 }
@@ -1672,9 +1668,9 @@ aside .asideTxt{
     padding: 0;
     max-width: 4.688rem;
 }
-.events .eventsPicture img{
+/*.events .eventsPicture img{
     width: 100%;
-}
+}*/
 .events > .eventsUaFnt{
     font-size: var(--fnt0p6875rem);
     letter-spacing: -0.03125rem;
@@ -2642,14 +2638,11 @@ footer{
 }
 .cusomSButton{
      -webkit-transition: all 0.1s; transition: all 0.1s;
-    background-color: rgba(var(--grey2), 0.8);
     height: 3.125rem;
     width: 3.125rem;
     background-size: 20px 30px;
 }
-.cusomSButton:hover{
-    background-color: rgba(var(--grey4), 0.8);
-}
+
 .cusomSButton.swiper-button-next{
   right: 1.25rem; 
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%238e8e8e'%2F%3E%3C%2Fsvg%3E");
@@ -2665,7 +2658,22 @@ footer{
   left: 1.25rem; 
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23a5d300'%2F%3E%3C%2Fsvg%3E");
 }
-
+@media only screen and (min-width: 0px){
+    .cusomSButton{
+        background-color: rgba(var(--grey2), 0.1);
+    }
+    .cusomSButton:hover{
+        background-color: rgba(var(--grey4), 0.1);
+    }
+}
+@media only screen and (min-width: 768px){
+    .cusomSButton{
+       background-color: rgba(var(--grey2), 0.8);
+   }
+    .cusomSButton:hover{
+        background-color: rgba(var(--grey4), 0.8);
+    }
+}
 
 /*.indexSlider style end*/
 
@@ -2712,6 +2720,9 @@ footer{
 .indexGoods .goodWrap {
     margin: 1rem 0.5rem 0 0.5rem;
 }
+.goodWrap[class*='bannerInGoods']{
+    overflow: visible;
+}
 .goodWrap[class*='bannerInGoods'] .knowMore {
     position: absolute;
     width: calc(18.75rem - 2.25rem);
@@ -2724,6 +2735,10 @@ footer{
     line-height: 0.8125rem;
     font-weight: bold;
     text-transform: uppercase;
+}
+.goodWrap.bannerInGoods1x a:first-child, .goodWrap.bannerInGoods1x a img,.goodWrap.bannerInGoods2x a:first-child, .goodWrap.bannerInGoods2x a img{
+    width: 100%;
+    display: block;
 }
 .goodWrap.bannerInGoods2x {
     width: 38.5rem;
